@@ -2,6 +2,13 @@
 
 
 
+## v0.1.2 (2024-04-05)
+
+### Documentation
+
+* docs: update 1 file and create 1 file Add semantic versioning and Python Semantic Release configuration ([`703d601`](https://github.com/bhklab/ORCESTRA-api/commit/703d601b7829443ac710c100d2f012c558e8a139))
+
+
 ## v0.1.1 (2024-04-05)
 
 ### Ci
