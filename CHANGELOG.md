@@ -2,11 +2,13 @@
 
 
 
-## v0.1.3-rc.3 (2024-04-05)
+## v0.1.3 (2024-04-05)
 
-### Ci
+### Unknown
 
-* ci: update main.yaml Fix GitHub app token configuration in main.yaml ([`b110a0e`](https://github.com/bhklab/ORCESTRA-api/commit/b110a0e9d44d19ea5a7b83a0ecb2bc935856ca37))
+* Merge pull request #3 from bhklab/staging
+
+Staging ([`3fa75fb`](https://github.com/bhklab/ORCESTRA-api/commit/3fa75fbd53e2b5af89f296fda508c5a1e69805b8))
 
 
 ## v0.1.3-rc.2 (2024-04-05)
