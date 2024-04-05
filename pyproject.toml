@@ -1,6 +1,6 @@
 [project]
 name = "snakemake-orcestrator-api"
-version = "0.1.2"
+version = "0.1.3-rc.1"
 
 ################################################################################
 # PIXI Configuration
@@ -61,6 +61,7 @@ allowed_tags = [
     "refactor",
     "revert",
     "test",
+    "merge",
 ]
 
 minor_tags = ["feat"]
