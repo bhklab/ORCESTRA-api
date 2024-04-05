@@ -1,4 +1,12 @@
 # Snakemake Orchestrator API w/ Kubernetes
+[![CI-CD](https://github.com/bhklab/ORCESTRA-api/actions/workflows/main.yaml/badge.svg)](https://github.com/bhklab/ORCESTRA-api/actions/workflows/main.yaml)
+[![Pixi Badge](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/prefix-dev/pixi/main/assets/badge/v0.json)](https://pixi.sh)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
+
+
+[![Dynamic TOML Badge](https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbhklab%2FORCESTRA-api%2Fmain%2Fpyproject.toml%3Ftoken%3DGHSAT0AAAAAACJ7UIIIXDF7ZCIOJHYTQBIEZQQNGQA&query=project.version&label=release)](https://github.com/bhklab/ORCESTRA-api/tree/main)
+[![Dynamic TOML Badge](https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbhklab%2FORCESTRA-api%2Fstaging%2Fpyproject.toml%3Ftoken%3DGHSAT0AAAAAACJ7UIII7LVUG7H2GC4ASUAEZQQNIXA&query=project.version&label=staging&color=red)
+](https://github.com/bhklab/ORCESTRA-api/tree/staging)
 
 ## Setup
 
