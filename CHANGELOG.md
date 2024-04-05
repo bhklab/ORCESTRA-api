@@ -2,6 +2,23 @@
 
 
 
+## v0.1.3-rc.2 (2024-04-05)
+
+### Ci
+
+* ci: update main.yaml Fix GitHub app token configuration in main.yaml ([`0de2f74`](https://github.com/bhklab/ORCESTRA-api/commit/0de2f7403d933e5e98b06241fd8de53be89b2fe3))
+
+### Unknown
+
+* Merge pull request #2 from bhklab/main
+
+Merge pull request #1 from bhklab/staging ([`4ada7a1`](https://github.com/bhklab/ORCESTRA-api/commit/4ada7a12c9227a0bade3ddb35b12cc6b0e7cdefe))
+
+* Merge pull request #1 from bhklab/staging
+
+ci: add merge as semver tag ([`0dbba42`](https://github.com/bhklab/ORCESTRA-api/commit/0dbba42ce992270d9a170ebb6885c8d8b9dcdc42))
+
+
 ## v0.1.3-rc.1 (2024-04-05)
 
 ### Ci
