@@ -1,6 +1,6 @@
 [project]
 name = "snakemake-orcestrator-api"
-version = "0.0.1"
+version = "0.0.0"
 
 ################################################################################
 # PIXI Configuration
