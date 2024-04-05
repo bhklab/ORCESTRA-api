@@ -1,0 +1,16 @@
+<mxfile host="65bd71144e">
+    <diagram id="NfRJwdA8AYz-zy0kMAGs" name="Page-1">
+        <mxGraphModel dx="2424" dy="1191" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="git requirements&lt;br&gt;&lt;hr&gt;" style="whiteSpace=wrap;html=1;fontSize=17;align=center;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="150" width="420" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;ul&gt;&lt;li style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;clone repo&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;pull repo (after it might update)&lt;/li&gt;&lt;ul&gt;&lt;li style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;should be able to determine that changes were made&lt;/li&gt;&lt;/ul&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;retrieve git hash&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;to tag pipelines with the exact version of the repo used to run&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Bonus&lt;/li&gt;&lt;ul&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;some sort of feature to parse files of a github repo for a &quot;CHANGELOG*&quot; or &quot;RELEASENOTES*&quot; that can be displayed for users&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;" style="whiteSpace=wrap;html=1;fontSize=17;align=left;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="210" width="420" height="350" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

@@ -37,3 +37,13 @@ pixi run hello
 ```
 
 TODO:: as development progresses, remove the hello_world function and add a more meaningful function to show the functionality of the project and PIXI in general.
+
+
+## Semantic Versioning
+
+For a detailed explanation of the release process, please refer to the [GitFlow Process and Release Cycle](docs/GitFlow-Process_ReleaseCycle.md).
+
+This project uses [Python Semantic Release](https://python-semantic-release.readthedocs.io/en/latest/) for
+automatic versioning and changelog generation.
+
+It is implemented via [GitHub Actions](.github/workflows/main.yml) and the configuration can be found in the [pyproject.toml](pyproject.toml) file.
