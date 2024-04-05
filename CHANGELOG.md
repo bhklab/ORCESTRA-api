@@ -2,6 +2,17 @@
 
 
 
+## v0.1.3-rc.1 (2024-04-05)
+
+### Ci
+
+* ci: add merge as semver tag ([`f0b60f5`](https://github.com/bhklab/ORCESTRA-api/commit/f0b60f56335aae40826ae9e347143d79b6b40721))
+
+### Unknown
+
+* remove unused semver ([`a52c959`](https://github.com/bhklab/ORCESTRA-api/commit/a52c9592931dc451b4e3346631d3f6884d378aab))
+
+
 ## v0.1.2 (2024-04-05)
 
 ### Documentation
