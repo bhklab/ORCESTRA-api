@@ -2,6 +2,13 @@
 
 
 
+## v0.1.1 (2024-04-05)
+
+### Ci
+
+* ci: add semver ([`47d19ed`](https://github.com/bhklab/ORCESTRA-api/commit/47d19edfe176877aa60c649889bb2bd44e48715c))
+
+
 ## v0.1.0 (2024-04-05)
 
 ### Feature
