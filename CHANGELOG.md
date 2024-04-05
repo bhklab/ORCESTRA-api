@@ -2,6 +2,16 @@
 
 
 
+## v0.1.4 (2024-04-05)
+
+### Unknown
+
+* Merge pull request #4 from bhklab/staging
+
+Staging ([`f6a8f39`](https://github.com/bhklab/ORCESTRA-api/commit/f6a8f39712c0480b9bbc0105ce74c481739913f3))
+
+* Merge branch &#39;main&#39; into staging ([`b0e0c95`](https://github.com/bhklab/ORCESTRA-api/commit/b0e0c956ac94f2032cf29bf6dbecfdcbbfbbd187))
+
 
 ## v0.1.3-rc.4 (2024-04-05)
 
@@ -19,6 +29,15 @@
 ### Ci
 
 * ci: update main.yaml Fix GitHub app token configuration in main.yaml ([`b110a0e`](https://github.com/bhklab/ORCESTRA-api/commit/b110a0e9d44d19ea5a7b83a0ecb2bc935856ca37))
+
+
+## v0.1.3 (2024-04-05)
+
+### Unknown
+
+* Merge pull request #3 from bhklab/staging
+
+Staging ([`3fa75fb`](https://github.com/bhklab/ORCESTRA-api/commit/3fa75fbd53e2b5af89f296fda508c5a1e69805b8))
 
 
 ## v0.1.3-rc.2 (2024-04-05)
