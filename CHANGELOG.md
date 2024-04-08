@@ -2,6 +2,16 @@
 
 
 
+## v0.1.5 (2024-04-08)
+
+### Unknown
+
+* Merge pull request #6 from bhklab/staging
+
+Staging ([`23418a6`](https://github.com/bhklab/ORCESTRA-api/commit/23418a6bd9a41bb077c4f3f53d0625380e796fac))
+
+* Merge branch &#39;main&#39; into staging ([`331efb7`](https://github.com/bhklab/ORCESTRA-api/commit/331efb7cd79badc47869290517f888723ba6cf0d))
+
 
 ## v0.1.5-rc.3 (2024-04-08)
 
@@ -35,6 +45,7 @@
 
 * tests: add test directories with simple snakefiles ([`03552b2`](https://github.com/bhklab/ORCESTRA-api/commit/03552b219b5a7381c1f2c6315a45c8dbb8a0919d))
 
+
 ## v0.1.4 (2024-04-05)
 
 ### Unknown
@@ -42,7 +53,6 @@
 * Merge pull request #4 from bhklab/staging
 
 Staging ([`f6a8f39`](https://github.com/bhklab/ORCESTRA-api/commit/f6a8f39712c0480b9bbc0105ce74c481739913f3))
-
 
 * Merge branch &#39;main&#39; into staging ([`b0e0c95`](https://github.com/bhklab/ORCESTRA-api/commit/b0e0c956ac94f2032cf29bf6dbecfdcbbfbbd187))
 
