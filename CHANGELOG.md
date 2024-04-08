@@ -29,6 +29,16 @@
 
 * Merge branch &#39;main&#39; into staging ([`b0e0c95`](https://github.com/bhklab/ORCESTRA-api/commit/b0e0c956ac94f2032cf29bf6dbecfdcbbfbbd187))
 
+## v0.1.4 (2024-04-05)
+
+### Unknown
+
+* Merge pull request #4 from bhklab/staging
+
+Staging ([`f6a8f39`](https://github.com/bhklab/ORCESTRA-api/commit/f6a8f39712c0480b9bbc0105ce74c481739913f3))
+
+* Merge branch &#39;main&#39; into staging ([`b0e0c95`](https://github.com/bhklab/ORCESTRA-api/commit/b0e0c956ac94f2032cf29bf6dbecfdcbbfbbd187))
+
 
 ## v0.1.3-rc.4 (2024-04-05)
 
