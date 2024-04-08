@@ -2,6 +2,26 @@
 
 
 
+## v0.1.5-rc.1 (2024-04-08)
+
+### Build
+
+* build(deps): update pyproject.toml Update hello command in pyproject.toml ([`3f252cd`](https://github.com/bhklab/ORCESTRA-api/commit/3f252cdf2615b99687a8c7e18a12406c814081dd))
+
+### Chore
+
+* chore: update .gitignore ([`a5fa71d`](https://github.com/bhklab/ORCESTRA-api/commit/a5fa71d730966ce2edb98b9cc122aee15581deb5))
+
+### Documentation
+
+* docs: update README. Add Pipeline-standards documentation ([`a84fb74`](https://github.com/bhklab/ORCESTRA-api/commit/a84fb741002c14b61f0d2449f01d7501085b35dc))
+
+### Unknown
+
+* tests: add test directories with simple snakefiles ([`03552b2`](https://github.com/bhklab/ORCESTRA-api/commit/03552b219b5a7381c1f2c6315a45c8dbb8a0919d))
+
+* Merge branch &#39;main&#39; into staging ([`b0e0c95`](https://github.com/bhklab/ORCESTRA-api/commit/b0e0c956ac94f2032cf29bf6dbecfdcbbfbbd187))
+
 
 ## v0.1.3-rc.4 (2024-04-05)
 
@@ -19,6 +39,15 @@
 ### Ci
 
 * ci: update main.yaml Fix GitHub app token configuration in main.yaml ([`b110a0e`](https://github.com/bhklab/ORCESTRA-api/commit/b110a0e9d44d19ea5a7b83a0ecb2bc935856ca37))
+
+
+## v0.1.3 (2024-04-05)
+
+### Unknown
+
+* Merge pull request #3 from bhklab/staging
+
+Staging ([`3fa75fb`](https://github.com/bhklab/ORCESTRA-api/commit/3fa75fbd53e2b5af89f296fda508c5a1e69805b8))
 
 
 ## v0.1.3-rc.2 (2024-04-05)
