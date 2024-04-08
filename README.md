@@ -3,9 +3,9 @@
 [![Pixi Badge](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/prefix-dev/pixi/main/assets/badge/v0.json)](https://pixi.sh)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
 
-
-[![Dynamic TOML Badge](https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbhklab%2FORCESTRA-api%2Fmain%2Fpyproject.toml%3Ftoken%3DGHSAT0AAAAAACJ7UIIIXDF7ZCIOJHYTQBIEZQQNGQA&query=project.version&label=release)](https://github.com/bhklab/ORCESTRA-api/tree/main)
-[![Dynamic TOML Badge](https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbhklab%2FORCESTRA-api%2Fstaging%2Fpyproject.toml%3Ftoken%3DGHSAT0AAAAAACJ7UIII7LVUG7H2GC4ASUAEZQQNIXA&query=project.version&label=staging&color=red)
+[![Dynamic TOML Badge](https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbhklab%2FORCESTRA-api%2Fmain%2Fpyproject.toml%3Ftoken%3DGHSAT0AAAAAACJ7UIIIFXW3TQEPGTWC7W5WZQUACSA&query=project.version&label=release&color=red)
+](https://github.com/bhklab/ORCESTRA-api/tree/main)
+[![Dynamic TOML Badge](https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbhklab%2FORCESTRA-api%2Fstaging%2Fpyproject.toml%3Ftoken%3DGHSAT0AAAAAACJ7UIIJLPEYVLIHZVHXLEUOZQUADVQ&query=project.version&label=staging&color=orange)
 ](https://github.com/bhklab/ORCESTRA-api/tree/staging)
 
 ## Setup
@@ -46,6 +46,12 @@ pixi run hello
 
 TODO:: as development progresses, remove the hello_world function and add a more meaningful function to show the functionality of the project and PIXI in general.
 
+## Pipeline Specification
+
+This project is aims to orchestrate the deployment and execution of Snakemake workflows on Kubernetes clusters.
+As such, it makes some assumptions about the structure of the workflow and the environment in which it is executed.
+
+All pipelines must follow the [Pipeline Standards](docs/Pipeline-standards.md) (WORK IN PROGRESS)
 
 ## Semantic Versioning
 

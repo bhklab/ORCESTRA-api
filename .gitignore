@@ -7,3 +7,4 @@
 .idea/
 __pycache__
 *.pyc
+src/core/__pycache__/main.cpython-312.pyc
