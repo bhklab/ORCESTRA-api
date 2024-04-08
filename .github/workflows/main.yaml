@@ -39,7 +39,6 @@ jobs:
       contents: write
       packages: write
       actions: read
-
     steps:
     - uses: actions/create-github-app-token@v1
       id: app-token
