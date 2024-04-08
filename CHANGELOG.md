@@ -2,6 +2,13 @@
 
 
 
+## v0.1.5-rc.2 (2024-04-08)
+
+### Build
+
+* build(deps): update README.md and pyproject.toml Add Pipeline Specification documentation ([`3d9f8a0`](https://github.com/bhklab/ORCESTRA-api/commit/3d9f8a005dc38ebf62ff378ec224cafb1de27880))
+
+
 ## v0.1.5-rc.1 (2024-04-08)
 
 ### Build
