@@ -1,6 +1,5 @@
 [project]
 name = "snakemake-orcestrator-api"
-
 version = "0.1.5-rc.1"
 
 
