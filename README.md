@@ -4,8 +4,9 @@
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
 
 
-[![Dynamic TOML Badge](https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbhklab%2FORCESTRA-api%2Fmain%2Fpyproject.toml%3Ftoken%3DGHSAT0AAAAAACJ7UIIIXDF7ZCIOJHYTQBIEZQQNGQA&query=project.version&label=release)](https://github.com/bhklab/ORCESTRA-api/tree/main)
-[![Dynamic TOML Badge](https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbhklab%2FORCESTRA-api%2Fstaging%2Fpyproject.toml%3Ftoken%3DGHSAT0AAAAAACJ7UIII7LVUG7H2GC4ASUAEZQQNIXA&query=project.version&label=staging&color=red)
+[![Dynamic TOML Badge](https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbhklab%2FORCESTRA-api%2Fmain%2Fpyproject.toml%3Ftoken%3DGHSAT0AAAAAACJ7UIIIFXW3TQEPGTWC7W5WZQUACSA&query=project.version&label=release&color=red)
+](https://github.com/bhklab/ORCESTRA-api/tree/main)
+[![Dynamic TOML Badge](https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbhklab%2FORCESTRA-api%2Fstaging%2Fpyproject.toml%3Ftoken%3DGHSAT0AAAAAACJ7UIIJLPEYVLIHZVHXLEUOZQUADVQ&query=project.version&label=staging&color=orange)
 ](https://github.com/bhklab/ORCESTRA-api/tree/staging)
 
 ## Setup
