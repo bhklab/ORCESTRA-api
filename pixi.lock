@@ -54,7 +54,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/pysocks-1.7.1-pyha2e5f31_6.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/linux-64/python-3.12.2-hab00c5b_0_cpython.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/python-gitlab-4.4.0-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/python-semantic-release-9.4.0-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/python-semantic-release-9.4.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/python_abi-3.12-4_cp312.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/pyyaml-6.0.1-py312h98912ed_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/readline-8.2-h8228510_1.conda
@@ -117,7 +117,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/pysocks-1.7.1-pyha2e5f31_6.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/python-3.12.2-hdf0ec26_0_cpython.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/python-gitlab-4.4.0-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/python-semantic-release-9.4.0-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/python-semantic-release-9.4.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/python_abi-3.12-4_cp312.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/pyyaml-6.0.1-py312h02f2b3b_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/readline-8.2-h92ec313_1.conda
@@ -1143,13 +1143,13 @@ packages:
   timestamp: 1705315869275
 - kind: conda
   name: python-semantic-release
-  version: 9.4.0
+  version: 9.4.1
   build: pyhd8ed1ab_0
   subdir: noarch
   noarch: python
-  url: https://conda.anaconda.org/conda-forge/noarch/python-semantic-release-9.4.0-pyhd8ed1ab_0.conda
-  sha256: f533e5ee1f19c80a51bafe3fce876a5f5fb07e8964a434a4bc8dd3db883f5a13
-  md5: 44dbff9201c5e35c4529017bcbb05509
+  url: https://conda.anaconda.org/conda-forge/noarch/python-semantic-release-9.4.1-pyhd8ed1ab_0.conda
+  sha256: 8eaf0c8251d28b75718597e38312bb064232e3e7b648636360588a1701142555
+  md5: 9e80694c392a71de3d1818af8dcae3d7
   depends:
   - click >=8,<9.0
   - click-option-group >=0.5,<0.6
@@ -1166,8 +1166,8 @@ packages:
   - tomlkit >=0.11,<1
   license: MIT
   license_family: MIT
-  size: 56727
-  timestamp: 1711928860834
+  size: 56729
+  timestamp: 1712440779205
 - kind: conda
   name: python_abi
   version: '3.12'
