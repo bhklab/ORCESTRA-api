@@ -18,6 +18,37 @@ As this data structure is designed, we can then standardize what needs to be out
 > TODO:
 > Need to decide on the source for each of these fields
 
+This diagram is based on all the sections below:
+
+```plantuml
+@startjson
+{
+    "pipeline":"SnakemakePipeline",
+    "about": {
+        "name": "gCSI",
+        "description": "gCSI dataset is a pharmacogenomics ...",
+        "Disclaimer": "The gCSI data were generated and shared by Genentech ...",
+        "Curated By": "BHK Lab",
+        "Curated On": "2021-09-01"
+    },
+    "technical_information": {
+        "Dataset DOI": "10.5281/zenodo.123456",
+        "Data Type": "PharmacoSet",
+        "Data Format": "RDS",
+        "License": "CC BY 4.0"
+    },
+    "pipeline": {
+        "GitHub Repo": "github.com/repo",
+        "Release Notes": "v2024.2 - 10 new drugs; added chembl MOA..."
+    },
+    "data_quality": {
+        "Annotation standards": "????",
+        "Quality Control": "link to HTML file"
+    }
+}
+@endjson
+```
+
 ### ABOUT
 
 ![DNL_about.png](DNL_about.png)
