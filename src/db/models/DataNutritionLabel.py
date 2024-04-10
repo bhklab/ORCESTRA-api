@@ -10,7 +10,6 @@ from pydantic.functional_validators import BeforeValidator
 
 from typing import Annotated, List, Optional
 
-PyObjectId = Annotated[str, BeforeValidator(str)]
 
 from datetime import datetime
 

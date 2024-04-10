@@ -51,11 +51,11 @@ TODO:: as development progresses, remove the hello_world function and add a more
 This project is aims to orchestrate the deployment and execution of Snakemake workflows on Kubernetes clusters.
 As such, it makes some assumptions about the structure of the workflow and the environment in which it is executed.
 
-All pipelines must follow the [Pipeline Standards](docs/Pipeline-standards.md) (WORK IN PROGRESS)
+All pipelines must follow the [Pipeline Standards](old_docs/Pipeline-standards.md) (WORK IN PROGRESS)
 
 ## Semantic Versioning
 
-For a detailed explanation of the release process, please refer to the [GitFlow Process and Release Cycle](docs/GitFlow-Process_ReleaseCycle.md).
+For a detailed explanation of the release process, please refer to the [GitFlow Process and Release Cycle](old_docs/GitFlow-Process_ReleaseCycle.md).
 
 This project uses [Python Semantic Release](https://python-semantic-release.readthedocs.io/en/latest/) for
 automatic versioning and changelog generation.
