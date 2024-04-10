@@ -8,3 +8,12 @@
 __pycache__
 *.pyc
 src/core/__pycache__/main.cpython-312.pyc
+src/core/__pycache__/main.cpython-312.pyc
+ORCESTRA-api.code-workspace
+
+
+# MacOS
+.DS_Store
+*.DS_Store
+tests/GDSC2_metadata.json
+/webHelpDD2-all.zip
