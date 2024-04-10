@@ -90,4 +90,4 @@ After the pipeline runs, the `API` will then retrieve the following files:
 1) `gs://orcestra-data-public/test_pipeline/results/pset.rds`
 2) `gs://orcestra-data-public/test_pipeline/results/dnl.json`
 
-because the <name> of the pipeline is `test_pipeline` and the `outputs` are `results/pset.rds` and `results/dnl.json`.
+because the name of the pipeline is `test_pipeline` and the `outputs` are `results/pset.rds` and `results/dnl.json`.

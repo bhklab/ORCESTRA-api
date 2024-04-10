@@ -2,7 +2,8 @@ name: Build documentation
 
 on:
   push:
-
+    branches:
+      - main
 
 permissions:
   id-token: write

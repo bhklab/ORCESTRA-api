@@ -1,4 +1,4 @@
-# About Design Documentation
+# Design Documentation
 
 This is an attempt at creating design documentation for Orcestra-api
 
