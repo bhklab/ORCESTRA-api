@@ -49,6 +49,44 @@ This diagram is based on all the sections below:
 @endjson
 ```
 
+### Python Pydantic class definitions
+
+```Python
+
+import datetime
+from typing import List, Optional
+from pydantic import BaseModel, Field
+
+class About_DNL(BaseModel):
+    name: str
+    description: str
+    Disclaimer: str
+    Curated_By: str
+    Curated_On: datetime.datetime
+
+class TechnicalInformation_DNL(BaseModel):
+    Dataset_DOI: str
+    Data_Type: str
+    Data_Format: str
+    License: str
+
+class Pipeline_DNL(BaseModel):
+    GitHub_Repo: str
+    Release_Notes: str
+
+class DataQuality_DNL(BaseModel):
+    Annotation_standards: str
+    Quality_Control: str
+
+class DataNutritionLabel(BaseModel):
+    about: About_DNL
+    technical_information: TechnicalInformation_DNL
+    pipeline: Pipeline_DNL
+    data_quality: DataQuality_DNL
+
+
+```
+
 ### ABOUT
 
 ![DNL_about.png](DNL_about.png)

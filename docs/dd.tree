@@ -9,8 +9,10 @@
     <toc-element topic="index.md">
         <toc-element topic="Pipeline-Standards.md"/>
         <toc-element topic="Pipeline-Outputs.md">
-            <toc-element topic="Data-Nutrition-Label.md"/>
-        </toc-element>
+            <toc-element topic="Data-Nutrition-Label.md">
+            </toc-element>
+            <toc-element topic="Pharmacoset-Specific.md"/>
+            </toc-element>
         <toc-element topic="Pipeline-Storage.md"/>
     </toc-element>
     <toc-element topic="Contributing.md">
