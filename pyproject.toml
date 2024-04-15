@@ -26,6 +26,11 @@ linux = "5.4.203"               # This is for my linux machine
 test = "python -c 'print(\"Hello, World!\")'"
 hello = { cmd = "python -m src.core.main", depends_on = ["test"] }
 
+# testing the __main__ functions in each module
+common = "python -m src.db.models.common"
+Pipeline = "python -m src.db.models.Pipeline"
+
+
 ################################################################################
 # Semantic Release Configuration
 ################################################################################

@@ -1,30 +1,5 @@
 from .common import PyObjectId
 
-
-"""
-Basic pipeline model
-
-Pipeline:
-    - id
-    - name
-    - git_url
-    - output_files
-
-
-Snakemake pipeline model inheriting from the basic pipeline model
-
-SnakemakePipeline:
-
-    - id
-    - name
-    - git_url
-    - output_files
-    - Snakefile_path
-    - config_file_path
-    - conda_env_file_path
-
-"""
-
 from pydantic import (
     BaseModel,
     Field,
@@ -63,7 +38,7 @@ if __name__ == "__main__":
     client = motor.motor_asyncio.AsyncIOMotorClient(os.environ["MONGODB_URL"])
     db: AsyncIOMotorDatabase = client.get_database("pipelines")
     snakemake_pipelines: AsyncIOMotorCollection = db.get_collection(
-        "snakemake_pipelines"
+        name="snakemake_pipelines"
     )
 
     async def create_snakemake_pipeline(snakemake_pipeline: SnakemakePipeline):
@@ -76,9 +51,23 @@ if __name__ == "__main__":
         # Return the id of the student
         return new_snakemake_pipeline.inserted_id
 
+    async def get_all_pipeline_names(
+        snakemake_pipeline: SnakemakePipeline,
+    ) -> list[str]:
+
+        pipeline_names: list[str] = await snakemake_pipelines.distinct("name")
+
+        return pipeline_names
+
     def main():
+        import datetime
+
+        today_pipeline: str = (
+            f"pipeline_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}"
+        )
+
         snakemake_pipeline = SnakemakePipeline(
-            name="test_pipeline",
+            name=today_pipeline,
             git_url="github.com/repo",
             output_files=["results/pset.rds", "results/dnl.json"],
             snakefile_path="./Snakefile",
@@ -94,4 +83,12 @@ if __name__ == "__main__":
 
         print(f"Pipeline id: {pipeline}")
 
+        pipeline_names = loop.run_until_complete(
+            get_all_pipeline_names(snakemake_pipeline)
+        )
+
+        print(f"Pipeline names: {pipeline_names}")
+
     main()
+
+    # function to get the names of all pipelines
