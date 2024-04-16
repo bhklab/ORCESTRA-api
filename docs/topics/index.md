@@ -1,5 +1,5 @@
 # Design Documentation
 
-This is an attempt at creating design documentation for Orcestra-api
+A set of documents describing the design of the project.
 
-It uses the Jetbrains Writerside software for better documentation.
+Includes design for the API itself as well as the pipeline-based architecture (`Snakemake` and `Data Nutrition Label`)

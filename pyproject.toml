@@ -53,7 +53,7 @@ prerelease_token = "rc"
 prerelease = true
 
 [tool.semantic_release.changelog]
-changelog_file = "CHANGELOG.md"
+changelog_file = "docs/topics/CHANGELOG.md"
 exclude_commit_patterns = []
 
 [tool.semantic_release.commit_parser_options]

@@ -180,6 +180,8 @@ Staging ([`f6a8f39`](https://github.com/bhklab/ORCESTRA-api/commit/f6a8f39712c04
 
 * docs: update README.md Update badges in README.md ([`2c0b6c1`](https://github.com/bhklab/ORCESTRA-api/commit/2c0b6c1a850575eaedf897c8df33c7b12160ce2b))
 
+* docs: update README.md Update badges in README.md ([`35fdb1d`](https://github.com/bhklab/ORCESTRA-api/commit/35fdb1de226f88d19e3c431e69609f29fd63f8b4))
+
 
 ## v0.1.3-rc.3 (2024-04-05)
 
