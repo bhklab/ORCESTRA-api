@@ -2,6 +2,33 @@
 
 
 
+## v0.4.0-rc.1 (2024-04-16)
+
+### Documentation
+
+* docs: create MultiAssayExperiment-Annotations.md ([`1338540`](https://github.com/bhklab/ORCESTRA-api/commit/13385405ab59d0855a8982f53a01383fbbd0aaeb))
+
+### Feature
+
+* feat: Add new files for ORCESTRA API
+
+This commit includes the addition of several new files for the ORCESTRA API. These files include a new Python script for handling the Snakemake pipeline, documentation on molecular profile annotations, a design documentation file, and a project configuration file. The new Python script includes functions for creating a new Snakemake pipeline and retrieving all pipeline names. The documentation provides information on how to add metadata to a Summarized Experiment. The design documentation file outlines the structure of the project&#39;s documentation. The project configuration file includes the project&#39;s name, version, dependencies, tasks, and semantic release configuration. ([`8b620b0`](https://github.com/bhklab/ORCESTRA-api/commit/8b620b06da0dbdaae5631ab49c26751bc4c198d9))
+
+* feat: restructure documentation files under pipeline directory ([`11e5cff`](https://github.com/bhklab/ORCESTRA-api/commit/11e5cffaf41ba0bd91a2e021209df44d8c0d1d61))
+
+### Unknown
+
+* Merge pull request #23 from bhklab/main
+
+sync w main ([`20f3695`](https://github.com/bhklab/ORCESTRA-api/commit/20f36950afbffce6b2e1a21af7e7fd0c99e86a1e))
+
+* Merge pull request #22 from bhklab/16-define-dnl-schema
+
+16 define dnl schema ([`d480bcf`](https://github.com/bhklab/ORCESTRA-api/commit/d480bcf79ff9a50d2b4da778aa846ebb90632cb3))
+
+* Merge branch &#39;main&#39; into 16-define-dnl-schema ([`6b26baa`](https://github.com/bhklab/ORCESTRA-api/commit/6b26baa5706a1f9dd7bb23c08ae3badcb20b409b))
+
+
 ## v0.2.0 (2024-04-10)
 
 ### Build
