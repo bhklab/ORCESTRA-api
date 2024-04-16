@@ -2,6 +2,92 @@
 
 
 
+## v0.2.0 (2024-04-10)
+
+### Build
+
+* build: add pydantic, setup db models ([`07c8093`](https://github.com/bhklab/ORCESTRA-api/commit/07c8093387f20235ef8d55762f66c5a931bc61e6))
+
+### Chore
+
+* chore: update .gitignore Update .gitignore to ignore macOS specific files ([`7590ed5`](https://github.com/bhklab/ORCESTRA-api/commit/7590ed5dc8a50c32a6ad184371fa1c06a37fee8b))
+
+### Ci
+
+* ci: update main.yaml Update Semantic-Release workflow in main.yaml ([`b9d17dd`](https://github.com/bhklab/ORCESTRA-api/commit/b9d17dd333c3953ce2d105d3374b8b797406383f))
+
+* ci: update main.yaml Update Pixi version to v0.19.0 in main.yaml ([`55084a3`](https://github.com/bhklab/ORCESTRA-api/commit/55084a3b07cb6dacee4aa34bdb9a6e58b92f2112))
+
+### Documentation
+
+* docs: Add Pharmacoset-Specific documentation and update DataNutritionLabel model ([`310aa1c`](https://github.com/bhklab/ORCESTRA-api/commit/310aa1cfd0c41d368aeac46a4499e711b7e1070b))
+
+* docs: add data nutrition label diagram to documentation ([`6c53955`](https://github.com/bhklab/ORCESTRA-api/commit/6c539559940765b2712ae993e5d16a4aecde3086))
+
+* docs: Update documentation structure and content
+
+This commit includes several changes to the documentation:
+- Updated the table of contents structure in dd.tree
+- Added new files for Pipeline-Outputs.md and Data-Nutrition-Label.md
+- Modified content in Pipeline-Storage.md and index.md
+- Updated the GitHub workflow for building pages
+These changes provide more detailed information about pipeline outputs and data nutrition labels, and improve the overall structure and readability of the documentation. ([`99b4c55`](https://github.com/bhklab/ORCESTRA-api/commit/99b4c55a002d44cca23063a51ef191cb444c6507))
+
+* docs: move old docs ([`3e22cfb`](https://github.com/bhklab/ORCESTRA-api/commit/3e22cfb6373d1ff11f5828ce8d7bb0d3487fa9ca))
+
+* docs: add background ([`9a961b7`](https://github.com/bhklab/ORCESTRA-api/commit/9a961b7e503ee4e186ee31774d59bf920caca5b0))
+
+* docs: update background ([`001b719`](https://github.com/bhklab/ORCESTRA-api/commit/001b719effc66a3f333e29c0d4758b57252de4c4))
+
+* docs: Add requirements diagrams and reference images ([`93b2362`](https://github.com/bhklab/ORCESTRA-api/commit/93b2362df7ae2ba1d7d612cabf75098f07f4fbe5))
+
+* docs: add requirements and some reference images ([`13e83ed`](https://github.com/bhklab/ORCESTRA-api/commit/13e83ed777109d1e5b8b7efe25f005c34cd04801))
+
+### Feature
+
+* feat: comment out Semantic-Release workflow in main.yaml ([`f0ba8a7`](https://github.com/bhklab/ORCESTRA-api/commit/f0ba8a7a08193bd33fd026583af7919579a30f8a))
+
+* feat: Add GitHub action for building and deploying documentation ([`e7dafca`](https://github.com/bhklab/ORCESTRA-api/commit/e7dafca4706cce458cbd9b598f5eefeaec974ea1))
+
+* feat: add design documentation
+
+This commit adds design documentation for the ORCESTRA API, including topics on pipeline storage, pipeline standards, Git Flow release cycle, and contributing guidelines. The documentation is organized using JetBrains Writerside software. ([`ee583b4`](https://github.com/bhklab/ORCESTRA-api/commit/ee583b4c536daf9fd453c0e241084311daf97c82))
+
+* feat: add common and pipeline models for MongoDB
+
+This commit introduces two new models for MongoDB: common and pipeline. The common model includes a new type called PyObjectId, which is a string that is validated and converted to a string before storing it as the id field. The pipeline model includes a basic pipeline model and a Snakemake pipeline model that inherits from the basic pipeline model. The Snakemake pipeline model includes additional fields for snakefile_path, config_file_path, and conda_env_file_path. This commit also includes methods to create a student and a Snakemake pipeline in the database. ([`f38c9bb`](https://github.com/bhklab/ORCESTRA-api/commit/f38c9bb1f61720e7a3c1b667206cc31a4ae470d7))
+
+### Merge
+
+* merge: Merge remote-tracking branch &#39;origin&#39; into development ([`2a28a22`](https://github.com/bhklab/ORCESTRA-api/commit/2a28a227c96e079bac63274242ab621ed27441e1))
+
+### Unknown
+
+* Merge pull request #20 from bhklab/16-define-dnl-schema
+
+16 define dnl schema ([`297287f`](https://github.com/bhklab/ORCESTRA-api/commit/297287f28f95e882cadb68caf884a3c5373f6c66))
+
+* Merge remote-tracking branch &#39;origin&#39; into 16-define-dnl-schema ([`90b2e92`](https://github.com/bhklab/ORCESTRA-api/commit/90b2e9218637840c2635005d58ef6ff84658864c))
+
+* update dd.tree, Data-Nutrition-Label.md, Pharmacoset-Specific.md and DataNutritionLabel.py Update DataNutritionLabel model and add Pharmacoset-Specific documentation ([`cb668db`](https://github.com/bhklab/ORCESTRA-api/commit/cb668db3bb7079ee766d495442cef557e198529b))
+
+* Merge pull request #19 from bhklab/staging
+
+Staging ([`147910c`](https://github.com/bhklab/ORCESTRA-api/commit/147910c0ef37a69093ffdbf6ded6af1a2ee6677d))
+
+* Merge pull request #14 from bhklab/development
+
+Development ([`fedb93b`](https://github.com/bhklab/ORCESTRA-api/commit/fedb93b1f2a43627275bfda756128b8326bddea9))
+
+* Merge pull request #17 from bhklab/16-define-dnl-schema
+
+16 define dnl schema ([`1f2242a`](https://github.com/bhklab/ORCESTRA-api/commit/1f2242a460de2b7baa6cfa8174dbd33df544f735))
+
+* first dnl draft ([`fad585a`](https://github.com/bhklab/ORCESTRA-api/commit/fad585a3099d5e7bb2473fcdd6ac3c017bb0a353))
+
+* Update .gitignore and pixi.lock ([`c87ee54`](https://github.com/bhklab/ORCESTRA-api/commit/c87ee5405abf92906ad9285182171973ea1bd536))
+
+
 ## v0.1.5 (2024-04-08)
 
 ### Unknown
@@ -66,6 +152,8 @@ Staging ([`f6a8f39`](https://github.com/bhklab/ORCESTRA-api/commit/f6a8f39712c04
 ### Documentation
 
 * docs: update README.md Update badges in README.md ([`2c0b6c1`](https://github.com/bhklab/ORCESTRA-api/commit/2c0b6c1a850575eaedf897c8df33c7b12160ce2b))
+
+* docs: update README.md Update badges in README.md ([`35fdb1d`](https://github.com/bhklab/ORCESTRA-api/commit/35fdb1de226f88d19e3c431e69609f29fd63f8b4))
 
 
 ## v0.1.3-rc.3 (2024-04-05)
