@@ -29,6 +29,15 @@ Added two new documentation files: `Snakemake-Requirements.md` and `Git-Requirem
 * 🛠️refactor(README) update GitFlow Process and Release Cycle link ([`61f0ef1`](https://github.com/bhklab/ORCESTRA-api/commit/61f0ef1a1b406c74d6b32276cd24f801e24e4667))
 
 
+## v0.4.0 (2024-04-16)
+
+### Unknown
+
+* Merge pull request #25 from bhklab/staging
+
+Staging ([`16b4db0`](https://github.com/bhklab/ORCESTRA-api/commit/16b4db095a208c11fe9906448eeaad993a662055))
+
+
 ## v0.4.0-rc.2 (2024-04-16)
 
 ### Feature
