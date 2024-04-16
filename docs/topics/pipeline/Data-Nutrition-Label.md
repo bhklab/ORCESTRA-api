@@ -23,7 +23,7 @@ This diagram is based on all the sections below:
 ```plantuml
 @startjson
 {
-    "pipeline":"SnakemakePipeline",
+    "pipeline":"gCSI-Pharmacoset_Snakemake",
     "about": {
         "name": "gCSI",
         "description": "gCSI dataset is a pharmacogenomics ...",
