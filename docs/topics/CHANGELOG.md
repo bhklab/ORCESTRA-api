@@ -2,7 +2,38 @@
 
 
 
+## v0.4.0-rc.2 (2024-04-16)
+
+### Feature
+
+* feat: Update documentation and project structure
+
+This commit includes several updates to the project&#39;s documentation and structure. Changes include:
+
+- Reorganizing the documentation tree structure for better navigation
+- Adding a new &#34;Developer Requirements&#34; section with initial content
+- Moving the changelog file to a new location within the docs directory
+- Creating new requirement diagrams to help understand the project requirements
+- Updating some existing documentation files for clarity and completeness
+- Renaming the pipeline in the Data Nutrition Label documentation
+
+These changes aim to improve the project&#39;s readability and maintainability. ([`136fa8d`](https://github.com/bhklab/ORCESTRA-api/commit/136fa8dcf330970037ce6f95ebe0f11fe89cce32))
+
+### Unknown
+
+* Merge pull request #24 from bhklab/16-define-dnl-schema
+
+16 define dnl schema ([`a1b2cbd`](https://github.com/bhklab/ORCESTRA-api/commit/a1b2cbd5b503c667f7a8bf9a8b2fcb14ff1dca7b))
+
+* Merge branch &#39;staging&#39; into 16-define-dnl-schema ([`0a7d32c`](https://github.com/bhklab/ORCESTRA-api/commit/0a7d32c445f542559c1ba6417529c309f7984369))
+
+* merge conflicts ([`4a68186`](https://github.com/bhklab/ORCESTRA-api/commit/4a68186556800b2da7967e1ebff6e2f127ba49bf))
+
+
 ## v0.4.0-rc.1 (2024-04-16)
+
+
+## v0.3.0 (2024-04-16)
 
 ### Documentation
 
