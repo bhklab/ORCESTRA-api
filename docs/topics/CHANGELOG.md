@@ -2,7 +2,7 @@
 
 
 
-## v0.3.0 (2024-04-16)
+## v0.4.0-rc.1 (2024-04-16)
 
 ### Documentation
 
@@ -17,6 +17,10 @@ This commit includes the addition of several new files for the ORCESTRA API. The
 * feat: restructure documentation files under pipeline directory ([`11e5cff`](https://github.com/bhklab/ORCESTRA-api/commit/11e5cffaf41ba0bd91a2e021209df44d8c0d1d61))
 
 ### Unknown
+
+* Merge pull request #23 from bhklab/main
+
+sync w main ([`20f3695`](https://github.com/bhklab/ORCESTRA-api/commit/20f36950afbffce6b2e1a21af7e7fd0c99e86a1e))
 
 * Merge pull request #22 from bhklab/16-define-dnl-schema
 
