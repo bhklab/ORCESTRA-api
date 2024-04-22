@@ -83,6 +83,33 @@ Added two new documentation files: `Snakemake-Requirements.md` and `Git-Requirem
 * 🛠️refactor(README) update GitFlow Process and Release Cycle link ([`61f0ef1`](https://github.com/bhklab/ORCESTRA-api/commit/61f0ef1a1b406c74d6b32276cd24f801e24e4667))
 
 
+## v0.4.0-rc.3 (2024-04-22)
+
+### Chore
+
+* chore: update .gitignore Update .gitignore to ignore byte-compiled/optimized/DLL files ([`5ead59d`](https://github.com/bhklab/ORCESTRA-api/commit/5ead59d2d3d484b6e92f82bcfa4ee0fa3efb648e))
+
+* chore: update .gitignore Update .gitignore file to ignore additional files and directories ([`9b4a886`](https://github.com/bhklab/ORCESTRA-api/commit/9b4a886b899d0a255df8f48c96298485e2f60057))
+
+### Feature
+
+* feat: add API reference documentation
+
+This commit introduces API reference documentation for the ORCESTRA API. The documentation includes detailed information about the API endpoints such as the Create User Route, Get User, Create Event Route, Get Event By Name Route, Get All Events Route, and the Read Root. The documentation is generated using a test &#34;scratch.json&#34; file. ([`9ba4a8b`](https://github.com/bhklab/ORCESTRA-api/commit/9ba4a8bdb8eb2143cea54c753ff5a6d2cd384d81))
+
+* feat(docs): add Snakemake and Git requirements documentation
+
+Added two new documentation files: `Snakemake-Requirements.md` and `Git-Requirements.md`. These files outline the requirements for the Snakemake and Git functionalities of the application. Also updated the `requirements.md` file to reflect these changes. ([`a1231d1`](https://github.com/bhklab/ORCESTRA-api/commit/a1231d1e2545bd78f41c9e99ea280d0f37323326))
+
+### Refactor
+
+* refactor(tests): rename Snakefile directories for clear organization ([`99e460b`](https://github.com/bhklab/ORCESTRA-api/commit/99e460b75e8f455d27ff03d73a3a7835c341ff25))
+
+### Unknown
+
+* 🛠️refactor(README) update GitFlow Process and Release Cycle link ([`61f0ef1`](https://github.com/bhklab/ORCESTRA-api/commit/61f0ef1a1b406c74d6b32276cd24f801e24e4667))
+
+
 ## v0.4.0-rc.2 (2024-04-16)
 
 ### Feature
