@@ -20,6 +20,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/boto3-1.34.89-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/botocore-1.34.89-pyge310_1234567_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/brotli-python-1.1.0-py312h30efb56_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/build-0.7.0-pyhd8ed1ab_0.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/linux-64/bzip2-1.0.8-hd590300_5.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/c-ares-1.28.1-hd590300_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/ca-certificates-2024.2.2-hbcca054_0.conda
@@ -48,6 +49,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/dotty-dict-1.3.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/dpath-2.1.6-pyha770c72_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/dropbox-11.36.2-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/editables-0.5-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/eido-0.2.2-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/exceptiongroup-1.2.0-pyhd8ed1ab_2.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/filechunkio-1.8-py_2.tar.bz2
@@ -66,10 +68,12 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/google-resumable-media-2.7.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/googleapis-common-protos-1.63.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/grpcio-1.62.2-py312hb06c811_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/hatchling-1.24.2-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/httplib2-0.22.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/humanfriendly-10.0-pyhd8ed1ab_6.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/identify-2.5.36-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/idna-3.7-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/importlib-metadata-7.1.0-pyha770c72_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/importlib-resources-6.4.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/importlib_resources-6.4.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/iniconfig-2.0.0-pyhd8ed1ab_0.conda
@@ -117,6 +121,8 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/packaging-24.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/pandas-2.2.2-py312hfb8ada1_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/paramiko-3.4.0-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/pathspec-0.12.1-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/pep517-0.13.0-pyhd8ed1ab_0.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/noarch/peppy-0.40.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pkgutil-resolve-name-1.3.10-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/plac-1.4.3-pyhd8ed1ab_0.conda
@@ -183,6 +189,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/toposort-1.10-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/tornado-6.4-py312h98912ed_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/traitlets-5.14.3-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/trove-classifiers-2024.4.10-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/typing-extensions-4.11.0-hd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/typing_extensions-4.11.0-pyha770c72_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/tzdata-2024a-h0c530f3_0.conda
@@ -213,6 +220,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/boto3-1.34.89-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/botocore-1.34.89-pyge310_1234567_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/brotli-python-1.1.0-py312h9f69965_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/build-0.7.0-pyhd8ed1ab_0.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/bzip2-1.0.8-h93a5062_5.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/c-ares-1.28.1-h93a5062_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/ca-certificates-2024.2.2-hf0a4a13_0.conda
@@ -241,6 +249,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/dotty-dict-1.3.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/dpath-2.1.6-pyha770c72_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/dropbox-11.36.2-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/editables-0.5-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/eido-0.2.2-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/exceptiongroup-1.2.0-pyhd8ed1ab_2.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/filechunkio-1.8-py_2.tar.bz2
@@ -259,10 +268,12 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/google-resumable-media-2.7.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/googleapis-common-protos-1.63.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/grpcio-1.62.2-py312h17030e7_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/hatchling-1.24.2-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/httplib2-0.22.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/humanfriendly-10.0-pyhd8ed1ab_6.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/identify-2.5.36-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/idna-3.7-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/importlib-metadata-7.1.0-pyha770c72_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/importlib-resources-6.4.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/importlib_resources-6.4.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/iniconfig-2.0.0-pyhd8ed1ab_0.conda
@@ -305,6 +316,8 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/packaging-24.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/pandas-2.2.2-py312h88edd18_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/paramiko-3.4.0-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/pathspec-0.12.1-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/pep517-0.13.0-pyhd8ed1ab_0.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/noarch/peppy-0.40.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pkgutil-resolve-name-1.3.10-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/plac-1.4.3-pyhd8ed1ab_0.conda
@@ -371,6 +384,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/toposort-1.10-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/tornado-6.4-py312he37b823_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/traitlets-5.14.3-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/trove-classifiers-2024.4.10-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/typing-extensions-4.11.0-hd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/typing_extensions-4.11.0-pyha770c72_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/tzdata-2024a-h0c530f3_0.conda
@@ -1062,6 +1076,27 @@ packages:
   - pkg:pypi/brotli
   size: 343435
   timestamp: 1695990731924
+- kind: conda
+  name: build
+  version: 0.7.0
+  build: pyhd8ed1ab_0
+  subdir: noarch
+  noarch: python
+  url: https://conda.anaconda.org/conda-forge/noarch/build-0.7.0-pyhd8ed1ab_0.tar.bz2
+  sha256: 44e2d3270209d1f10b8adec2a159699ed66914e851ec34775902e856ea04afeb
+  md5: add7f31586d03678695b32b78a1337a1
+  depends:
+  - importlib-metadata
+  - packaging
+  - pep517 >=0.9.1
+  - python >=3.6
+  - tomli
+  license: MIT
+  license_family: MIT
+  purls:
+  - pkg:pypi/build
+  size: 17759
+  timestamp: 1631843776429
 - kind: conda
   name: bzip2
   version: 1.0.8
@@ -1805,6 +1840,23 @@ packages:
   size: 979149
   timestamp: 1686657624820
 - kind: conda
+  name: editables
+  version: '0.5'
+  build: pyhd8ed1ab_0
+  subdir: noarch
+  noarch: python
+  url: https://conda.anaconda.org/conda-forge/noarch/editables-0.5-pyhd8ed1ab_0.conda
+  sha256: de160a7494e7bc72360eea6a29cbddf194d0a79f45ff417a4de20e6858cf79a9
+  md5: 9873878e2a069bc358b69e9a29c1ecd5
+  depends:
+  - python >=3.7
+  license: MIT
+  license_family: MIT
+  purls:
+  - pkg:pypi/editables
+  size: 10988
+  timestamp: 1705857085102
+- kind: conda
   name: eido
   version: 0.2.2
   build: pyhd8ed1ab_0
@@ -2221,6 +2273,29 @@ packages:
   size: 1046177
   timestamp: 1713390905173
 - kind: conda
+  name: hatchling
+  version: 1.24.2
+  build: pyhd8ed1ab_0
+  subdir: noarch
+  noarch: python
+  url: https://conda.anaconda.org/conda-forge/noarch/hatchling-1.24.2-pyhd8ed1ab_0.conda
+  sha256: 1161601871d8aa6c5ff7719a277462cdf0160351a88f2a84a22d6ead3b90150f
+  md5: 28cef29029f6da70e7a987a76a3599a4
+  depends:
+  - editables >=0.3
+  - importlib-metadata
+  - packaging >=21.3
+  - pathspec >=0.10.1
+  - pluggy >=1.0.0
+  - python >=3.7
+  - tomli >=1.2.2
+  - trove-classifiers
+  license: MIT
+  purls:
+  - pkg:pypi/hatchling
+  size: 63793
+  timestamp: 1713757830609
+- kind: conda
   name: httplib2
   version: 0.22.0
   build: pyhd8ed1ab_0
@@ -2292,6 +2367,24 @@ packages:
   - pkg:pypi/idna
   size: 52718
   timestamp: 1713279497047
+- kind: conda
+  name: importlib-metadata
+  version: 7.1.0
+  build: pyha770c72_0
+  subdir: noarch
+  noarch: python
+  url: https://conda.anaconda.org/conda-forge/noarch/importlib-metadata-7.1.0-pyha770c72_0.conda
+  sha256: cc2e7d1f7f01cede30feafc1118b7aefa244d0a12224513734e24165ae12ba49
+  md5: 0896606848b2dc5cebdf111b6543aa04
+  depends:
+  - python >=3.8
+  - zipp >=0.5
+  license: Apache-2.0
+  license_family: APACHE
+  purls:
+  - pkg:pypi/importlib-metadata
+  size: 27043
+  timestamp: 1710971498183
 - kind: conda
   name: importlib-resources
   version: 6.4.0
@@ -3570,6 +3663,41 @@ packages:
   - pkg:pypi/paramiko
   size: 160045
   timestamp: 1703016056314
+- kind: conda
+  name: pathspec
+  version: 0.12.1
+  build: pyhd8ed1ab_0
+  subdir: noarch
+  noarch: python
+  url: https://conda.anaconda.org/conda-forge/noarch/pathspec-0.12.1-pyhd8ed1ab_0.conda
+  sha256: 4e534e66bfe8b1e035d2169d0e5b185450546b17e36764272863e22e0370be4d
+  md5: 17064acba08d3686f1135b5ec1b32b12
+  depends:
+  - python >=3.7
+  license: MPL-2.0
+  license_family: MOZILLA
+  purls:
+  - pkg:pypi/pathspec
+  size: 41173
+  timestamp: 1702250135032
+- kind: conda
+  name: pep517
+  version: 0.13.0
+  build: pyhd8ed1ab_0
+  subdir: noarch
+  noarch: python
+  url: https://conda.anaconda.org/conda-forge/noarch/pep517-0.13.0-pyhd8ed1ab_0.tar.bz2
+  sha256: 6a6f2fa6bc9106b2edcccc142242dc3ab1f2f77a6debbd5b480f08482f052636
+  md5: d94aa03d99d8adc9898f783eba0d84d2
+  depends:
+  - python >=3.8
+  - tomli
+  license: MIT
+  license_family: MIT
+  purls:
+  - pkg:pypi/pep517
+  size: 19044
+  timestamp: 1667916747996
 - kind: conda
   name: peppy
   version: 0.40.1
@@ -4884,7 +5012,7 @@ packages:
   name: snakemake-orcestrator-api
   version: 0.7.0
   path: .
-  sha256: 7a45ff51d61d8e10e807b8663cca8c6c0e9cfb9fcd1557bc28e352de4d6c6f56
+  sha256: 952d55f78cf7d4b4c2d0f5707b02956e1f81a534f0a72466d711e07bc3fd7407
   requires_python: '>=3.11'
   editable: true
 - kind: conda
@@ -5110,6 +5238,23 @@ packages:
   - pkg:pypi/traitlets
   size: 110187
   timestamp: 1713535244513
+- kind: conda
+  name: trove-classifiers
+  version: 2024.4.10
+  build: pyhd8ed1ab_0
+  subdir: noarch
+  noarch: python
+  url: https://conda.anaconda.org/conda-forge/noarch/trove-classifiers-2024.4.10-pyhd8ed1ab_0.conda
+  sha256: cbc8e5c5f82b1eeff7aa21aaff77757336c1e6d64a4255b071c783acd60f4618
+  md5: 9622d541e2314c0207bebdc0359fa478
+  depends:
+  - python >=3.7
+  license: Apache-2.0
+  license_family: Apache
+  purls:
+  - pkg:pypi/trove-classifiers
+  size: 18444
+  timestamp: 1712814840654
 - kind: conda
   name: typing-extensions
   version: 4.11.0
