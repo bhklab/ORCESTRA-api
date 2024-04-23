@@ -55,7 +55,7 @@ All pipelines must follow the [Pipeline Standards](old_docs/Pipeline-standards.m
 
 ## Semantic Versioning
 
-For a detailed explanation of the release process, please refer to the [GitFlow Process and Release Cycle](old_docs/GitFlow-Process_ReleaseCycle.md).
+For a detailed explanation of the release process, please refer to the [GitFlow Process and Release Cycle](https://bhklab.github.io/ORCESTRA-api/git-flow-release-cycle.html).
 
 This project uses [Python Semantic Release](https://python-semantic-release.readthedocs.io/en/latest/) for
 automatic versioning and changelog generation.
