@@ -1,6 +1,20 @@
+################################################################################
+# Project Configuration
+################################################################################
 [project]
 name = "snakemake-orcestrator-api"
-version = "0.4.0"
+version = "0.4.0-rc.1"
+description = "Add a short description here"
+authors = [
+    {name = "Jermiah Joseph", email = "jermiah.joseph@uhn.ca"},
+    {name = "Matthew Boccolon", email = "matthew.boccolon@uhn.ca"}
+    ]
+requires-python = ">= 3.11"
+dependencies = []
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
 
 ################################################################################
 # PIXI Configuration
@@ -11,6 +25,12 @@ name = "snakemake-orcestrator-api"
 channels = ["conda-forge"]
 platforms = ["osx-arm64", "linux-64"]
 
+[tool.pixi.system-requirements]
+linux = "5.4.203"               # This is for my linux machine
+
+[tool.pixi.pypi-dependencies]
+ORCESTRA-api = { path = ".", editable = true }
+
 [tool.pixi.dependencies]
 python = "3.12.*"
 python-semantic-release = ">=9.4.0,<9.5"
@@ -18,18 +38,14 @@ pre-commit = ">=3.7.0,<3.8"
 pydantic = ">=2.6.4,<2.7"
 motor = ">=3.4.0,<3.5"
 
-
-[tool.pixi.system-requirements]
-linux = "5.4.203"               # This is for my linux machine
-
 [tool.pixi.tasks]
+# Basic Tests
 test = "python -c 'print(\"Hello, World!\")'"
 hello = { cmd = "python -m src.core.main", depends_on = ["test"] }
 
 # testing the __main__ functions in each module
 common = "python -m src.db.models.common"
 Pipeline = "python -m src.db.models.Pipeline"
-
 
 ################################################################################
 # Semantic Release Configuration
