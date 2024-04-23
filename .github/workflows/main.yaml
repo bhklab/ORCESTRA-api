@@ -31,7 +31,7 @@ jobs:
 
   Semantic-Release:
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/staging' )
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/main')
     needs: Run-A-Pixi-Job
     concurrency: release
     permissions:

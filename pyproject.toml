@@ -64,11 +64,6 @@ version_toml = [
 [tool.semantic_release.branches.main]
 match = "(main|master)"
 
-[tool.semantic_release.branches.staging]
-match = "(stg|staging)"
-prerelease_token = "rc"
-prerelease = true
-
 [tool.semantic_release.changelog]
 changelog_file = "docs/topics/CHANGELOG.md"
 exclude_commit_patterns = []
