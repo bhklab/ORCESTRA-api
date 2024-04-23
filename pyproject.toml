@@ -42,8 +42,6 @@ motor = ">=3.4.0,<3.5"
 # Basic Tests
 test = "python -c 'print(\"Hello, World!\")'"
 hello = { cmd = "python -m src.core.main", depends_on = ["test"] }
-
-# testing the __main__ functions in each module
 common = "python -m src.db.models.common"
 Pipeline = "python -m src.db.models.Pipeline"
 
