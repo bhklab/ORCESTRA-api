@@ -31,7 +31,7 @@ jobs:
 
   Semantic-Release:
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/staging' )
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/main')
     needs: Run-A-Pixi-Job
     concurrency: release
     permissions:
@@ -54,6 +54,33 @@ jobs:
     - name: Python Semantic Release
       uses: python-semantic-release/python-semantic-release@master
       with:
-        root_options: -vv
+        root_options: -v
         github_token: ${{ secrets.GITHUB_TOKEN }}
         git_committer_name: 'gh-actions-semver'
+
+  Update-Branches:
+    runs-on: ubuntu-latest
+    needs: Semantic-Release
+    if: needs.Semantic-Release.outputs.released == 'true' && github.event_name == 'push' && (github.ref == 'refs/heads/main')
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+
+      - name: Merge and push to staging
+        run: |
+          git checkout staging
+          git merge --no-ff main -m "Merge main into staging [ci skip]"
+          git push origin staging
+
+      - name: Merge and push to development
+        run: |
+          git checkout development
+          git merge --no-ff main -m "Merge main into development [ci skip]"
+          git push origin development
