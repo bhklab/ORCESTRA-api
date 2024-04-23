@@ -22,28 +22,38 @@ build-backend = "setuptools.build_meta"
 
 [tool.pixi.project]
 name = "snakemake-orcestrator-api"
-channels = ["conda-forge"]
+channels = ["conda-forge", "bioconda"]
 platforms = ["osx-arm64", "linux-64"]
 
 [tool.pixi.system-requirements]
 linux = "5.4.203"               # This is for my linux machine
 
 [tool.pixi.pypi-dependencies]
-ORCESTRA-api = { path = ".", editable = true }
 
 [tool.pixi.dependencies]
 python = "3.12.*"
-python-semantic-release = ">=9.4.0,<9.5"
-pre-commit = ">=3.7.0,<3.8"
 pydantic = ">=2.6.4,<2.7"
 motor = ">=3.4.0,<3.5"
+snakemake = "==7.32.4"
 
 [tool.pixi.tasks]
 # Basic Tests
 test = "python -c 'print(\"Hello, World!\")'"
 hello = { cmd = "python -m src.core.main", depends_on = ["test"] }
-common = "python -m src.db.models.common"
-Pipeline = "python -m src.db.models.Pipeline"
+
+[tool.pixi.environments]
+default = { features = ["dev"], solve-group = "default" }
+prod = { features = ["prod"], solve-group = "prod" }
+
+[tool.pixi.feature.dev.dependencies]
+python-semantic-release = ">=9.4.0,<9.5"
+pre-commit = ">=3.7.0,<3.8"
+
+[tool.pixi.feature.dev.pypi-dependencies]
+ORCESTRA-api = { path = ".", editable = true }
+
+[tool.pixi.feature.prod]
+
 
 ################################################################################
 # Semantic Release Configuration
