@@ -1,7 +1,5 @@
 # CHANGELOG
 
-
-
 ## v0.6.0-rc.2 (2024-04-23)
 
 ### Feature
@@ -327,6 +325,12 @@ This commit introduces API reference documentation for the ORCESTRA API. The doc
 Co-authored-by: gh-actions-semver &lt;github-actions@github.com&gt; ([`754a1ff`](https://github.com/bhklab/ORCESTRA-api/commit/754a1ff622ecedb08dc8f08c0dcfb38e59088f46))
 
 * Merge main into staging [ci skip] ([`bb4ced2`](https://github.com/bhklab/ORCESTRA-api/commit/bb4ced22cc72f9342df5e01f861f2047db243967))
+
+
+## v0.6.0 (2024-04-23)
+
+### Unknown
+
 
 * Merge pull request #36 from bhklab/staging
 
