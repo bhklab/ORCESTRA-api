@@ -27,6 +27,7 @@ packages = [
 
 [tool.pixi.project]
 name = "snakemake-orcestrator-api"
+version = "0.7.0"
 channels = ["conda-forge", "bioconda"]
 platforms = ["osx-arm64", "linux-64"]
 
@@ -42,9 +43,6 @@ motor = ">=3.4.0,<3.5"
 snakemake = "==7.32.4"
 
 [tool.pixi.tasks]
-# Basic Tests
-test = "python -c 'print(\"Hello, World!\")'"
-hello = { cmd = "python -m src.core.main", depends_on = ["test"] }
 
 [tool.pixi.environments]
 default = { features = ["dev", "build"], solve-group = "default" }
@@ -57,6 +55,10 @@ pre-commit = ">=3.7.0,<3.8"
 [tool.pixi.feature.dev.pypi-dependencies]
 ORCESTRA-api = { path = ".", editable = true }
 
+[tool.pixi.feature.dev.tasks]
+test = "python -c 'print(\"Hello, World!\")'"
+hello = { cmd = "python -m src.core.main", depends_on = ["test"] }
+
 [tool.pixi.feature.build.dependencies]
 build = "*"
 hatchling = ">=1.24.2,<1.25"
@@ -65,8 +67,6 @@ hatchling = ">=1.24.2,<1.25"
 wheel = "python -m build --no-isolation --wheel ."
 
 [tool.pixi.feature.prod]
-
-
 
 
 ################################################################################
@@ -80,6 +80,7 @@ logging_use_named_masks = true
 tag_format = "v{version}"
 version_toml = [
     "pyproject.toml:project.version",
+    "pyproject.toml:tool.pixi.project.version",
 ]
 
 [tool.semantic_release.branches.main]

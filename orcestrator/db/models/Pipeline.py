@@ -45,16 +45,13 @@ if __name__ == "__main__":
         # Insert the student into the database
         new_snakemake_pipeline: InsertOneResult
         new_snakemake_pipeline = await snakemake_pipelines.insert_one(
-            document=snakemake_pipeline.model_dump(by_alias=True, exclude=["id"])
+            document=snakemake_pipeline.model_dump(by_alias=True, exclude={"id"})
         )
 
         # Return the id of the student
         return new_snakemake_pipeline.inserted_id
 
-    async def get_all_pipeline_names(
-        snakemake_pipeline: SnakemakePipeline,
-    ) -> list[str]:
-
+    async def get_all_pipeline_names() -> list[str]:
         pipeline_names: list[str] = await snakemake_pipelines.distinct("name")
 
         return pipeline_names
@@ -83,9 +80,7 @@ if __name__ == "__main__":
 
         print(f"Pipeline id: {pipeline}")
 
-        pipeline_names = loop.run_until_complete(
-            get_all_pipeline_names(snakemake_pipeline)
-        )
+        pipeline_names = loop.run_until_complete(get_all_pipeline_names())
 
         print(f"Pipeline names: {pipeline_names}")
 
