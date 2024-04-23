@@ -3,7 +3,7 @@
 ################################################################################
 [project]
 name = "snakemake-orcestrator-api"
-version = "0.6.0"
+version = "0.7.0"
 description = "Add a short description here"
 authors = [
     {name = "Jermiah Joseph", email = "jermiah.joseph@uhn.ca"},
