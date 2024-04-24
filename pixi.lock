@@ -5012,7 +5012,7 @@ packages:
   name: snakemake-orcestrator-api
   version: 0.7.0
   path: .
-  sha256: 952d55f78cf7d4b4c2d0f5707b02956e1f81a534f0a72466d711e07bc3fd7407
+  sha256: 87d9107a2f0a3e89c133d62c8aef1e7db65f10f44e73bf19995dafb452fdeab8
   requires_python: '>=3.11'
   editable: true
 - kind: conda
