@@ -185,3 +185,4 @@ ORCESTRA-api.code-workspace
 tests/GDSC2_metadata.json
 /webHelpDD2-all.zip
 src/core/__pycache__/main.cpython-312.pyc
+logs/logs.json
