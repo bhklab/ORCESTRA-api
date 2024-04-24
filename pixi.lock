@@ -5189,7 +5189,7 @@ packages:
   name: snakemake-orcestrator-api
   version: 0.7.0
   path: .
-  sha256: 2051287de8076876e5574bc74018b6bfd512cdc97fd65c0772b889b26a9617b9
+  sha256: e4cd7b9fae37c317506d0d79b537cbe03c37e48df31b2b39ecd286e58663c14f
   requires_dist:
   - python-json-logger
   requires_python: '>=3.11'

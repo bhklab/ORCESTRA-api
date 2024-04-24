@@ -1,3 +1,5 @@
+configfile: "config/config.yaml"
+
 rule all:
     input:
         "results/summary.txt",

@@ -27,7 +27,7 @@ What this does is create a virtual environment and install the dependencies list
 By starting command line commands with `pixi run`, you can run the commands in the specific environment.
 
 ```bash
-pixi run python -m src.core.snakemake.main
+pixi run python -m orcestrator.core.main
 # > Hello World!
 ```
 

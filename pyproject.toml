@@ -58,7 +58,7 @@ ORCESTRA-api = { path = ".", editable = true }
 
 [tool.pixi.feature.dev.tasks]
 test = "python -c 'print(\"Hello, World!\")'"
-hello = { cmd = "python -m src.core.main", depends_on = ["test"] }
+hello = { cmd = "python -m orcestrator.core.main", depends_on = ["test"] }
 
 cloudlogs = { cmd = """gcloud logging read labels.app="orcestra-api" --format json"""}
 

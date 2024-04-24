@@ -22,6 +22,9 @@ class SnakemakePipeline(BaseModel):
     conda_env_file_path: str = Field(
         default="./pipeline.yaml",
     )
+    jobs: int = Field(
+        default=1,
+    )
 
 
 if __name__ == "__main__":
