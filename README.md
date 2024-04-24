@@ -1,4 +1,5 @@
 # Snakemake Orchestrator API w/ Kubernetes
+
 [![CI-CD](https://github.com/bhklab/ORCESTRA-api/actions/workflows/main.yaml/badge.svg)](https://github.com/bhklab/ORCESTRA-api/actions/workflows/main.yaml)
 [![Pixi Badge](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/prefix-dev/pixi/main/assets/badge/v0.json)](https://pixi.sh)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
@@ -45,6 +46,26 @@ pixi run hello
 ```
 
 TODO:: as development progresses, remove the hello_world function and add a more meaningful function to show the functionality of the project and PIXI in general.
+
+### Pre-commit
+
+This project has pre-commit hooks enabled to ensure that the code is formatted correctly and that the tests pass before committing.
+To install the pre-commit hooks, run the following command:
+
+```bash
+pixi run pre-commit install
+```
+
+Then run:
+
+```bash
+pixi run pre-commit run --all-files
+```
+
+This will run the pre-commit hooks on all files in the repository.
+If there are any issues, they will be displayed in the terminal, and most often, the file will be automatically formatted.
+
+From now on, anytime you commit, the pre-commit hooks will run automatically. If there are any issues, the commit will be rejected until the issues are resolved. Most often, you can just run `git commit` again and the issues will be fixed.
 
 ## Pipeline Specification
 
