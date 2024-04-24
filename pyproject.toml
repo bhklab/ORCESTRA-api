@@ -54,7 +54,7 @@ python-semantic-release = ">=9.4.0,<9.5"
 pre-commit = ">=3.7.0,<3.8"
 
 [tool.pixi.feature.dev.pypi-dependencies]
-ORCESTRA-api = { path = ".", editable = true }
+orcestrator = { path = ".", editable = true }
 
 [tool.pixi.feature.dev.tasks]
 test = "python -c 'print(\"Hello, World!\")'"
