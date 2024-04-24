@@ -60,6 +60,9 @@ ORCESTRA-api = { path = ".", editable = true }
 test = "python -c 'print(\"Hello, World!\")'"
 hello = { cmd = "python -m src.core.main", depends_on = ["test"] }
 
+cloudlogs = { cmd = """gcloud logging read labels.app="orcestra-api" --format json"""}
+
+
 [tool.pixi.feature.build.dependencies]
 build = "*"
 hatchling = ">=1.24.2,<1.25"

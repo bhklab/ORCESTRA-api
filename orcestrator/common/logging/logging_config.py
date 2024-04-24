@@ -64,8 +64,13 @@ def setup_logger(logger_name: str) -> logging.Logger:
             "cloud_logging": {
                 "class": "google.cloud.logging.handlers.CloudLoggingHandler",
                 "client": gcp_logging.Client(),
+                "name": "orcestra-api-prod",
                 "level": "DEBUG",
                 "formatter": "json",
+                "labels": {
+                    "env": "prod",
+                    "app": "orcestra-api",
+                },
             }
         }
         LOGGING["handlers"].update(cloud_handler)
