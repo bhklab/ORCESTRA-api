@@ -10,7 +10,10 @@ authors = [
     {name = "Matthew Boccolon", email = "matthew.boccolon@uhn.ca"}
     ]
 requires-python = ">= 3.11"
-dependencies = ["python-json-logger"]
+dependencies = ["python-json-logger", "pathlib"]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-xdist"]
 
 [build-system]
 requires = ["hatchling"]
@@ -57,9 +60,8 @@ pre-commit = ">=3.7.0,<3.8"
 orcestrator = { path = ".", editable = true }
 
 [tool.pixi.feature.dev.tasks]
-test = "python -c 'print(\"Hello, World!\")'"
-hello = { cmd = "python -m orcestrator.core.main", depends_on = ["test"] }
-
+hello = "python -m orcestrator.core.main"
+test = "pytest -n auto"
 cloudlogs = { cmd = """gcloud logging read labels.app="orcestra-api" --format json"""}
 
 
@@ -71,6 +73,13 @@ hatchling = ">=1.24.2,<1.25"
 wheel = "python -m build --no-isolation --wheel ."
 
 [tool.pixi.feature.prod]
+
+#################################################################################
+# Pytest Configuration
+#################################################################################
+
+[tool.pytest.ini_options]
+filterwarnings = "ignore::DeprecationWarning"
 
 
 ################################################################################

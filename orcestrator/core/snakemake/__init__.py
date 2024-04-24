@@ -1,39 +1,38 @@
 from orcestrator.db.models import SnakemakePipeline
+from pathlib import Path
 
 
-def get_snakemake_cmd(
+def build_snakemake_command(
     pipeline: SnakemakePipeline,
     work_dir: str,
-) -> str:
+    dryrun: bool = False,
+) -> list[str]:
 
-    cmd = [
+    WORKDIR = Path(work_dir)
+    if not WORKDIR.exists():
+        raise FileNotFoundError(f"Working directory not found at {WORKDIR}")
+
+    SNAKEFILE_PATH: Path = WORKDIR / Path(pipeline.snakefile_path)
+    if not SNAKEFILE_PATH.exists():
+        raise FileNotFoundError(f"Snakefile not found at {SNAKEFILE_PATH}")
+
+    METADATA: dict[str, str] = {
+        "pipeline_name": pipeline.name,
+        "git_url": pipeline.git_url,
+    }
+
+    cmd: list[str] = [
         "snakemake",
-        f"--snakefile {work_dir}/{pipeline.snakefile_path}",
-        f"--directory {work_dir}",
+        f"--snakefile {SNAKEFILE_PATH}",
+        f"--directory {WORKDIR}",
+        f"--config {' '.join([f'{k}={v}' for k, v in METADATA.items()])}",
         f"--use-conda",
-        f"--conda-prefix {work_dir}/conda",
+        f"--conda-prefix {WORKDIR}/conda",
         f"--jobs {pipeline.jobs}",
         f"{' '.join(pipeline.output_files)}",
     ]
 
-    return " ".join(cmd)
+    if dryrun:
+        cmd.append("--dryrun")
 
-
-if __name__ == "__main__":
-    import datetime
-
-    today_pipeline: str = (
-        f"pipeline_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}"
-    )
-    snakemake_pipeline = SnakemakePipeline(
-        name=today_pipeline,
-        git_url="github.com/repo",
-        output_files=["results/summary.txt"],
-        snakefile_path="./Snakefile",
-    )
-
-    print(
-        get_snakemake_cmd(
-            snakemake_pipeline, "./tests/test_snakemake-workflows/simple_Snakefile"
-        )
-    )
+    return cmd
