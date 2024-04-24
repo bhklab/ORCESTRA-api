@@ -76,8 +76,14 @@ def setup_logger(logger_name: str) -> logging.Logger:
     return logging.getLogger(logger_name)
 
 
-if __name__ == "__main__":
-
-    logger = setup_logger("development")
-
+def main_log_function():
+    logger: logging.Logger = setup_logger(logger_name="prod")
     logger.info("This is an info log")
+    logger.debug("This is a debug log")
+    logger.error("This is an error log")
+    logger.warning("This is a warning log")
+    logger.critical("This is a critical log")
+
+
+if __name__ == "__main__":
+    main_log_function()
