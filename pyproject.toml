@@ -61,7 +61,7 @@ orcestrator = { path = ".", editable = true }
 
 [tool.pixi.feature.dev.tasks]
 hello = "python -m orcestrator.core.main"
-test = "pytest -n auto"
+test = "pytest -n auto -vv"
 cloudlogs = { cmd = """gcloud logging read labels.app="orcestra-api" --format json"""}
 
 

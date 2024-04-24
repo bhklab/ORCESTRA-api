@@ -27,7 +27,7 @@ jobs:
     - name: Run Pixi
       run: |
         pixi run python --version | grep 3.12
-        pixi run test | grep "Hello, World"
+        pixi run test
 
   Semantic-Release:
     runs-on: ubuntu-latest
