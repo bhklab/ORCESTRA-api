@@ -28,7 +28,7 @@ def test_build_snakemake_command(snakemake_pipeline):
     )
 
     expected_command = [
-        "snakemake",
+        "snakemakes",
         "--snakefile tests/test_snakemake-workflows/simple_Snakefile/Snakefile",
         "--directory tests/test_snakemake-workflows/simple_Snakefile",
         f"--config pipeline_name={today_pipeline} git_url=github.com/repo",
