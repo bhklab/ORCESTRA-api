@@ -12,6 +12,18 @@ authors = [
 requires-python = ">= 3.11"
 dependencies = ["python-json-logger", "pathlib"]
 
+[project.optional-dependencies]
+dev = ["pytest", "pytest-xdist"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "orcestrator",
+]
+
 ################################################################################
 # PIXI Configuration
 ################################################################################
@@ -25,35 +37,33 @@ platforms = ["osx-arm64", "linux-64", "linux-aarch64"]
 [tool.pixi.system-requirements]
 linux = "5.4.203"               # This is for my linux machine
 
-[tool.pixi.feature.dev.pypi-dependencies]
-orcestrator = { path = ".", editable = true }
+[tool.pixi.pypi-dependencies]
 
 [tool.pixi.dependencies]
+python = "3.12.*"
 pydantic = ">=2.6.4,<2.7"
 motor = ">=3.4.0,<3.5"
 snakemake = "==7.32.4"
 google-cloud-logging = ">=3.10.0,<3.11"
-numpy = ">=1.26.4,<1.27"
 
 [tool.pixi.tasks]
 
 [tool.pixi.environments]
 default = { features = ["dev", "build"], solve-group = "default" }
-prod = { features = ["prod"], solve-group = "default" }
+prod = { features = ["prod"], solve-group = "prod" }
 
 [tool.pixi.feature.dev.dependencies]
 python-semantic-release = ">=9.4.0,<9.5"
 pre-commit = ">=3.7.0,<3.8"
-pytest = ">=8.1.1,<8.2"
-pytest-xdist = ">=3.5.0,<3.6"
+
+[tool.pixi.feature.dev.pypi-dependencies]
+orcestrator = { path = ".", editable = true }
 
 [tool.pixi.feature.dev.tasks]
 hello = "python -m orcestrator.core.main"
 test = "pytest -n auto -vv"
 cloudlogs = { cmd = """gcloud logging read labels.app="orcestra-api" --format json"""}
 
-# ------------------------------------------------------------------------------
-# Build specific configurations
 
 [tool.pixi.feature.build.dependencies]
 build = "*"
@@ -63,14 +73,7 @@ hatchling = ">=1.24.2,<1.25"
 testpython = "python --version"
 build-wheel = { cmd = "python -m build --no-isolation --wheel ." }
 
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
 
-[tool.hatch.build.targets.wheel]
-packages = [
-    "orcestrator",
-]
 
 # ------------------------------------------------------------------------------
 # Production specific configurations

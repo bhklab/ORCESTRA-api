@@ -22,13 +22,12 @@ def test_build_snakemake_command(snakemake_pipeline):
         pipeline=snakemake_pipeline,
         work_dir="./tests/test_snakemake-workflows/simple_Snakefile",
     )
-
     today_pipeline: str = (
         f"pipeline_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}"
     )
 
     expected_command = [
-        "snakemakes",
+        "snakemake",
         "--snakefile tests/test_snakemake-workflows/simple_Snakefile/Snakefile",
         "--directory tests/test_snakemake-workflows/simple_Snakefile",
         f"--config pipeline_name={today_pipeline} git_url=github.com/repo",
