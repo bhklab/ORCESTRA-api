@@ -26,7 +26,7 @@ jobs:
 
     - name: Run Pixi
       run: |
-        pixi run python --version | grep 3.12
+        pixi run python --version
         pixi run test
 
   Semantic-Release:
