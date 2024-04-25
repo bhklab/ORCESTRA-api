@@ -16,14 +16,6 @@
         </toc-element>
         <toc-element topic="Pipeline-Storage.md"/>
     </toc-element>
-    <toc-element topic="API_Reference.md">
-        <toc-element topic="Read_Root.md"/>
-        <toc-element topic="Get_Event_By_Name_Route.md"/>
-        <toc-element topic="Create_Event_Route.md"/>
-        <toc-element topic="Get_All_Events_Route.md"/>
-        <toc-element topic="Get_User.md"/>
-        <toc-element topic="Create_User_Route.md"/>
-    </toc-element>
     <toc-element topic="Developer-Requirements.md">
         <toc-element topic="requirements.md"/>
         <toc-element topic="Snakemake-Requirements.md"/>
