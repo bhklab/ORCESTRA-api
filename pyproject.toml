@@ -3,7 +3,7 @@
 ################################################################################
 [project]
 name = "snakemake-orcestrator-api"
-version = "0.7.0"
+version = "0.7.1"
 description = "Add a short description here"
 authors = [
     {name = "Jermiah Joseph", email = "jermiah.joseph@uhn.ca"},
@@ -30,7 +30,7 @@ packages = [
 
 [tool.pixi.project]
 name = "snakemake-orcestrator-api"
-version = "0.7.0"
+version = "0.7.1"
 channels = ["conda-forge", "bioconda"]
 platforms = ["osx-arm64", "linux-64", "linux-aarch64"]
 
