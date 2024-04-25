@@ -10,11 +10,19 @@ authors = [
     {name = "Matthew Boccolon", email = "matthew.boccolon@uhn.ca"}
     ]
 requires-python = ">= 3.11"
-dependencies = []
+dependencies = ["python-json-logger", "pathlib"]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-xdist"]
 
 [build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "orcestrator",
+]
 
 ################################################################################
 # PIXI Configuration
@@ -22,30 +30,66 @@ build-backend = "setuptools.build_meta"
 
 [tool.pixi.project]
 name = "snakemake-orcestrator-api"
-channels = ["conda-forge"]
-platforms = ["osx-arm64", "linux-64"]
+version = "0.7.0"
+channels = ["conda-forge", "bioconda"]
+platforms = ["osx-arm64", "linux-64", "linux-aarch64"]
 
 [tool.pixi.system-requirements]
 linux = "5.4.203"               # This is for my linux machine
 
 [tool.pixi.pypi-dependencies]
-ORCESTRA-api = { path = ".", editable = true }
 
 [tool.pixi.dependencies]
 python = "3.12.*"
-python-semantic-release = ">=9.4.0,<9.5"
-pre-commit = ">=3.7.0,<3.8"
 pydantic = ">=2.6.4,<2.7"
 motor = ">=3.4.0,<3.5"
+snakemake = "==7.32.4"
+google-cloud-logging = ">=3.10.0,<3.11"
 
 [tool.pixi.tasks]
-# Basic Tests
-test = "python -c 'print(\"Hello, World!\")'"
-hello = { cmd = "python -m src.core.main", depends_on = ["test"] }
 
-# testing the __main__ functions in each module
-common = "python -m src.db.models.common"
-Pipeline = "python -m src.db.models.Pipeline"
+[tool.pixi.environments]
+default = { features = ["dev", "build"], solve-group = "default" }
+prod = { features = ["prod"], solve-group = "prod" }
+
+[tool.pixi.feature.dev.dependencies]
+python-semantic-release = ">=9.4.0,<9.5"
+pre-commit = ">=3.7.0,<3.8"
+
+[tool.pixi.feature.dev.pypi-dependencies]
+orcestrator = { path = ".", editable = true }
+
+[tool.pixi.feature.dev.tasks]
+hello = "python -m orcestrator.core.main"
+test = "pytest -n auto -vv"
+cloudlogs = { cmd = """gcloud logging read labels.app="orcestra-api" --format json"""}
+
+
+[tool.pixi.feature.build.dependencies]
+build = "*"
+hatchling = ">=1.24.2,<1.25"
+
+[tool.pixi.feature.build.tasks]
+testpython = "python --version"
+build-wheel = { cmd = "python -m build --no-isolation --wheel ." }
+
+
+
+# ------------------------------------------------------------------------------
+# Production specific configurations
+[tool.pixi.feature.prod.host-dependencies]
+pip = "*"
+
+[tool.pixi.feature.prod.tasks]
+install-dist= "pip install --no-deps --disable-pip-version-check dist/*.whl"
+
+#################################################################################
+# Pytest Configuration
+#################################################################################
+
+[tool.pytest.ini_options]
+filterwarnings = "ignore::DeprecationWarning"
+
 
 ################################################################################
 # Semantic Release Configuration
@@ -58,6 +102,7 @@ logging_use_named_masks = true
 tag_format = "v{version}"
 version_toml = [
     "pyproject.toml:project.version",
+    "pyproject.toml:tool.pixi.project.version",
 ]
 
 [tool.semantic_release.branches.main]
