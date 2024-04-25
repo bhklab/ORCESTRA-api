@@ -18,7 +18,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/attrs-23.2.0-pyh71513ae_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/bcrypt-4.1.2-py311h46250e7_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/boto3-1.34.90-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/botocore-1.34.90-pyge310_1234567_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/botocore-1.34.91-pyge310_1234567_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/brotli-python-1.1.0-py311hb755f60_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/build-0.7.0-pyhd8ed1ab_0.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/linux-64/bzip2-1.0.8-hd590300_5.conda
@@ -229,7 +229,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/attrs-23.2.0-pyh71513ae_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/bcrypt-4.1.2-py311h2bdde80_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/boto3-1.34.90-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/botocore-1.34.90-pyge310_1234567_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/botocore-1.34.91-pyge310_1234567_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/brotli-python-1.1.0-py311h8715677_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/build-0.7.0-pyhd8ed1ab_0.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/bzip2-1.0.8-h31becfc_5.conda
@@ -439,7 +439,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/attrs-23.2.0-pyh71513ae_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/bcrypt-4.1.2-py311h94f323b_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/boto3-1.34.90-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/botocore-1.34.90-pyge310_1234567_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/botocore-1.34.91-pyge310_1234567_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/brotli-python-1.1.0-py311ha891d26_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/build-0.7.0-pyhd8ed1ab_0.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/bzip2-1.0.8-h93a5062_5.conda
@@ -651,7 +651,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/attrs-23.2.0-pyh71513ae_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/bcrypt-4.1.2-py311h46250e7_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/boto3-1.34.90-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/botocore-1.34.90-pyge310_1234567_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/botocore-1.34.91-pyge310_1234567_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/brotli-python-1.1.0-py311hb755f60_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/bzip2-1.0.8-hd590300_5.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/c-ares-1.28.1-hd590300_0.conda
@@ -838,7 +838,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/attrs-23.2.0-pyh71513ae_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/bcrypt-4.1.2-py311h2bdde80_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/boto3-1.34.90-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/botocore-1.34.90-pyge310_1234567_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/botocore-1.34.91-pyge310_1234567_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/brotli-python-1.1.0-py311h8715677_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/bzip2-1.0.8-h31becfc_5.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/c-ares-1.28.1-h31becfc_0.conda
@@ -1024,7 +1024,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/attrs-23.2.0-pyh71513ae_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/bcrypt-4.1.2-py311h94f323b_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/boto3-1.34.90-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/botocore-1.34.90-pyge310_1234567_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/botocore-1.34.91-pyge310_1234567_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/brotli-python-1.1.0-py311ha891d26_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/bzip2-1.0.8-h93a5062_5.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/c-ares-1.28.1-h93a5062_0.conda
@@ -1512,13 +1512,13 @@ packages:
   timestamp: 1713924822831
 - kind: conda
   name: botocore
-  version: 1.34.90
+  version: 1.34.91
   build: pyge310_1234567_0
   subdir: noarch
   noarch: python
-  url: https://conda.anaconda.org/conda-forge/noarch/botocore-1.34.90-pyge310_1234567_0.conda
-  sha256: 55bb2add1d2e55ccefd916bf3130ec17e5dc5a12564987a132805baea4f9cd83
-  md5: 2128e9c1a123bc60bdd83f2ba2eeeeb6
+  url: https://conda.anaconda.org/conda-forge/noarch/botocore-1.34.91-pyge310_1234567_0.conda
+  sha256: d15327d97e647a37f657f80a00fbf55a55a4cb9322d0c3cd4505b051989cdb79
+  md5: 97c110073e5345f78da8221c04bb7cdd
   depends:
   - jmespath >=0.7.1,<2.0.0
   - python >=3.10
@@ -1528,8 +1528,8 @@ packages:
   license_family: Apache
   purls:
   - pkg:pypi/botocore
-  size: 6992404
-  timestamp: 1713915260511
+  size: 6922118
+  timestamp: 1714046747181
 - kind: conda
   name: brotli-python
   version: 1.1.0
