@@ -12,8 +12,6 @@ authors = [
 requires-python = ">= 3.11"
 dependencies = ["python-json-logger", "pathlib"]
 
-
-
 ################################################################################
 # PIXI Configuration
 ################################################################################
@@ -27,7 +25,7 @@ platforms = ["osx-arm64", "linux-64", "linux-aarch64"]
 [tool.pixi.system-requirements]
 linux = "5.4.203"               # This is for my linux machine
 
-[tool.pixi.pypi-dependencies]
+[tool.pixi.feature.dev.pypi-dependencies]
 orcestrator = { path = ".", editable = true }
 
 [tool.pixi.dependencies]
@@ -80,7 +78,7 @@ packages = [
 pip = "*"
 
 [tool.pixi.feature.prod.tasks]
-install-dist = "pip install --no-deps --disable-pip-version-check dist/*.whl"
+install-dist= "pip install --no-deps --disable-pip-version-check dist/*.whl"
 
 #################################################################################
 # Pytest Configuration
