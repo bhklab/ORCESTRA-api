@@ -193,3 +193,14 @@ logs/logs.json
 **/results/
 **/logs/
 **/rawdata/
+
+
+.pixi/
+*.zip
+.git*
+*.DS_Store
+.idea/
+dist
+logs
+
+pixi.lock

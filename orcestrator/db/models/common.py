@@ -44,7 +44,7 @@ if __name__ == "__main__":
         # Insert the student into the database
         new_student: InsertOneResult
         new_student = await student_collection.insert_one(
-            document=student.model_dump(by_alias=True, exclude=["id"])
+            document=student.model_dump(by_alias=True, exclude={"id"})
         )
 
         # Return the id of the student
