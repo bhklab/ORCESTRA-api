@@ -8,7 +8,7 @@ This document outlines a set of standards that all pipelines should follow.
 - These standards are designed to ensure that pipelines are easy to use, reproducible, and well-documented.
 - They are also designed to make it easier for multiple users to collaborate on a pipeline, and to make it easier for users to reproduce the results of a pipeline.
 
-Fundamentally, any user should be able to:
+**Fundamentally, any user should be able to:**
 
 1) Clone the repository from Github
 2) Run the pipeline using the exact command provided in the `README.md`
@@ -16,8 +16,21 @@ Fundamentally, any user should be able to:
 
 It is highly recommended to try these steps out from a fresh environment to ensure that the pipeline is reproducible.
 
-> [!WARNING]
 > Failure to adhere to these standards may result in the pipeline being rejected from the project.
+{style="warning"}
+
+## TL;DR
+
+**Version Control**: Use git for version control as early as possible. Store the pipeline in a git repository with a `README.md` file that explains how to run the pipeline.
+
+**Isolated Environments**: Use conda environments to define the environment that the pipeline is run in, as well as the environment that each rule is run in. If using containers, include the `Dockerfile` or `Singularity` file in the repository.
+
+**Directory Structure**: Follow a consistent directory structure, ensuring relative paths are used everywhere.
+
+**Data Description**: Clearly describe data sources, formats, processing steps, and provide links or instructions to obtain non-public data.
+
+**Self-Documenting Code**: Ensure that the `Snakefile` and pipeline rules are self-documenting or well-commented. Use consistent naming conventions for rules, scripts, and environment files.
+
 
 ## Definitions
 
