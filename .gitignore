@@ -193,3 +193,6 @@ logs/logs.json
 **/results/
 **/logs/
 **/rawdata/
+
+
+.vscode

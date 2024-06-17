@@ -1,8 +1,8 @@
-import pytest
-from orcestrator.db.models import SnakemakePipeline
 import datetime
-from orcestrator.core.snakemake import build_snakemake_command
 
+import pytest
+from orcestrator.core.snakemake import build_snakemake_command
+from orcestrator.db.models import SnakemakePipeline
 
 @pytest.fixture(scope="module")
 def snakemake_pipeline():

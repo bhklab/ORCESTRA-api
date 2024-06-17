@@ -1,6 +1,6 @@
 import logging
 import logging.config
-
+import os
 from google.cloud import logging as gcp_logging
 
 LOGGING: dict = {
@@ -9,11 +9,11 @@ LOGGING: dict = {
     "formatters": {
         "json": {
             "class": "pythonjsonlogger.jsonlogger.JsonFormatter",
-            "format": "%(asctime)s %(name)s %(levelname)s %(module)s %(message)s %(pathname)s %(lineno)s %(funcName)s %(threadName)s %(thread)s %(process)s %(processName)s",
+            "format": "%(asctime)s %(name)s %(levelname)s %(module)s %(message)s %(pathname)s %(lineno)s %(funcName)s %(threadName)s %(thread)s %(process)s %(processName)s",  # noqa: E501
             "datefmt": "%Y-%m-%d %H:%M:%S",
         },
         "stdout": {
-            "format": "%(asctime)s - %(name)s - %(levelname)s - %(module)s - %(message)s",
+            "format": "%(levelname)s: %(asctime)s - %(name)s - %(module)s - %(message)s",
             "datefmt": "%Y-%m-%d %H:%M:%S",
         },
     },
@@ -53,26 +53,29 @@ LOGGING: dict = {
 }
 
 
-def setup_logger(logger_name: str) -> logging.Logger:
-    assert logger_name in [
-        "devel",
-        "prod",
-    ], "Invalid logger name. Available options are 'devel' or 'prod'"
+def create_cloud_handler(test: bool = False) -> dict:
+    labels = {"env": "prod", "app": "orcestra-api"}
+    if test:
+        labels["env"] = labels["env"] + "-test"
+    return {
+        "cloud_logging": {
+            "class": "google.cloud.logging.handlers.CloudLoggingHandler",
+            "client": gcp_logging.Client(),
+            "level": "DEBUG",
+            "formatter": "json",
+            "labels" : labels
+        }
+    }
+
+
+def setup_logger(logger_name: str, test: bool = False) -> logging.Logger:
+    valid_loggers = ["devel", "prod"]
+    assert (
+        logger_name in valid_loggers
+    ), f"Invalid logger name. Available options are {valid_loggers}"
 
     if logger_name == "prod":
-        cloud_handler = {
-            "cloud_logging": {
-                "class": "google.cloud.logging.handlers.CloudLoggingHandler",
-                "client": gcp_logging.Client(),
-                "name": "orcestra-api-prod",
-                "level": "DEBUG",
-                "formatter": "json",
-                "labels": {
-                    "env": "prod",
-                    "app": "orcestra-api",
-                },
-            }
-        }
+        cloud_handler = create_cloud_handler(test)
         LOGGING["handlers"].update(cloud_handler)
         LOGGING["loggers"]["prod"]["handlers"].append("cloud_logging")
 
@@ -81,14 +84,8 @@ def setup_logger(logger_name: str) -> logging.Logger:
     return logging.getLogger(logger_name)
 
 
-def main_log_function():
-    logger: logging.Logger = setup_logger(logger_name="prod")
-    logger.info("This is an info log")
-    logger.debug("This is a debug log")
-    logger.error("This is an error log")
-    logger.warning("This is a warning log")
-    logger.critical("This is a critical log")
-
-
-if __name__ == "__main__":
-    main_log_function()
+def get_logger() -> logging.Logger:
+    env = os.environ.get("ENV")
+    if not env:
+        raise ValueError("ENV not set for logger")
+    return setup_logger(env)
