@@ -1,0 +1,30 @@
+site_name: My Docs
+repo_url: https://github.com/bhklab/orcestra-api
+repo_name: orcestra-api
+site_description: Package documentation for snakemake orcestrator
+site_author: Jermiah Joseph
+
+# The directory where the documentation files are located
+docs_dir: ../docs
+
+# The directory where the documentation is built (add to .gitignore if changed)
+site_dir: ../site
+
+# Set a list of CSS files (relative to docs_dir) to be included by the theme
+# typically as <link> tags.
+extra_css: []
+
+# This is the branch where the documentation will pushed to using
+# 'mkdocs gh-deploy' and from where it will be served by GitHub Pages.
+remote_branch: gh-pages
+
+# Address when using 'mkdocs serve', format is 'address:port'
+dev_addr: 127.0.0.1:8000
+
+# The layout of the navigation links
+nav:
+  - Home: index.md
+  - About: about.md
+  - Changelog: CHANGELOG.md
+
+theme: readthedocs

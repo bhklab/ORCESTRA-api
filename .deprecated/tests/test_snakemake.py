@@ -10,7 +10,7 @@ def snakemake_pipeline():
         f"pipeline_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}"
     )
     return SnakemakePipeline(
-        name=today_pipeline,
+        pipeline_name=today_pipeline,
         git_url="github.com/repo",
         output_files=["results/summary.txt"],
         snakefile_path="./Snakefile",
