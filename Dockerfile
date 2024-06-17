@@ -6,6 +6,7 @@ RUN pixi run build-wheel
 RUN pixi run install-dist
 RUN pixi shell-hook -e prod > /shell-hook
 RUN echo "python -m orcestrator.core.main" >> /shell-hook
+RUN echo "python -m orcestrator.db.models.Pipeline" >> /shell-hook
 
 FROM ubuntu:22.04 AS production
 

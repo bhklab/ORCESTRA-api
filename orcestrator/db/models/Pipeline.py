@@ -1,4 +1,4 @@
-from .common import PyObjectId
+from orcestrator.db.models.common import PyObjectId
 
 from pydantic import (
     BaseModel,
@@ -10,35 +10,38 @@ from typing import List
 
 class SnakemakePipeline(BaseModel):
     id: PyObjectId = Field(alias="_id", default=None)
-    name: str
+    pipeline_name: str
     git_url: str
     output_files: List[str]
     snakefile_path: str = Field(
-        default="./Snakefile",
+        default="Snakefile",
     )
     config_file_path: str = Field(
-        default="./config/config.yaml",
+        default="config/config.yaml",
     )
     conda_env_file_path: str = Field(
-        default="./pipeline.yaml",
+        default="pipeline_env.yaml",
     )
     jobs: int = Field(
         default=1,
     )
 
 
-if __name__ == "__main__":
+def main():
     # pixi run python -m src.db.models.Pipeline
+    """
+    This main area is to test the implementation of the model
+    """
 
     import os
     from pydantic import BaseModel, Field
     import motor.motor_asyncio
     from motor.motor_asyncio import AsyncIOMotorCollection, AsyncIOMotorDatabase
-    from pydantic import ConfigDict
     from pymongo.results import InsertOneResult
     import asyncio
+    from rich import print
 
-    client = motor.motor_asyncio.AsyncIOMotorClient(os.environ["MONGODB_URL"])
+    client = motor.motor_asyncio.AsyncIOMotorClient(os.environ["MONGO_URI"])
     db: AsyncIOMotorDatabase = client.get_database("pipelines")
     snakemake_pipelines: AsyncIOMotorCollection = db.get_collection(
         name="snakemake_pipelines"
@@ -55,7 +58,7 @@ if __name__ == "__main__":
         return new_snakemake_pipeline.inserted_id
 
     async def get_all_pipeline_names() -> list[str]:
-        pipeline_names: list[str] = await snakemake_pipelines.distinct("name")
+        pipeline_names: list[str] = await snakemake_pipelines.distinct("pipeline_name")
 
         return pipeline_names
 
@@ -67,10 +70,10 @@ if __name__ == "__main__":
         )
 
         snakemake_pipeline = SnakemakePipeline(
-            name=today_pipeline,
+            pipeline_name=today_pipeline,
             git_url="github.com/repo",
             output_files=["results/pset.rds", "results/dnl.json"],
-            snakefile_path="./Snakefile",
+            snakefile_path="Snakefile",
         )
 
         print(snakemake_pipeline.model_dump())
@@ -90,3 +93,7 @@ if __name__ == "__main__":
     main()
 
     # function to get the names of all pipelines
+
+
+if __name__ == "__main__":
+    main()
