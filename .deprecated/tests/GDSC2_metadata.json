@@ -1,0 +1,571 @@
+{
+  "molecularProfiles": [
+    {
+      "data_source": {
+        "rawdata": {
+          "description": [
+            "Data available from EGA under accession EGAD00001001357. 466 samples. Access to raw cram files requires DAC approval. NOTE: This data is not yet used in the pipeline"
+          ],
+          "url": [
+            "https://ega-archive.org/datasets/EGAD00001001357"
+          ]
+        },
+        "processed": {
+          "description": [
+            "Read counts, TPM & FPKM-values for all sequenced models including cell lines and organoids."
+          ],
+          "tool": [
+            "TODO::(add tool)"
+          ],
+          "tool_version": [
+            "TODO::(add tool version)"
+          ],
+          "url": [
+            "https://cog.sanger.ac.uk/cmp/download/rnaseq_all_20220624.zip"
+          ]
+        }
+      },
+      "filename": [
+        "rnaseq_fpkm_20220624.csv"
+      ],
+      "annotation": [
+        "rnaseq"
+      ],
+      "datatype": [
+        "fpkm"
+      ],
+      "date": [
+        "2024-02-26"
+      ],
+      "numSamples": [
+        949
+      ]
+    },
+    {
+      "data_source": {
+        "rawdata": {
+          "description": [
+            "Data available from EGA under accession EGAD00001001357. 466 samples. Access to raw cram files requires DAC approval. NOTE: This data is not yet used in the pipeline"
+          ],
+          "url": [
+            "https://ega-archive.org/datasets/EGAD00001001357"
+          ]
+        },
+        "processed": {
+          "description": [
+            "Read counts, TPM & FPKM-values for all sequenced models including cell lines and organoids."
+          ],
+          "tool": [
+            "TODO::(add tool)"
+          ],
+          "tool_version": [
+            "TODO::(add tool version)"
+          ],
+          "url": [
+            "https://cog.sanger.ac.uk/cmp/download/rnaseq_all_20220624.zip"
+          ]
+        }
+      },
+      "filename": [
+        "rnaseq_read_count_20220624.csv"
+      ],
+      "annotation": [
+        "rnaseq"
+      ],
+      "datatype": [
+        "read_count"
+      ],
+      "date": [
+        "2024-02-26"
+      ],
+      "numSamples": [
+        949
+      ]
+    },
+    {
+      "data_source": {
+        "rawdata": {
+          "description": [
+            "Data available from EGA under accession EGAD00001001357. 466 samples. Access to raw cram files requires DAC approval. NOTE: This data is not yet used in the pipeline"
+          ],
+          "url": [
+            "https://ega-archive.org/datasets/EGAD00001001357"
+          ]
+        },
+        "processed": {
+          "description": [
+            "Read counts, TPM & FPKM-values for all sequenced models including cell lines and organoids."
+          ],
+          "tool": [
+            "TODO::(add tool)"
+          ],
+          "tool_version": [
+            "TODO::(add tool version)"
+          ],
+          "url": [
+            "https://cog.sanger.ac.uk/cmp/download/rnaseq_all_20220624.zip"
+          ]
+        }
+      },
+      "filename": [
+        "rnaseq_tpm_20220624.csv"
+      ],
+      "annotation": [
+        "rnaseq"
+      ],
+      "datatype": [
+        "tpm"
+      ],
+      "date": [
+        "2024-02-26"
+      ],
+      "numSamples": [
+        949
+      ]
+    },
+    {
+      "data_source": {
+        "WES_CNV": {
+          "description": [
+            "Total copy number and categorical CNA calls derived from WES data processed through PureCN."
+          ],
+          "tool": [
+            "TODO::(add tool)"
+          ],
+          "tool_version": [
+            "TODO::(add tool version)"
+          ],
+          "url": [
+            "https://cog.sanger.ac.uk/cmp/download/WES_pureCN_CNV_genes_20221213.zip"
+          ]
+        }
+      },
+      "filename": [
+        "WES_pureCN_CNV_genes_20221213.csv",
+        "WES_pureCN_CNV_genes_cn_category_20221213.csv",
+        "WES_pureCN_CNV_genes_total_copy_number_20221213.csv"
+      ],
+      "annotation": [
+        "cnv"
+      ],
+      "samples": [
+        934
+      ],
+      "date_created": [
+        "2024-02-26 19:50:17"
+      ]
+    },
+    {
+      "data_source": {
+        "WES_CNV": {
+          "description": [
+            "Total copy number and categorical CNA calls derived from WES data processed through PureCN."
+          ],
+          "tool": [
+            "TODO::(add tool)"
+          ],
+          "tool_version": [
+            "TODO::(add tool version)"
+          ],
+          "url": [
+            "https://cog.sanger.ac.uk/cmp/download/WES_pureCN_CNV_genes_20221213.zip"
+          ]
+        }
+      },
+      "filename": [
+        "WES_pureCN_CNV_genes_20221213.csv",
+        "WES_pureCN_CNV_genes_cn_category_20221213.csv",
+        "WES_pureCN_CNV_genes_total_copy_number_20221213.csv"
+      ],
+      "annotation": [
+        "cnv"
+      ],
+      "samples": [
+        934
+      ],
+      "date_created": [
+        "2024-02-26 19:50:17"
+      ]
+    },
+    {
+      "data_source": {
+        "WES_CNV": {
+          "description": [
+            "Total copy number and categorical CNA calls derived from WES data processed through PureCN."
+          ],
+          "tool": [
+            "TODO::(add tool)"
+          ],
+          "tool_version": [
+            "TODO::(add tool version)"
+          ],
+          "url": [
+            "https://cog.sanger.ac.uk/cmp/download/WES_pureCN_CNV_genes_20221213.zip"
+          ]
+        }
+      },
+      "filename": [
+        "WES_pureCN_CNV_genes_20221213.csv",
+        "WES_pureCN_CNV_genes_cn_category_20221213.csv",
+        "WES_pureCN_CNV_genes_total_copy_number_20221213.csv"
+      ],
+      "annotation": [
+        "cnv"
+      ],
+      "samples": [
+        934
+      ],
+      "date_created": [
+        "2024-02-26 19:50:17"
+      ]
+    },
+    {
+      "data_source": {
+        "WES_CNV": {
+          "description": [
+            "Total copy number and categorical CNA calls derived from WES data processed through PureCN."
+          ],
+          "tool": [
+            "TODO::(add tool)"
+          ],
+          "tool_version": [
+            "TODO::(add tool version)"
+          ],
+          "url": [
+            "https://cog.sanger.ac.uk/cmp/download/WES_pureCN_CNV_genes_20221213.zip"
+          ]
+        }
+      },
+      "filename": [
+        "WES_pureCN_CNV_genes_20221213.csv",
+        "WES_pureCN_CNV_genes_cn_category_20221213.csv",
+        "WES_pureCN_CNV_genes_total_copy_number_20221213.csv"
+      ],
+      "annotation": [
+        "cnv"
+      ],
+      "samples": [
+        934
+      ],
+      "date_created": [
+        "2024-02-26 19:50:17"
+      ]
+    },
+    {
+      "data_source": {
+        "WES_CNV": {
+          "description": [
+            "Total copy number and categorical CNA calls derived from WES data processed through PureCN."
+          ],
+          "tool": [
+            "TODO::(add tool)"
+          ],
+          "tool_version": [
+            "TODO::(add tool version)"
+          ],
+          "url": [
+            "https://cog.sanger.ac.uk/cmp/download/WES_pureCN_CNV_genes_20221213.zip"
+          ]
+        }
+      },
+      "filename": [
+        "WES_pureCN_CNV_genes_20221213.csv",
+        "WES_pureCN_CNV_genes_cn_category_20221213.csv",
+        "WES_pureCN_CNV_genes_total_copy_number_20221213.csv"
+      ],
+      "annotation": [
+        "cnv"
+      ],
+      "samples": [
+        934
+      ],
+      "date_created": [
+        "2024-02-26 19:50:17"
+      ]
+    },
+    {
+      "data_source": {
+        "WES_CNV": {
+          "description": [
+            "Total copy number and categorical CNA calls derived from WES data processed through PureCN."
+          ],
+          "tool": [
+            "TODO::(add tool)"
+          ],
+          "tool_version": [
+            "TODO::(add tool version)"
+          ],
+          "url": [
+            "https://cog.sanger.ac.uk/cmp/download/WES_pureCN_CNV_genes_20221213.zip"
+          ]
+        }
+      },
+      "filename": [
+        "WES_pureCN_CNV_genes_20221213.csv",
+        "WES_pureCN_CNV_genes_cn_category_20221213.csv",
+        "WES_pureCN_CNV_genes_total_copy_number_20221213.csv"
+      ],
+      "annotation": [
+        "cnv"
+      ],
+      "samples": [
+        934
+      ],
+      "date_created": [
+        "2024-02-26 19:50:17"
+      ]
+    },
+    {
+      "data_source": {},
+      "filename": {
+        "data": [
+          "mutations_all_20230202.zip"
+        ],
+        "mutation_genes": [
+          "driver_mutations_20221208.csv"
+        ]
+      },
+      "annotation": [
+        "mutation"
+      ],
+      "samples": [
+        935
+      ],
+      "date_created": [
+        "2024-02-26"
+      ],
+      "datatype": [
+        "protein_mutation"
+      ]
+    },
+    {
+      "data_source": {},
+      "filename": {
+        "data": [
+          "mutations_all_20230202.zip"
+        ],
+        "mutation_genes": [
+          "driver_mutations_20221208.csv"
+        ]
+      },
+      "annotation": [
+        "mutation"
+      ],
+      "samples": [
+        935
+      ],
+      "date_created": [
+        "2024-02-26"
+      ],
+      "datatype": [
+        "rna_mutation"
+      ]
+    },
+    {
+      "data_source": {},
+      "filename": {
+        "data": [
+          "mutations_all_20230202.zip"
+        ],
+        "mutation_genes": [
+          "driver_mutations_20221208.csv"
+        ]
+      },
+      "annotation": [
+        "mutation"
+      ],
+      "samples": [
+        935
+      ],
+      "date_created": [
+        "2024-02-26"
+      ],
+      "datatype": [
+        "cdna_mutation"
+      ]
+    },
+    {
+      "data_source": {},
+      "filename": {
+        "data": [
+          "mutations_all_20230202.zip"
+        ],
+        "mutation_genes": [
+          "driver_mutations_20221208.csv"
+        ]
+      },
+      "annotation": [
+        "mutation"
+      ],
+      "samples": [
+        935
+      ],
+      "date_created": [
+        "2024-02-26"
+      ],
+      "datatype": [
+        "vaf"
+      ]
+    },
+    {
+      "data_source": {},
+      "filename": {
+        "data": [
+          "mutations_all_20230202.zip"
+        ],
+        "mutation_genes": [
+          "driver_mutations_20221208.csv"
+        ]
+      },
+      "annotation": [
+        "mutation"
+      ],
+      "samples": [
+        935
+      ],
+      "date_created": [
+        "2024-02-26"
+      ],
+      "datatype": [
+        "effect"
+      ]
+    },
+    {
+      "data_source": {
+        "gene_fusions": {
+          "description": [
+            "TODO::(add description)"
+          ],
+          "tool": [
+            "TODO::(add tool)"
+          ],
+          "tool_version": [
+            "TODO::(add tool version)"
+          ],
+          "url": [
+            "https://cog.sanger.ac.uk/cmp/download/Fusions_20230725.zip"
+          ]
+        }
+      },
+      "filename": [
+        "Fusions_20230725.zip"
+      ],
+      "annotation": [
+        "fusion"
+      ],
+      "samples": [
+        874
+      ],
+      "date": [
+        "2024-02-26"
+      ]
+    }
+  ],
+  "treatmentResponse": {
+    "data_source": {
+      "rawdata": {
+        "description": [
+          "The raw data for the GDSC2 release 8.5 is available from the GDSC website."
+        ],
+        "url": [
+          "https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.5/GDSC2_public_raw_data_27Oct23.csv"
+        ]
+      },
+      "processed": {
+        "description": [
+          "The processed data for the GDSC2 release 8.5 is available from the GDSC website."
+        ],
+        "url": [
+          "https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.5/GDSC2_fitted_dose_response_27Oct23.xlsx"
+        ]
+      }
+    },
+    "filename": {
+      "description": [
+        "The filename used in the pipeline to create this object. Likely renamed from the original file"
+      ],
+      "raw": [
+        "GDSC2_public_raw_data.csv"
+      ],
+      "processed": [
+        "GDSC2_fitted_dose_response.xlsx"
+      ]
+    },
+    "date": [
+      "2024-02-26"
+    ]
+  },
+  "sampleMetadata": {
+    "numSamples": [
+      1000
+    ],
+    "sampleAnnotations": [
+      "GDSC.sampleid",
+      "GDSC.Sample_Name",
+      "CCLE.sampleid",
+      "GDSC.BROAD_ID",
+      "GDSC.RRID",
+      "CMP.model_id",
+      "CMP.sampleid",
+      "GDSC.COSMIC_ID",
+      "GDSC.Whole_Exome_Sequencing_.WES.",
+      "GDSC.Copy_Number_Alterations_.CNA.",
+      "GDSC.Gene_Expression",
+      "GDSC.Methylation",
+      "GDSC.DrugResponse",
+      "GDSC.Tissue_descriptor_1",
+      "GDSC.Tissuedescriptor_2",
+      "GDSC.Cancer_Type.matching_TCGA_label.",
+      "GDSC.Microsatellite_instability_Status_.MSI.",
+      "GDSC.Screen_Medium",
+      "GDSC.Growth_Properties",
+      "GDSC.tissue",
+      "GDSC.cancer_type",
+      "GDSC.cancer_type_ncit_id",
+      "GDSC.sample_site",
+      "GDSC.gender",
+      "GDSC.ethnicity",
+      "GDSC.age_at_sampling",
+      "cellosaurus.acc",
+      "cellosaurus.id",
+      "cellosaurus.accession",
+      "cellosaurus.synonyms",
+      "cellosaurus.misspellings",
+      "cellosaurus.diseases",
+      "cellosaurus.category",
+      "cellosaurus.sexOfCell",
+      "cellosaurus.ageAtSampling",
+      "cellosaurus.samplingSite"
+    ]
+  },
+  "treatmentMetadata": {
+    "numTreatments": [
+      539
+    ],
+    "treatmentAnnotations": [
+      "pubchem.ChEMBL.ID",
+      "GDSC.treatmentid",
+      "GDSC.DRUG_ID",
+      "GDSC.SCREENING_SITE",
+      "GDSC.DRUG_NAME",
+      "GDSC.SYNONYMS",
+      "GDSC.TARGET",
+      "GDSC.TARGET_PATHWAY",
+      "pubchem.CID",
+      "pubchem.MolecularFormula",
+      "pubchem.CanonicalSMILES",
+      "pubchem.InChIKey",
+      "pubchem.Title",
+      "pubchem.NSC.Number",
+      "pubchem.DILI.Status",
+      "pubchem.CAS.Number",
+      "pubchem.ATC.Code",
+      "chembl.ActionType",
+      "chembl.MechanismOfAction",
+      "chembl.MolecularMechanism",
+      "chembl.MechanismComment",
+      "chembl.ParentMoleculeChEMBL.ID",
+      "chembl.TargetChEMBL.ID"
+    ]
+  }
+}
