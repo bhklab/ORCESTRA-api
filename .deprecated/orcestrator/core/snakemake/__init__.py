@@ -1,6 +1,6 @@
-from orcestrator.db.models import SnakemakePipeline
 from pathlib import Path
 
+from orcestrator.db.models import SnakemakePipeline
 
 def build_snakemake_command(
     pipeline: SnakemakePipeline,

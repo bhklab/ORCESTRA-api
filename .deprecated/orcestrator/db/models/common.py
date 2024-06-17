@@ -21,10 +21,10 @@ if __name__ == "__main__":
     # pixi run python -m src.db.models.common
 
     import os
-    from pydantic import BaseModel, Field
+
     import motor.motor_asyncio
     from motor.motor_asyncio import AsyncIOMotorCollection, AsyncIOMotorDatabase
-    from pydantic import ConfigDict
+    from pydantic import BaseModel, ConfigDict, Field
     from pymongo.results import InsertOneResult
 
     client = motor.motor_asyncio.AsyncIOMotorClient(os.environ["MONGODB_URL"])

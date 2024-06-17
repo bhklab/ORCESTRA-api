@@ -1,0 +1,39 @@
+version: "3.9"
+
+services:
+  app:
+    depends_on:
+      - redis-cache
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+      - /app/.pixi # Ignore this directory in the volume
+    env_file:
+      - .env
+    networks:
+      - app-network
+
+  redis-cache:
+    image: redis:alpine
+    hostname: redis-cache
+    container_name: redis-cache
+    restart: on-failure
+    ports:
+      - '6379:6379'
+    command: redis-server
+    volumes:
+      - cache:/data
+    networks:
+      - app-network
+
+volumes:
+  cache:
+    driver: local
+
+networks:
+  app-network:
+    driver: bridge

@@ -1,12 +1,11 @@
-from orcestrator.db.models.common import PyObjectId
+from typing import List
 
 from pydantic import (
     BaseModel,
     Field,
 )
 
-from typing import List
-
+from orcestrator.db.models.common import PyObjectId
 
 class SnakemakePipeline(BaseModel):
     id: PyObjectId = Field(alias="_id", default=None)
@@ -33,12 +32,12 @@ def main():
     This main area is to test the implementation of the model
     """
 
+    import asyncio
     import os
-    from pydantic import BaseModel, Field
+
     import motor.motor_asyncio
     from motor.motor_asyncio import AsyncIOMotorCollection, AsyncIOMotorDatabase
     from pymongo.results import InsertOneResult
-    import asyncio
     from rich import print
 
     client = motor.motor_asyncio.AsyncIOMotorClient(os.environ["MONGO_URI"])
