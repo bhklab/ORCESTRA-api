@@ -15,7 +15,6 @@ from pydantic.functional_validators import BeforeValidator
 #  which in this case will convert the string to a string
 #     - It will be represented as a `str` on the model so that it can be serialized to JSON.
 
-
 PyObjectId = Annotated[str, BeforeValidator(str)]
 
 if __name__ == "__main__":

@@ -73,7 +73,7 @@ So if this is the given info (random example and not a real pipeline):
   "_id": {
     "$oid": "6616c22cc823c5691e050680"
   },
-  "name": "test_pipeline",
+  "pipeline_name": "test_pipeline",
   "git_url": "github.com/repo",
   "output_files": [
     "results/pset.rds",

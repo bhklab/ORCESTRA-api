@@ -20,8 +20,7 @@ As this data structure is designed, we can then standardize what needs to be out
 
 This diagram is based on all the sections below:
 
-```plantuml
-@startjson
+```json
 {
     "pipeline":"gCSI-Pharmacoset_Snakemake",
     "about": {
@@ -46,7 +45,6 @@ This diagram is based on all the sections below:
         "Quality Control": "link to HTML file"
     }
 }
-@endjson
 ```
 
 ### Python Pydantic class definitions

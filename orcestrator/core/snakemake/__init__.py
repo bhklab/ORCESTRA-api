@@ -17,7 +17,7 @@ def build_snakemake_command(
         raise FileNotFoundError(f"Snakefile not found at {SNAKEFILE_PATH}")
 
     METADATA: dict[str, str] = {
-        "pipeline_name": pipeline.name,
+        "pipeline_name": pipeline.pipeline_name,
         "git_url": pipeline.git_url,
     }
 
@@ -26,7 +26,7 @@ def build_snakemake_command(
         f"--snakefile {SNAKEFILE_PATH}",
         f"--directory {WORKDIR}",
         f"--config {' '.join([f'{k}={v}' for k, v in METADATA.items()])}",
-        f"--use-conda",
+        "--use-conda",
         f"--conda-prefix {WORKDIR}/conda",
         f"--jobs {pipeline.jobs}",
         f"{' '.join(pipeline.output_files)}",

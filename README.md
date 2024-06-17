@@ -9,6 +9,11 @@
 [![Dynamic TOML Badge](https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbhklab%2FORCESTRA-api%2Fstaging%2Fpyproject.toml%3Ftoken%3DGHSAT0AAAAAACJ7UIIJLPEYVLIHZVHXLEUOZQUADVQ&query=project.version&label=staging&color=orange)
 ](https://github.com/bhklab/ORCESTRA-api/tree/staging)
 
+## Miro board of design:
+
+https://miro.com/app/board/uXjVKLKSUGQ=/
+
+
 ## Setup
 
 This project uses [Pixi](https://pixi.sh/dev/) to manage packages and the environment.
