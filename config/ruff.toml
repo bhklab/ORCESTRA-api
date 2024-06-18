@@ -24,9 +24,7 @@ select = [
   "N",   # pep8-naming
   "ANN", # flake8-annotations
   "BLE", # flake8-blind-except
-  "B",   # flake8-bugbear
   "A",   # flake8-builtins
-  "G",   # flake8-logging-format
   "ERA", # eradicate
   "RUF", # Ruff-specific rules
   "TCH", # flake8-type-checking

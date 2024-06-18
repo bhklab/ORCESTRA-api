@@ -1,35 +1,34 @@
 import time
 from functools import wraps
+from typing import Callable, List
+
 from fastapi import (
     APIRouter,
+    Body,
+    Depends,
     HTTPException,
     Path,
-    Depends,
-    Body,
 )
-
-from motor.motor_asyncio import AsyncIOMotorDatabase
-from orcestrator.models.Pipeline import (
-    CreatePipeline,
-    UpdatePipeline,
-    PipelineOut,
-)
-from orcestrator.common import get_logger
-
-from typing import List
 from fastapi_cache.decorator import cache
+from motor.motor_asyncio import AsyncIOMotorDatabase
 
+from orcestrator.common import get_logger
 from orcestrator.crud import crud_pipeline
 from orcestrator.db import get_db
+from orcestrator.models.Pipeline import (
+    CreatePipeline,
+    PipelineOut,
+    UpdatePipeline,
+)
 
 router = APIRouter()
 
 logger = get_logger()
 
 
-def log_execution_time(func):
+def log_execution_time(func: Callable) -> Callable:
     @wraps(func)
-    async def wrapper(*args, **kwargs):
+    async def wrapper(*args, **kwargs):  # noqa
         start_time = time.time()
         result = await func(*args, **kwargs)
         end_time = time.time()
@@ -38,7 +37,6 @@ def log_execution_time(func):
         return result
 
     return wrapper
-
 
 ###############################################################################
 # CREATE
@@ -116,7 +114,7 @@ async def update_pipeline(
 async def delete_pipeline(
     pipeline_name: str,
     db: AsyncIOMotorDatabase = Depends(get_db),
-):
+) -> PipelineOut:
     pipeline = await crud_pipeline.get_pipeline_by_name(pipeline_name, db)
     if pipeline is None:
         raise HTTPException(status_code=404, detail="Pipeline not found")

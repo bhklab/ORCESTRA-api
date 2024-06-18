@@ -1,6 +1,7 @@
 import logging
 import logging.config
 import os
+
 from google.cloud import logging as gcp_logging
 
 LOGGING: dict = {

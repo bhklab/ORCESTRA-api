@@ -1,9 +1,9 @@
-from pymongo.results import UpdateResult
-from orcestrator.common import get_logger
-from orcestrator.models.Pipeline import CreatePipeline, PipelineOut, UpdatePipeline
+from typing import List, Optional
+
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
-from typing import List, Optional
+from orcestrator.common import get_logger
+from orcestrator.models.Pipeline import CreatePipeline, PipelineOut, UpdatePipeline
 
 logger = get_logger()
 
@@ -63,22 +63,18 @@ async def update_pipeline_fields(
 
     if not existing_pipeline:
         raise ValueError("Pipeline not found")
-    # logger.debug(f"Updating pipeline {pipeline_name}")
-    # logger.debug(f"Existing pipeline: {existing_pipeline.model_dump_json()}")
-    # logger.debug(f"Updated pipeline: {updated_pipeline.model_dump_json()}")
+    logger.debug(f"Updating pipeline {pipeline_name}")
     updated_pipeline_data = updated_pipeline.model_dump()
     new_pipeline_data = {**existing_pipeline.model_dump(), **updated_pipeline_data}
-    
-    result: UpdateResult = await db["pipelines"].update_one(
+
+    result = await db["pipelines"].update_one(
         filter={"pipeline_name": pipeline_name},
         update={"$set": updated_pipeline_data},
     )
-    
+
     if result.modified_count == 0:
         raise ValueError("Pipeline not updated")
     return PipelineOut(**new_pipeline_data)
-
-
 
 
 ###############################################################################

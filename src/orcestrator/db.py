@@ -1,6 +1,7 @@
 from motor.motor_asyncio import AsyncIOMotorClient, AsyncIOMotorDatabase
-from orcestrator.common.config import settings
+
 from orcestrator.common import get_logger
+from orcestrator.common.config import settings
 
 logger = get_logger()
 
@@ -20,7 +21,7 @@ async def get_db() -> AsyncIOMotorDatabase:
     return db_client[db_name]
 
 
-async def connect_and_init_db():
+async def connect_and_init_db() -> None:
     global db_client
     try:
         db_client = AsyncIOMotorClient(settings.MONGO_URI)
@@ -30,7 +31,7 @@ async def connect_and_init_db():
         raise
 
 
-async def close_db_connect():
+async def close_db_connect() -> None:
     global db_client
     if db_client is None:
         logger.warning("Connection is None, nothing to close.")

@@ -11,8 +11,9 @@ from pydantic.functional_validators import BeforeValidator
 
 # Create a new type called PyObjectId
 # - type is a string
-# - before pydantic validates if the string is a valid ObjectId, the BeforeValidator `func` is called on it
-#  which in this case will convert the string to a string
+# - before pydantic validates if the string is a valid ObjectId,
+#   the BeforeValidator `func` is called on it
+#   which in this case will convert the string to a string
 #     - It will be represented as a `str` on the model so that it can be serialized to JSON.
 
 PyObjectId = Annotated[str, BeforeValidator(str)]

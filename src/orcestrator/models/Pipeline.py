@@ -1,16 +1,16 @@
+from datetime import datetime, timezone
 from typing import (
     List,
     Optional,
 )
-from datetime import datetime, timezone
 
 from pydantic import (
     BaseModel,
-    Field,
     ConfigDict,
+    Field,
 )
-from orcestrator.models.common import PyObjectId
 
+from orcestrator.models.common import PyObjectId
 
 class SnakemakePipeline(BaseModel):
     git_url: str
