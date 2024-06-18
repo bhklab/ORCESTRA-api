@@ -33,3 +33,8 @@ docker --version
 docker-compose --version
 # Docker Compose version v2.15.1
 ```
+
+
+## Status
+
+![alt text](./assets/06-18-2024_api_status.png)
