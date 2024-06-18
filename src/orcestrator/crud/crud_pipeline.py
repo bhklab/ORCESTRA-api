@@ -1,15 +1,15 @@
-
+from pymongo.results import UpdateResult
 from orcestrator.common import get_logger
-from orcestrator.models.Pipeline import (
-    CreatePipeline,
-    PipelineOut,
-)
+from orcestrator.models.Pipeline import CreatePipeline, PipelineOut, UpdatePipeline
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
 from typing import List, Optional
 
 logger = get_logger()
 
+
+###############################################################################
+# CREATE
 async def create_pipeline(
     pipeline: CreatePipeline,
     db: AsyncIOMotorDatabase,
@@ -22,6 +22,7 @@ async def create_pipeline(
 
     logger.info(f"Creating pipeline {pipeline.pipeline_name}")
     logger.debug(f"{pipeline.model_dump_json()}")
+
     new_pipeline = pipeline.model_dump()
     result = await db["pipelines"].insert_one(new_pipeline)
     new_pipeline["id"] = result.inserted_id
@@ -29,10 +30,13 @@ async def create_pipeline(
     return PipelineOut(**new_pipeline)
 
 
+###############################################################################
+# READ
 async def get_pipeline_by_name(
     pipeline_name: str,
     db: AsyncIOMotorDatabase,
 ) -> Optional[PipelineOut]:
+    """Query the database for a pipeline by name and return it if found."""
     pipeline = await db["pipelines"].find_one(
         filter={"pipeline_name": pipeline_name},
     )
@@ -46,3 +50,48 @@ async def get_all_pipelines(
 ) -> List[PipelineOut]:
     pipelines = await db["pipelines"].find().to_list(length=None)
     return [PipelineOut(**pipeline) for pipeline in pipelines]
+
+
+###############################################################################
+# UPDATE
+async def update_pipeline_fields(
+    pipeline_name: str,
+    updated_pipeline: UpdatePipeline,
+    db: AsyncIOMotorDatabase,
+) -> PipelineOut:
+    existing_pipeline = await get_pipeline_by_name(pipeline_name, db)
+
+    if not existing_pipeline:
+        raise ValueError("Pipeline not found")
+    # logger.debug(f"Updating pipeline {pipeline_name}")
+    # logger.debug(f"Existing pipeline: {existing_pipeline.model_dump_json()}")
+    # logger.debug(f"Updated pipeline: {updated_pipeline.model_dump_json()}")
+    updated_pipeline_data = updated_pipeline.model_dump()
+    new_pipeline_data = {**existing_pipeline.model_dump(), **updated_pipeline_data}
+    
+    result: UpdateResult = await db["pipelines"].update_one(
+        filter={"pipeline_name": pipeline_name},
+        update={"$set": updated_pipeline_data},
+    )
+    
+    if result.modified_count == 0:
+        raise ValueError("Pipeline not updated")
+    return PipelineOut(**new_pipeline_data)
+
+
+
+
+###############################################################################
+# DELETE
+
+
+async def delete_pipeline(
+    pipeline_name: str,
+    db: AsyncIOMotorDatabase,
+) -> None:
+    result = await db["pipelines"].delete_one(
+        filter={"pipeline_name": pipeline_name},
+    )
+    if result.deleted_count == 0:
+        raise ValueError("Pipeline not found")
+    logger.info(f"Deleted pipeline {pipeline_name}")
