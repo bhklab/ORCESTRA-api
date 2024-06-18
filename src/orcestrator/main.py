@@ -18,6 +18,7 @@ import os
 env = os.environ.get("ENV", "devel")
 logger = setup_logger(env)
 
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     try:
@@ -35,9 +36,9 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(lifespan=lifespan)
 
-app.include_router(router=pipeline.router, prefix="/api", tags=["pipelines"])
+app.include_router(router=pipeline.router, prefix="/api", tags=["Pipelines"])
 
-@app.get(path="/", response_class=HTMLResponse)
+@app.get(path="/", response_class=HTMLResponse, include_in_schema=False)
 async def read_root(db: AsyncIOMotorDatabase = Depends(get_db)):
     # Return a clickable link to the api docs as html
     return """
