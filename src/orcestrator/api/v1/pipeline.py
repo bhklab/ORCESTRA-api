@@ -38,6 +38,7 @@ def log_execution_time(func: Callable) -> Callable:
 
     return wrapper
 
+
 ###############################################################################
 # CREATE
 @router.post("/pipelines", response_model=PipelineOut)
@@ -46,6 +47,8 @@ async def create_pipeline(
     pipeline: CreatePipeline,
     db: AsyncIOMotorDatabase = Depends(get_db),
 ) -> PipelineOut:
+    logger.debug(f"Creating pipeline: {pipeline.model_dump()}")
+    logger.debug(f"db: {db.name}")
     try:
         new_pipeline = await crud_pipeline.create_pipeline(pipeline, db)
     except ValueError as e:
@@ -67,6 +70,7 @@ async def get_pipeline_by_name(
 ) -> PipelineOut:
     pipeline = await crud_pipeline.get_pipeline_by_name(pipeline_name, db)
     if pipeline is None:
+        logger.debug(f"Pipeline {pipeline_name} not found")
         raise HTTPException(status_code=404, detail="Pipeline not found")
     return pipeline
 
@@ -79,12 +83,14 @@ async def get_pipelines(
 ) -> List[PipelineOut]:
     pipelines = await crud_pipeline.get_all_pipelines(db)
     if not pipelines:
+        logger.debug("No pipelines found")
         raise HTTPException(status_code=404, detail="No pipelines found")
     return pipelines
 
 
 ###############################################################################
 # UPDATE
+
 
 @router.put("/pipelines/{pipeline_name}", response_model=PipelineOut)
 async def update_pipeline(
@@ -93,8 +99,8 @@ async def update_pipeline(
     db: AsyncIOMotorDatabase = Depends(get_db),
 ) -> PipelineOut:
     if updated_pipeline is None:
+        logger.debug("No fields provided to update")
         raise HTTPException(status_code=400, detail="No fields to update")
-
     try:
         resolved_pipeline_update = await crud_pipeline.update_pipeline_fields(
             pipeline_name, updated_pipeline, db
@@ -108,6 +114,7 @@ async def update_pipeline(
 ###############################################################################
 # DELETE
 
+
 @router.delete("/pipelines/{pipeline_name}", response_model=PipelineOut)
 @log_execution_time
 @cache(expire=60)
@@ -120,3 +127,17 @@ async def delete_pipeline(
         raise HTTPException(status_code=404, detail="Pipeline not found")
     await db["pipelines"].delete_one({"pipeline_name": pipeline_name})
     return pipeline
+
+
+@router.delete("/pipelines", response_model=List[PipelineOut])
+@log_execution_time
+async def delete_all_pipelines(
+    db: AsyncIOMotorDatabase = Depends(get_db),
+) -> List[PipelineOut]:
+    pipelines = await crud_pipeline.get_all_pipelines(db)
+    if not pipelines:
+        e = HTTPException(status_code=404, detail="No pipelines found")
+        logger.warning(e.detail)
+    for pipeline in pipelines:
+        await delete_pipeline(pipeline.pipeline_name, db)
+    return pipelines
