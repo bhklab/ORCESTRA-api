@@ -4,6 +4,7 @@ services:
   app:
     depends_on:
       - redis-cache
+      - local-mongo
     build:
       context: ./
       dockerfile: Dockerfile
@@ -12,8 +13,10 @@ services:
     volumes:
       - .:/app
       - /app/.pixi # Ignore this directory in the volume
-    env_file:
-      - .env
+    environment:
+      - MONGO_URI=mongodb://local-mongo:27017
+      - MONGO_DB=orcestra2_test_db
+      - ENV=devel
     networks:
       - app-network
 
@@ -23,15 +26,28 @@ services:
     container_name: redis-cache
     restart: on-failure
     ports:
-      - '6379:6379'
+      - "6379:6379"
     command: redis-server
     volumes:
       - cache:/data
     networks:
       - app-network
 
+  local-mongo:
+    image: mongo:latest
+    container_name: local-mongo
+    restart: on-failure
+    ports:
+      - "27017:27017"
+    volumes:
+      - local-mongo-data:/data/db
+    networks:
+      - app-network
+
 volumes:
   cache:
+    driver: local
+  local-mongo-data:
     driver: local
 
 networks:

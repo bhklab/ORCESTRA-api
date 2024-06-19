@@ -208,7 +208,6 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/distlib-0.3.8-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/exceptiongroup-1.2.0-pyhd8ed1ab_2.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/execnet-2.1.1-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/faker-25.8.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/filelock-3.15.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/ghp-import-2.1.0-pyhd8ed1ab_0.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/noarch/h11-0.14.0-pyhd8ed1ab_0.tar.bz2
@@ -257,6 +256,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/pytest-8.2.2-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pytest-asyncio-0.23.7-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pytest-cov-5.0.0-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/pytest-dependency-0.5.1-pyh9f0ad1d_0.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/noarch/pytest-xdist-3.6.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/python-3.11.0-ha43d526_1_cpython.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/python-dateutil-2.9.0-pyhd8ed1ab_0.conda
@@ -307,7 +307,6 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/66/a0/d27ec874fb0a86b3609b73161a15cf633924888afa05c1673b3ab5a6c3f4/grpc_google_iam_v1-0.13.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/b1/a8/658ad3b2eeb52fbd1d6da9ad36cc39a6127fd43eb72c64bead4335623be5/grpcio-1.64.1-cp311-cp311-manylinux_2_17_aarch64.whl
       - pypi: https://files.pythonhosted.org/packages/33/63/56a8c67a77947d0ebc31a03c5dea8d2c933ab3ad30019b0bafa3e50a5ef6/grpcio_status-1.62.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/72/aa/c8ab31ecffa2579f765d14eb09a56db545b101bf4c387b539bb8b5fdd340/mongomock_motor-0.0.30-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/c1/94/e09b22a1501ac8960de4d6ff4e8d21fb7ef67063a3f4454823886fee43b5/motor-3.4.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/3f/e1/7fdd0f39565df3af87d6c2903fb66a7d529fbd0a8a066045d7a5b6ad1145/multidict-6.0.5-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
       - pypi: https://files.pythonhosted.org/packages/96/8b/0023592cdd5ecfcd85465053795b5ff86766151c7ff1bd139efc69c54b76/orjson-3.10.5-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
@@ -345,7 +344,6 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/distlib-0.3.8-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/exceptiongroup-1.2.0-pyhd8ed1ab_2.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/execnet-2.1.1-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/faker-25.8.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/filelock-3.15.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/ghp-import-2.1.0-pyhd8ed1ab_0.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/noarch/h11-0.14.0-pyhd8ed1ab_0.tar.bz2
@@ -389,6 +387,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/pytest-8.2.2-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pytest-asyncio-0.23.7-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pytest-cov-5.0.0-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/pytest-dependency-0.5.1-pyh9f0ad1d_0.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/noarch/pytest-xdist-3.6.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/python-3.11.0-h3ba56d0_1_cpython.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/python-dateutil-2.9.0-pyhd8ed1ab_0.conda
@@ -439,7 +438,6 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/66/a0/d27ec874fb0a86b3609b73161a15cf633924888afa05c1673b3ab5a6c3f4/grpc_google_iam_v1-0.13.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/11/8d/049fee0b7374b948d47a0301fb97d71af067ffd5e5d8fbe9190475a76065/grpcio-1.64.1-cp311-cp311-macosx_10_9_universal2.whl
       - pypi: https://files.pythonhosted.org/packages/33/63/56a8c67a77947d0ebc31a03c5dea8d2c933ab3ad30019b0bafa3e50a5ef6/grpcio_status-1.62.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/72/aa/c8ab31ecffa2579f765d14eb09a56db545b101bf4c387b539bb8b5fdd340/mongomock_motor-0.0.30-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/c1/94/e09b22a1501ac8960de4d6ff4e8d21fb7ef67063a3f4454823886fee43b5/motor-3.4.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/02/c1/b15ecceb6ffa5081ed2ed450aea58d65b0e0358001f2b426705f9f41f4c2/multidict-6.0.5-cp311-cp311-macosx_11_0_arm64.whl
       - pypi: https://files.pythonhosted.org/packages/5b/0d/96079bcd0d7f6cda1719c1cbb07bb136049123f46b70be085610f625f6cd/orjson-3.10.5-cp311-cp311-macosx_10_15_x86_64.macosx_11_0_arm64.macosx_10_15_universal2.whl
@@ -779,22 +777,6 @@ packages:
 - kind: pypi
   name: aiohttp
   version: 3.9.5
-  url: https://files.pythonhosted.org/packages/78/28/2080ed3140b7d25c406f77fe2d5776edd9c7a25228f7f905d7058a6e2d61/aiohttp-3.9.5-cp312-cp312-macosx_11_0_arm64.whl
-  sha256: d153f652a687a8e95ad367a86a61e8d53d528b0530ef382ec5aaf533140ed00f
-  requires_dist:
-  - aiosignal>=1.1.2
-  - attrs>=17.3.0
-  - frozenlist>=1.1.1
-  - multidict<7.0,>=4.5
-  - yarl<2.0,>=1.0
-  - async-timeout<5.0,>=4.0 ; python_version < '3.11'
-  - brotlicffi ; platform_python_implementation != 'CPython' and extra == 'speedups'
-  - brotli ; platform_python_implementation == 'CPython' and extra == 'speedups'
-  - aiodns ; (sys_platform == 'linux' or sys_platform == 'darwin') and extra == 'speedups'
-  requires_python: '>=3.8'
-- kind: pypi
-  name: aiohttp
-  version: 3.9.5
   url: https://files.pythonhosted.org/packages/d3/c0/cd9d02e1b9e1b1073c94f7692ffe69067987c4acc0252bbc0c7645360d37/aiohttp-3.9.5-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
   sha256: 82a6a97d9771cb48ae16979c3a3a9a18b600a8505b1115cfe354dfb2054468b4
   requires_dist:
@@ -811,8 +793,8 @@ packages:
 - kind: pypi
   name: aiohttp
   version: 3.9.5
-  url: https://files.pythonhosted.org/packages/4e/78/266be6e31daad1a2dc99c777dfb12b62044691ec573b6e48409a0d804fc7/aiohttp-3.9.5-cp311-cp311-macosx_11_0_arm64.whl
-  sha256: 639d0042b7670222f33b0028de6b4e2fad6451462ce7df2af8aee37dcac55424
+  url: https://files.pythonhosted.org/packages/78/28/2080ed3140b7d25c406f77fe2d5776edd9c7a25228f7f905d7058a6e2d61/aiohttp-3.9.5-cp312-cp312-macosx_11_0_arm64.whl
+  sha256: d153f652a687a8e95ad367a86a61e8d53d528b0530ef382ec5aaf533140ed00f
   requires_dist:
   - aiosignal>=1.1.2
   - attrs>=17.3.0
@@ -829,6 +811,22 @@ packages:
   version: 3.9.5
   url: https://files.pythonhosted.org/packages/73/f1/084f82069428b87d2b5c1e3e2d1d51911981f4cccd94c5c3691f10061c99/aiohttp-3.9.5-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
   sha256: f26383adb94da5e7fb388d441bf09c61e5e35f455a3217bfd790c6b6bc64b2ee
+  requires_dist:
+  - aiosignal>=1.1.2
+  - attrs>=17.3.0
+  - frozenlist>=1.1.1
+  - multidict<7.0,>=4.5
+  - yarl<2.0,>=1.0
+  - async-timeout<5.0,>=4.0 ; python_version < '3.11'
+  - brotlicffi ; platform_python_implementation != 'CPython' and extra == 'speedups'
+  - brotli ; platform_python_implementation == 'CPython' and extra == 'speedups'
+  - aiodns ; (sys_platform == 'linux' or sys_platform == 'darwin') and extra == 'speedups'
+  requires_python: '>=3.8'
+- kind: pypi
+  name: aiohttp
+  version: 3.9.5
+  url: https://files.pythonhosted.org/packages/4e/78/266be6e31daad1a2dc99c777dfb12b62044691ec573b6e48409a0d804fc7/aiohttp-3.9.5-cp311-cp311-macosx_11_0_arm64.whl
+  sha256: 639d0042b7670222f33b0028de6b4e2fad6451462ce7df2af8aee37dcac55424
   requires_dist:
   - aiosignal>=1.1.2
   - attrs>=17.3.0
@@ -1204,14 +1202,14 @@ packages:
 - kind: pypi
   name: charset-normalizer
   version: 3.3.2
-  url: https://files.pythonhosted.org/packages/3a/52/9f9d17c3b54dc238de384c4cb5a2ef0e27985b42a0e5cc8e8a31d918d48d/charset_normalizer-3.3.2-cp312-cp312-macosx_11_0_arm64.whl
-  sha256: 55086ee1064215781fff39a1af09518bc9255b50d6333f2e4c74ca09fac6a8f6
+  url: https://files.pythonhosted.org/packages/99/b0/9c365f6d79a9f0f3c379ddb40a256a67aa69c59609608fe7feb6235896e1/charset_normalizer-3.3.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+  sha256: 8f4a014bc36d3c57402e2977dada34f9c12300af536839dc38c0beab8878f38a
   requires_python: '>=3.7.0'
 - kind: pypi
   name: charset-normalizer
   version: 3.3.2
-  url: https://files.pythonhosted.org/packages/99/b0/9c365f6d79a9f0f3c379ddb40a256a67aa69c59609608fe7feb6235896e1/charset_normalizer-3.3.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
-  sha256: 8f4a014bc36d3c57402e2977dada34f9c12300af536839dc38c0beab8878f38a
+  url: https://files.pythonhosted.org/packages/3a/52/9f9d17c3b54dc238de384c4cb5a2ef0e27985b42a0e5cc8e8a31d918d48d/charset_normalizer-3.3.2-cp312-cp312-macosx_11_0_arm64.whl
+  sha256: 55086ee1064215781fff39a1af09518bc9255b50d6333f2e4c74ca09fac6a8f6
   requires_python: '>=3.7.0'
 - kind: conda
   name: charset-normalizer
@@ -1505,24 +1503,6 @@ packages:
   purls: []
   size: 128302
   timestamp: 1710362329008
-- kind: conda
-  name: faker
-  version: 25.8.0
-  build: pyhd8ed1ab_0
-  subdir: noarch
-  noarch: python
-  url: https://conda.anaconda.org/conda-forge/noarch/faker-25.8.0-pyhd8ed1ab_0.conda
-  sha256: 39cd88e11c2c58ae7b1c7977c76d34ff315436d4b58250c632f075aa5bd4b233
-  md5: ffcb6c30c22bc6f454f8313e3bc60951
-  depends:
-  - python >=3.8
-  - python-dateutil >=2.4
-  license: MIT
-  license_family: MIT
-  purls:
-  - pkg:pypi/faker?source=conda-forge-mapping
-  size: 1390488
-  timestamp: 1717824280433
 - kind: pypi
   name: fastapi
   version: 0.111.0
@@ -1596,26 +1576,26 @@ packages:
 - kind: pypi
   name: frozenlist
   version: 1.4.1
-  url: https://files.pythonhosted.org/packages/3f/ab/c543c13824a615955f57e082c8a5ee122d2d5368e80084f2834e6f4feced/frozenlist-1.4.1-cp312-cp312-macosx_11_0_arm64.whl
-  sha256: c9c92be9fd329ac801cc420e08452b70e7aeab94ea4233a4804f0915c14eba9b
-  requires_python: '>=3.8'
-- kind: pypi
-  name: frozenlist
-  version: 1.4.1
   url: https://files.pythonhosted.org/packages/a9/b8/438cfd92be2a124da8259b13409224d9b19ef8f5a5b2507174fc7e7ea18f/frozenlist-1.4.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
   sha256: 5c3894db91f5a489fc8fa6a9991820f368f0b3cbdb9cd8849547ccfab3392d86
   requires_python: '>=3.8'
 - kind: pypi
   name: frozenlist
   version: 1.4.1
-  url: https://files.pythonhosted.org/packages/5b/9c/f12b69997d3891ddc0d7895999a00b0c6a67f66f79498c0e30f27876435d/frozenlist-1.4.1-cp311-cp311-macosx_11_0_arm64.whl
-  sha256: fde5bd59ab5357e3853313127f4d3565fc7dad314a74d7b5d43c22c6a5ed2ced
+  url: https://files.pythonhosted.org/packages/3f/ab/c543c13824a615955f57e082c8a5ee122d2d5368e80084f2834e6f4feced/frozenlist-1.4.1-cp312-cp312-macosx_11_0_arm64.whl
+  sha256: c9c92be9fd329ac801cc420e08452b70e7aeab94ea4233a4804f0915c14eba9b
   requires_python: '>=3.8'
 - kind: pypi
   name: frozenlist
   version: 1.4.1
   url: https://files.pythonhosted.org/packages/ac/6e/e0322317b7c600ba21dec224498c0c5959b2bce3865277a7c0badae340a9/frozenlist-1.4.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
   sha256: 722e1124aec435320ae01ee3ac7bec11a5d47f25d0ed6328f2273d287bc3abb0
+  requires_python: '>=3.8'
+- kind: pypi
+  name: frozenlist
+  version: 1.4.1
+  url: https://files.pythonhosted.org/packages/5b/9c/f12b69997d3891ddc0d7895999a00b0c6a67f66f79498c0e30f27876435d/frozenlist-1.4.1-cp311-cp311-macosx_11_0_arm64.whl
+  sha256: fde5bd59ab5357e3853313127f4d3565fc7dad314a74d7b5d43c22c6a5ed2ced
   requires_python: '>=3.8'
 - kind: conda
   name: ghp-import
@@ -1777,14 +1757,6 @@ packages:
 - kind: pypi
   name: grpcio
   version: 1.64.1
-  url: https://files.pythonhosted.org/packages/60/b9/b3d5ead82ff4456d68671ae7b4f6745a31ff7185326fbb70ca1d450ae5e9/grpcio-1.64.1-cp312-cp312-macosx_10_9_universal2.whl
-  sha256: 62b4e6eb7bf901719fce0ca83e3ed474ae5022bb3827b0a501e056458c51c0a1
-  requires_dist:
-  - grpcio-tools>=1.64.1 ; extra == 'protobuf'
-  requires_python: '>=3.8'
-- kind: pypi
-  name: grpcio
-  version: 1.64.1
   url: https://files.pythonhosted.org/packages/9f/91/a93f589fc85c6cc0c39006e860fe119fc1c348e72b79cf55b03c85311257/grpcio-1.64.1-cp312-cp312-manylinux_2_17_aarch64.whl
   sha256: ee73a2f5ca4ba44fa33b4d7d2c71e2c8a9e9f78d53f6507ad68e7d2ad5f64a22
   requires_dist:
@@ -1793,8 +1765,8 @@ packages:
 - kind: pypi
   name: grpcio
   version: 1.64.1
-  url: https://files.pythonhosted.org/packages/11/8d/049fee0b7374b948d47a0301fb97d71af067ffd5e5d8fbe9190475a76065/grpcio-1.64.1-cp311-cp311-macosx_10_9_universal2.whl
-  sha256: bbc5b1d78a7822b0a84c6f8917faa986c1a744e65d762ef6d8be9d75677af2ca
+  url: https://files.pythonhosted.org/packages/60/b9/b3d5ead82ff4456d68671ae7b4f6745a31ff7185326fbb70ca1d450ae5e9/grpcio-1.64.1-cp312-cp312-macosx_10_9_universal2.whl
+  sha256: 62b4e6eb7bf901719fce0ca83e3ed474ae5022bb3827b0a501e056458c51c0a1
   requires_dist:
   - grpcio-tools>=1.64.1 ; extra == 'protobuf'
   requires_python: '>=3.8'
@@ -1803,6 +1775,14 @@ packages:
   version: 1.64.1
   url: https://files.pythonhosted.org/packages/b1/a8/658ad3b2eeb52fbd1d6da9ad36cc39a6127fd43eb72c64bead4335623be5/grpcio-1.64.1-cp311-cp311-manylinux_2_17_aarch64.whl
   sha256: 5841dd1f284bd1b3d8a6eca3a7f062b06f1eec09b184397e1d1d43447e89a7ae
+  requires_dist:
+  - grpcio-tools>=1.64.1 ; extra == 'protobuf'
+  requires_python: '>=3.8'
+- kind: pypi
+  name: grpcio
+  version: 1.64.1
+  url: https://files.pythonhosted.org/packages/11/8d/049fee0b7374b948d47a0301fb97d71af067ffd5e5d8fbe9190475a76065/grpcio-1.64.1-cp311-cp311-macosx_10_9_universal2.whl
+  sha256: bbc5b1d78a7822b0a84c6f8917faa986c1a744e65d762ef6d8be9d75677af2ca
   requires_dist:
   - grpcio-tools>=1.64.1 ; extra == 'protobuf'
   requires_python: '>=3.8'
@@ -1973,16 +1953,16 @@ packages:
 - kind: pypi
   name: httptools
   version: 0.6.1
-  url: https://files.pythonhosted.org/packages/60/13/b62e086b650752adf9094b7e62dab97f4cb7701005664544494b7956a51e/httptools-0.6.1-cp312-cp312-macosx_10_9_universal2.whl
-  sha256: 75c8022dca7935cba14741a42744eee13ba05db00b27a4b940f0d646bd4d56d0
+  url: https://files.pythonhosted.org/packages/d0/a4/b503851c40f20bcbd453db24ed35d961f62abdae0dccc8f672cd5d350d87/httptools-0.6.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+  sha256: 6f58e335a1402fb5a650e271e8c2d03cfa7cea46ae124649346d17bd30d59c90
   requires_dist:
   - cython<0.30.0,>=0.29.24 ; extra == 'test'
   requires_python: '>=3.8.0'
 - kind: pypi
   name: httptools
   version: 0.6.1
-  url: https://files.pythonhosted.org/packages/d0/a4/b503851c40f20bcbd453db24ed35d961f62abdae0dccc8f672cd5d350d87/httptools-0.6.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
-  sha256: 6f58e335a1402fb5a650e271e8c2d03cfa7cea46ae124649346d17bd30d59c90
+  url: https://files.pythonhosted.org/packages/60/13/b62e086b650752adf9094b7e62dab97f4cb7701005664544494b7956a51e/httptools-0.6.1-cp312-cp312-macosx_10_9_universal2.whl
+  sha256: 75c8022dca7935cba14741a42744eee13ba05db00b27a4b940f0d646bd4d56d0
   requires_dist:
   - cython<0.30.0,>=0.29.24 ; extra == 'test'
   requires_python: '>=3.8.0'
@@ -2732,14 +2712,14 @@ packages:
 - kind: pypi
   name: markupsafe
   version: 2.1.5
-  url: https://files.pythonhosted.org/packages/53/bd/583bf3e4c8d6a321938c13f49d44024dbe5ed63e0a7ba127e454a66da974/MarkupSafe-2.1.5-cp312-cp312-macosx_10_9_universal2.whl
-  sha256: 8dec4936e9c3100156f8a2dc89c4b88d5c435175ff03413b443469c7c8c5f4d1
+  url: https://files.pythonhosted.org/packages/51/b5/5d8ec796e2a08fc814a2c7d2584b55f889a55cf17dd1a90f2beb70744e5c/MarkupSafe-2.1.5-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+  sha256: ac07bad82163452a6884fe8fa0963fb98c2346ba78d779ec06bd7a6262132aee
   requires_python: '>=3.7'
 - kind: pypi
   name: markupsafe
   version: 2.1.5
-  url: https://files.pythonhosted.org/packages/51/b5/5d8ec796e2a08fc814a2c7d2584b55f889a55cf17dd1a90f2beb70744e5c/MarkupSafe-2.1.5-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
-  sha256: ac07bad82163452a6884fe8fa0963fb98c2346ba78d779ec06bd7a6262132aee
+  url: https://files.pythonhosted.org/packages/53/bd/583bf3e4c8d6a321938c13f49d44024dbe5ed63e0a7ba127e454a66da974/MarkupSafe-2.1.5-cp312-cp312-macosx_10_9_universal2.whl
+  sha256: 8dec4936e9c3100156f8a2dc89c4b88d5c435175ff03413b443469c7c8c5f4d1
   requires_python: '>=3.7'
 - kind: conda
   name: markupsafe
@@ -2896,14 +2876,6 @@ packages:
   - pkg:pypi/mongomock?source=conda-forge-mapping
   size: 49726
   timestamp: 1644681949667
-- kind: pypi
-  name: mongomock-motor
-  version: 0.0.30
-  url: https://files.pythonhosted.org/packages/72/aa/c8ab31ecffa2579f765d14eb09a56db545b101bf4c387b539bb8b5fdd340/mongomock_motor-0.0.30-py3-none-any.whl
-  sha256: 5eb41488ce5825ebf1a1ddc90c6ff2c870b2d8506bd1096790408f53068f0ca6
-  requires_dist:
-  - mongomock<5.0.0,>=3.23.0
-  requires_python: '>=3.6'
 - kind: conda
   name: more-itertools
   version: 10.3.0
@@ -2944,26 +2916,26 @@ packages:
 - kind: pypi
   name: multidict
   version: 6.0.5
-  url: https://files.pythonhosted.org/packages/9c/18/9565f32c19d186168731e859692dfbc0e98f66a1dcf9e14d69c02a78b75a/multidict-6.0.5-cp312-cp312-macosx_11_0_arm64.whl
-  sha256: 2ffc42c922dbfddb4a4c3b438eb056828719f07608af27d163191cb3e3aa6cc5
-  requires_python: '>=3.7'
-- kind: pypi
-  name: multidict
-  version: 6.0.5
   url: https://files.pythonhosted.org/packages/4e/4e/3815190e73e6ef101b5681c174c541bf972a1b064e926e56eea78d06e858/multidict-6.0.5-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
   sha256: ceb3b7e6a0135e092de86110c5a74e46bda4bd4fbfeeb3a3bcec79c0f861e450
   requires_python: '>=3.7'
 - kind: pypi
   name: multidict
   version: 6.0.5
-  url: https://files.pythonhosted.org/packages/02/c1/b15ecceb6ffa5081ed2ed450aea58d65b0e0358001f2b426705f9f41f4c2/multidict-6.0.5-cp311-cp311-macosx_11_0_arm64.whl
-  sha256: 612d1156111ae11d14afaf3a0669ebf6c170dbb735e510a7438ffe2369a847fd
+  url: https://files.pythonhosted.org/packages/9c/18/9565f32c19d186168731e859692dfbc0e98f66a1dcf9e14d69c02a78b75a/multidict-6.0.5-cp312-cp312-macosx_11_0_arm64.whl
+  sha256: 2ffc42c922dbfddb4a4c3b438eb056828719f07608af27d163191cb3e3aa6cc5
   requires_python: '>=3.7'
 - kind: pypi
   name: multidict
   version: 6.0.5
   url: https://files.pythonhosted.org/packages/3f/e1/7fdd0f39565df3af87d6c2903fb66a7d529fbd0a8a066045d7a5b6ad1145/multidict-6.0.5-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
   sha256: 7be7047bd08accdb7487737631d25735c9a04327911de89ff1b26b81745bd4e3
+  requires_python: '>=3.7'
+- kind: pypi
+  name: multidict
+  version: 6.0.5
+  url: https://files.pythonhosted.org/packages/02/c1/b15ecceb6ffa5081ed2ed450aea58d65b0e0358001f2b426705f9f41f4c2/multidict-6.0.5-cp311-cp311-macosx_11_0_arm64.whl
+  sha256: 612d1156111ae11d14afaf3a0669ebf6c170dbb735e510a7438ffe2369a847fd
   requires_python: '>=3.7'
 - kind: conda
   name: ncurses
@@ -3076,26 +3048,26 @@ packages:
 - kind: pypi
   name: orjson
   version: 3.10.5
-  url: https://files.pythonhosted.org/packages/da/26/98e34b9b442fb36e1ec0fd468006118684d182c986007403c6fb19490337/orjson-3.10.5-cp312-cp312-macosx_10_15_x86_64.macosx_11_0_arm64.macosx_10_15_universal2.whl
-  sha256: 68f85ecae7af14a585a563ac741b0547a3f291de81cd1e20903e79f25170458f
-  requires_python: '>=3.8'
-- kind: pypi
-  name: orjson
-  version: 3.10.5
   url: https://files.pythonhosted.org/packages/f0/89/ec0d805c9e912b9ee61483f04533b6d42359fe75a94332abf2fa9a257489/orjson-3.10.5-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
   sha256: 28afa96f496474ce60d3340fe8d9a263aa93ea01201cd2bad844c45cd21f5268
   requires_python: '>=3.8'
 - kind: pypi
   name: orjson
   version: 3.10.5
-  url: https://files.pythonhosted.org/packages/5b/0d/96079bcd0d7f6cda1719c1cbb07bb136049123f46b70be085610f625f6cd/orjson-3.10.5-cp311-cp311-macosx_10_15_x86_64.macosx_11_0_arm64.macosx_10_15_universal2.whl
-  sha256: cdf7365063e80899ae3a697def1277c17a7df7ccfc979990a403dfe77bb54d40
+  url: https://files.pythonhosted.org/packages/da/26/98e34b9b442fb36e1ec0fd468006118684d182c986007403c6fb19490337/orjson-3.10.5-cp312-cp312-macosx_10_15_x86_64.macosx_11_0_arm64.macosx_10_15_universal2.whl
+  sha256: 68f85ecae7af14a585a563ac741b0547a3f291de81cd1e20903e79f25170458f
   requires_python: '>=3.8'
 - kind: pypi
   name: orjson
   version: 3.10.5
   url: https://files.pythonhosted.org/packages/96/8b/0023592cdd5ecfcd85465053795b5ff86766151c7ff1bd139efc69c54b76/orjson-3.10.5-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
   sha256: 6b68742c469745d0e6ca5724506858f75e2f1e5b59a4315861f9e2b1df77775a
+  requires_python: '>=3.8'
+- kind: pypi
+  name: orjson
+  version: 3.10.5
+  url: https://files.pythonhosted.org/packages/5b/0d/96079bcd0d7f6cda1719c1cbb07bb136049123f46b70be085610f625f6cd/orjson-3.10.5-cp311-cp311-macosx_10_15_x86_64.macosx_11_0_arm64.macosx_10_15_universal2.whl
+  sha256: cdf7365063e80899ae3a697def1277c17a7df7ccfc979990a403dfe77bb54d40
   requires_python: '>=3.8'
 - kind: conda
   name: packaging
@@ -3151,18 +3123,6 @@ packages:
 - kind: pypi
   name: pendulum
   version: 3.0.0
-  url: https://files.pythonhosted.org/packages/12/e6/08f462f6ea87e2159f19b43ff88231d26e02bda31c10bcb29290a617ace4/pendulum-3.0.0-cp312-cp312-macosx_11_0_arm64.whl
-  sha256: a38ad2121c5ec7c4c190c7334e789c3b4624798859156b138fcc4d92295835dc
-  requires_dist:
-  - python-dateutil>=2.6
-  - tzdata>=2020.1
-  - backports-zoneinfo>=0.2.1 ; python_version < '3.9'
-  - time-machine>=2.6.0 ; implementation_name != 'pypy'
-  - importlib-resources>=5.9.0 ; python_version < '3.9'
-  requires_python: '>=3.8'
-- kind: pypi
-  name: pendulum
-  version: 3.0.0
   url: https://files.pythonhosted.org/packages/47/29/b6877f6b53b91356c2c56d19ddab17b165ca994ad1e57b32c089e79f3fb5/pendulum-3.0.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
   sha256: fde4d0b2024b9785f66b7f30ed59281bd60d63d9213cda0eb0910ead777f6d37
   requires_dist:
@@ -3175,8 +3135,8 @@ packages:
 - kind: pypi
   name: pendulum
   version: 3.0.0
-  url: https://files.pythonhosted.org/packages/68/e5/0f9d8351242ddb119a40b41c0cf1d0c74cc243829eea6811f753a8ecf15f/pendulum-3.0.0-cp311-cp311-macosx_11_0_arm64.whl
-  sha256: 6c035f03a3e565ed132927e2c1b691de0dbf4eb53b02a5a3c5a97e1a64e17bec
+  url: https://files.pythonhosted.org/packages/12/e6/08f462f6ea87e2159f19b43ff88231d26e02bda31c10bcb29290a617ace4/pendulum-3.0.0-cp312-cp312-macosx_11_0_arm64.whl
+  sha256: a38ad2121c5ec7c4c190c7334e789c3b4624798859156b138fcc4d92295835dc
   requires_dist:
   - python-dateutil>=2.6
   - tzdata>=2020.1
@@ -3189,6 +3149,18 @@ packages:
   version: 3.0.0
   url: https://files.pythonhosted.org/packages/30/43/70d0a08e5d6ca434ba139d19ec2a4847b0a3e461fbb82e680a9b6a4237ef/pendulum-3.0.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
   sha256: 597e66e63cbd68dd6d58ac46cb7a92363d2088d37ccde2dae4332ef23e95cd00
+  requires_dist:
+  - python-dateutil>=2.6
+  - tzdata>=2020.1
+  - backports-zoneinfo>=0.2.1 ; python_version < '3.9'
+  - time-machine>=2.6.0 ; implementation_name != 'pypy'
+  - importlib-resources>=5.9.0 ; python_version < '3.9'
+  requires_python: '>=3.8'
+- kind: pypi
+  name: pendulum
+  version: 3.0.0
+  url: https://files.pythonhosted.org/packages/68/e5/0f9d8351242ddb119a40b41c0cf1d0c74cc243829eea6811f753a8ecf15f/pendulum-3.0.0-cp311-cp311-macosx_11_0_arm64.whl
+  sha256: 6c035f03a3e565ed132927e2c1b691de0dbf4eb53b02a5a3c5a97e1a64e17bec
   requires_dist:
   - python-dateutil>=2.6
   - tzdata>=2020.1
@@ -3318,14 +3290,14 @@ packages:
 - kind: pypi
   name: protobuf
   version: 4.25.3
-  url: https://files.pythonhosted.org/packages/f3/bf/26deba06a4c910a85f78245cac7698f67cedd7efe00d04f6b3e1b3506a59/protobuf-4.25.3-cp37-abi3-macosx_10_9_universal2.whl
-  sha256: f1279ab38ecbfae7e456a108c5c0681e4956d5b1090027c1de0f934dfdb4b35c
+  url: https://files.pythonhosted.org/packages/d8/82/aefe901174b5a618daee511ddd00342193c1b545e3cd6a2cd6df9ba452b5/protobuf-4.25.3-cp37-abi3-manylinux2014_aarch64.whl
+  sha256: e7cb0ae90dd83727f0c0718634ed56837bfeeee29a5f82a7514c03ee1364c019
   requires_python: '>=3.8'
 - kind: pypi
   name: protobuf
   version: 4.25.3
-  url: https://files.pythonhosted.org/packages/d8/82/aefe901174b5a618daee511ddd00342193c1b545e3cd6a2cd6df9ba452b5/protobuf-4.25.3-cp37-abi3-manylinux2014_aarch64.whl
-  sha256: e7cb0ae90dd83727f0c0718634ed56837bfeeee29a5f82a7514c03ee1364c019
+  url: https://files.pythonhosted.org/packages/f3/bf/26deba06a4c910a85f78245cac7698f67cedd7efe00d04f6b3e1b3506a59/protobuf-4.25.3-cp37-abi3-macosx_10_9_universal2.whl
+  sha256: f1279ab38ecbfae7e456a108c5c0681e4956d5b1090027c1de0f934dfdb4b35c
   requires_python: '>=3.8'
 - kind: conda
   name: ptyprocess
@@ -3408,16 +3380,16 @@ packages:
 - kind: pypi
   name: pydantic-core
   version: 2.18.4
-  url: https://files.pythonhosted.org/packages/e9/93/46f546b40aba72683032c167aef9ccd568a54e28f28687081d10a6735294/pydantic_core-2.18.4-cp312-cp312-macosx_11_0_arm64.whl
-  sha256: 2fdf2156aa3d017fddf8aea5adfba9f777db1d6022d392b682d2a8329e087cef
+  url: https://files.pythonhosted.org/packages/e5/84/864556db336393f2433eda50b7e047a8d485b95dd48d1d277750ce0042bf/pydantic_core-2.18.4-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+  sha256: 4748321b5078216070b151d5271ef3e7cc905ab170bbfd27d5c83ee3ec436695
   requires_dist:
   - typing-extensions>=4.6.0,!=4.7.0
   requires_python: '>=3.8'
 - kind: pypi
   name: pydantic-core
   version: 2.18.4
-  url: https://files.pythonhosted.org/packages/e5/84/864556db336393f2433eda50b7e047a8d485b95dd48d1d277750ce0042bf/pydantic_core-2.18.4-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
-  sha256: 4748321b5078216070b151d5271ef3e7cc905ab170bbfd27d5c83ee3ec436695
+  url: https://files.pythonhosted.org/packages/e9/93/46f546b40aba72683032c167aef9ccd568a54e28f28687081d10a6735294/pydantic_core-2.18.4-cp312-cp312-macosx_11_0_arm64.whl
+  sha256: 2fdf2156aa3d017fddf8aea5adfba9f777db1d6022d392b682d2a8329e087cef
   requires_dist:
   - typing-extensions>=4.6.0,!=4.7.0
   requires_python: '>=3.8'
@@ -3491,28 +3463,6 @@ packages:
 - kind: pypi
   name: pymongo
   version: 4.7.3
-  url: https://files.pythonhosted.org/packages/3c/88/8092bcb97121bf0c858556b31aabe16f3425e153fd26535f8a20ab4bac78/pymongo-4.7.3-cp312-cp312-macosx_11_0_arm64.whl
-  sha256: 9cf2069f5d37c398186453589486ea98bb0312214c439f7d320593b61880dc05
-  requires_dist:
-  - dnspython<3.0.0,>=1.16.0
-  - pymongo-auth-aws<2.0.0,>=1.1.0 ; extra == 'aws'
-  - pymongo-auth-aws<2.0.0,>=1.1.0 ; extra == 'encryption'
-  - pymongocrypt<2.0.0,>=1.6.0 ; extra == 'encryption'
-  - certifi ; (os_name == 'nt' or sys_platform == 'darwin') and extra == 'encryption'
-  - pykerberos ; os_name != 'nt' and extra == 'gssapi'
-  - winkerberos>=0.5.0 ; os_name == 'nt' and extra == 'gssapi'
-  - pyopenssl>=17.2.0 ; extra == 'ocsp'
-  - requests<3.0.0 ; extra == 'ocsp'
-  - cryptography>=2.5 ; extra == 'ocsp'
-  - service-identity>=18.1.0 ; extra == 'ocsp'
-  - certifi ; (os_name == 'nt' or sys_platform == 'darwin') and extra == 'ocsp'
-  - python-snappy ; extra == 'snappy'
-  - pytest>=7 ; extra == 'test'
-  - zstandard ; extra == 'zstd'
-  requires_python: '>=3.7'
-- kind: pypi
-  name: pymongo
-  version: 4.7.3
   url: https://files.pythonhosted.org/packages/4d/1d/efe5e0c4c4a88b2cde5962138f05603fc8d90824b31c7b23b654c7ac2609/pymongo-4.7.3-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
   sha256: 3564f423958fced8a8c90940fd2f543c27adbcd6c7c6ed6715d847053f6200a0
   requires_dist:
@@ -3535,8 +3485,8 @@ packages:
 - kind: pypi
   name: pymongo
   version: 4.7.3
-  url: https://files.pythonhosted.org/packages/ce/f2/259fb22d82f2fb18a45ec065026f565c1b5ff325c5afe7b516a9bb2805b8/pymongo-4.7.3-cp311-cp311-macosx_11_0_arm64.whl
-  sha256: 6e2287f1e2cc35e73cd74a4867e398a97962c5578a3991c730ef78d276ca8e46
+  url: https://files.pythonhosted.org/packages/3c/88/8092bcb97121bf0c858556b31aabe16f3425e153fd26535f8a20ab4bac78/pymongo-4.7.3-cp312-cp312-macosx_11_0_arm64.whl
+  sha256: 9cf2069f5d37c398186453589486ea98bb0312214c439f7d320593b61880dc05
   requires_dist:
   - dnspython<3.0.0,>=1.16.0
   - pymongo-auth-aws<2.0.0,>=1.1.0 ; extra == 'aws'
@@ -3559,6 +3509,28 @@ packages:
   version: 4.7.3
   url: https://files.pythonhosted.org/packages/30/1d/f3193c511907cc53915a30d81082413e5eef735cab57981dd82882983530/pymongo-4.7.3-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
   sha256: 413506bd48d8c31ee100645192171e4773550d7cb940b594d5175ac29e329ea1
+  requires_dist:
+  - dnspython<3.0.0,>=1.16.0
+  - pymongo-auth-aws<2.0.0,>=1.1.0 ; extra == 'aws'
+  - pymongo-auth-aws<2.0.0,>=1.1.0 ; extra == 'encryption'
+  - pymongocrypt<2.0.0,>=1.6.0 ; extra == 'encryption'
+  - certifi ; (os_name == 'nt' or sys_platform == 'darwin') and extra == 'encryption'
+  - pykerberos ; os_name != 'nt' and extra == 'gssapi'
+  - winkerberos>=0.5.0 ; os_name == 'nt' and extra == 'gssapi'
+  - pyopenssl>=17.2.0 ; extra == 'ocsp'
+  - requests<3.0.0 ; extra == 'ocsp'
+  - cryptography>=2.5 ; extra == 'ocsp'
+  - service-identity>=18.1.0 ; extra == 'ocsp'
+  - certifi ; (os_name == 'nt' or sys_platform == 'darwin') and extra == 'ocsp'
+  - python-snappy ; extra == 'snappy'
+  - pytest>=7 ; extra == 'test'
+  - zstandard ; extra == 'zstd'
+  requires_python: '>=3.7'
+- kind: pypi
+  name: pymongo
+  version: 4.7.3
+  url: https://files.pythonhosted.org/packages/ce/f2/259fb22d82f2fb18a45ec065026f565c1b5ff325c5afe7b516a9bb2805b8/pymongo-4.7.3-cp311-cp311-macosx_11_0_arm64.whl
+  sha256: 6e2287f1e2cc35e73cd74a4867e398a97962c5578a3991c730ef78d276ca8e46
   requires_dist:
   - dnspython<3.0.0,>=1.16.0
   - pymongo-auth-aws<2.0.0,>=1.1.0 ; extra == 'aws'
@@ -3657,6 +3629,24 @@ packages:
   - pkg:pypi/pytest-cov?source=conda-forge-mapping
   size: 25507
   timestamp: 1711411153367
+- kind: conda
+  name: pytest-dependency
+  version: 0.5.1
+  build: pyh9f0ad1d_0
+  subdir: noarch
+  noarch: python
+  url: https://conda.anaconda.org/conda-forge/noarch/pytest-dependency-0.5.1-pyh9f0ad1d_0.tar.bz2
+  sha256: bdb25a7daf3efb7255b1a19d7b5d41d7d4d96bc647b8e5f7407ec4dd9e384257
+  md5: b6764e23dece9f9cda0469af044fafeb
+  depends:
+  - pytest >=3.6.0
+  - python
+  license: Apache-2.0
+  license_family: APACHE
+  purls:
+  - pkg:pypi/pytest-dependency?source=conda-forge-mapping
+  size: 11937
+  timestamp: 1593032402328
 - kind: conda
   name: pytest-xdist
   version: 3.6.1
@@ -3936,14 +3926,14 @@ packages:
 - kind: pypi
   name: pyyaml
   version: 6.0.1
-  url: https://files.pythonhosted.org/packages/84/02/404de95ced348b73dd84f70e15a41843d817ff8c1744516bf78358f2ffd2/PyYAML-6.0.1-cp312-cp312-macosx_11_0_arm64.whl
-  sha256: 40df9b996c2b73138957fe23a16a4f0ba614f4c0efce1e9406a184b6d07fa3a9
+  url: https://files.pythonhosted.org/packages/c7/4c/4a2908632fc980da6d918b9de9c1d9d7d7e70b2672b1ad5166ed27841ef7/PyYAML-6.0.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+  sha256: a08c6f0fe150303c1c6b71ebcd7213c2858041a7e01975da3a99aed1e7a378ef
   requires_python: '>=3.6'
 - kind: pypi
   name: pyyaml
   version: 6.0.1
-  url: https://files.pythonhosted.org/packages/c7/4c/4a2908632fc980da6d918b9de9c1d9d7d7e70b2672b1ad5166ed27841ef7/PyYAML-6.0.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
-  sha256: a08c6f0fe150303c1c6b71ebcd7213c2858041a7e01975da3a99aed1e7a378ef
+  url: https://files.pythonhosted.org/packages/84/02/404de95ced348b73dd84f70e15a41843d817ff8c1744516bf78358f2ffd2/PyYAML-6.0.1-cp312-cp312-macosx_11_0_arm64.whl
+  sha256: 40df9b996c2b73138957fe23a16a4f0ba614f4c0efce1e9406a184b6d07fa3a9
   requires_python: '>=3.6'
 - kind: conda
   name: pyyaml
@@ -4309,7 +4299,7 @@ packages:
   name: snakemake-orcestrator
   version: 0.1.0
   path: .
-  sha256: f7cc00e27112ad04917bd05ec1953e883dbe72dc363b0806ce3f684d2a1c7f0c
+  sha256: f48d384502c3190ae8f30a234706aa1afcba8bced520df44c74068ab2488ffca
   requires_dist:
   - python-json-logger
   - google-cloud-logging
@@ -4361,14 +4351,6 @@ packages:
 - kind: pypi
   name: time-machine
   version: 2.14.1
-  url: https://files.pythonhosted.org/packages/3f/4f/3dc3995be802f820fa608bc9eab2ece3399ddb7ba8306faf890a5cb96bb6/time_machine-2.14.1-cp312-cp312-macosx_10_9_universal2.whl
-  sha256: 30a4a18357fa6cf089eeefcb37e9549b42523aebb5933894770a8919e6c398e1
-  requires_dist:
-  - python-dateutil
-  requires_python: '>=3.8'
-- kind: pypi
-  name: time-machine
-  version: 2.14.1
   url: https://files.pythonhosted.org/packages/31/7e/7083ec1cfdd8fb1246f6c743d13f791009c7d23c86918943c0098c62d8a7/time_machine-2.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
   sha256: 7fd7d188b4f9d358c6bd477daf93b460d9b244a4c296ddd065945f2b6193c2bd
   requires_dist:
@@ -4377,8 +4359,8 @@ packages:
 - kind: pypi
   name: time-machine
   version: 2.14.1
-  url: https://files.pythonhosted.org/packages/f6/77/65a24ee3fb6274c145f3fc63ecd472641a252921e90a6e3f4f426aef8f75/time_machine-2.14.1-cp311-cp311-macosx_10_9_universal2.whl
-  sha256: 442d42f1b0ef006f03a5a34905829a1d3ac569a5bcda64d29706e6dc60832f94
+  url: https://files.pythonhosted.org/packages/3f/4f/3dc3995be802f820fa608bc9eab2ece3399ddb7ba8306faf890a5cb96bb6/time_machine-2.14.1-cp312-cp312-macosx_10_9_universal2.whl
+  sha256: 30a4a18357fa6cf089eeefcb37e9549b42523aebb5933894770a8919e6c398e1
   requires_dist:
   - python-dateutil
   requires_python: '>=3.8'
@@ -4387,6 +4369,14 @@ packages:
   version: 2.14.1
   url: https://files.pythonhosted.org/packages/77/13/6b15375a24f0a6bead3ba1106004a6ee069e2ad9f3ead4a264513c1a5d85/time_machine-2.14.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
   sha256: 0a39dba3033d9c28347d2db16bcb16041bbf4e9032e2b70023686b6f95deac9d
+  requires_dist:
+  - python-dateutil
+  requires_python: '>=3.8'
+- kind: pypi
+  name: time-machine
+  version: 2.14.1
+  url: https://files.pythonhosted.org/packages/f6/77/65a24ee3fb6274c145f3fc63ecd472641a252921e90a6e3f4f426aef8f75/time_machine-2.14.1-cp311-cp311-macosx_10_9_universal2.whl
+  sha256: 442d42f1b0ef006f03a5a34905829a1d3ac569a5bcda64d29706e6dc60832f94
   requires_dist:
   - python-dateutil
   requires_python: '>=3.8'
@@ -4579,26 +4569,26 @@ packages:
 - kind: pypi
   name: ujson
   version: 5.10.0
-  url: https://files.pythonhosted.org/packages/a8/47/dd03fd2b5ae727e16d5d18919b383959c6d269c7b948a380fdd879518640/ujson-5.10.0-cp312-cp312-macosx_11_0_arm64.whl
-  sha256: a9d2edbf1556e4f56e50fab7d8ff993dbad7f54bac68eacdd27a8f55f433578e
-  requires_python: '>=3.8'
-- kind: pypi
-  name: ujson
-  version: 5.10.0
   url: https://files.pythonhosted.org/packages/25/23/079a4cc6fd7e2655a473ed9e776ddbb7144e27f04e8fc484a0fb45fe6f71/ujson-5.10.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
   sha256: 6627029ae4f52d0e1a2451768c2c37c0c814ffc04f796eb36244cf16b8e57043
   requires_python: '>=3.8'
 - kind: pypi
   name: ujson
   version: 5.10.0
-  url: https://files.pythonhosted.org/packages/8d/9f/4731ef0671a0653e9f5ba18db7c4596d8ecbf80c7922dd5fe4150f1aea76/ujson-5.10.0-cp311-cp311-macosx_11_0_arm64.whl
-  sha256: 502bf475781e8167f0f9d0e41cd32879d120a524b22358e7f205294224c71126
+  url: https://files.pythonhosted.org/packages/a8/47/dd03fd2b5ae727e16d5d18919b383959c6d269c7b948a380fdd879518640/ujson-5.10.0-cp312-cp312-macosx_11_0_arm64.whl
+  sha256: a9d2edbf1556e4f56e50fab7d8ff993dbad7f54bac68eacdd27a8f55f433578e
   requires_python: '>=3.8'
 - kind: pypi
   name: ujson
   version: 5.10.0
   url: https://files.pythonhosted.org/packages/1f/2b/44d6b9c1688330bf011f9abfdb08911a9dc74f76926dde74e718d87600da/ujson-5.10.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
   sha256: 5b91b5d0d9d283e085e821651184a647699430705b15bf274c7896f23fe9c9d8
+  requires_python: '>=3.8'
+- kind: pypi
+  name: ujson
+  version: 5.10.0
+  url: https://files.pythonhosted.org/packages/8d/9f/4731ef0671a0653e9f5ba18db7c4596d8ecbf80c7922dd5fe4150f1aea76/ujson-5.10.0-cp311-cp311-macosx_11_0_arm64.whl
+  sha256: 502bf475781e8167f0f9d0e41cd32879d120a524b22358e7f205294224c71126
   requires_python: '>=3.8'
 - kind: conda
   name: ukkonen
@@ -4783,8 +4773,8 @@ packages:
 - kind: pypi
   name: uvloop
   version: 0.19.0
-  url: https://files.pythonhosted.org/packages/85/57/6736733bb0e86a4b5380d04082463b289c0baecaa205934ba81e8a1d5ea4/uvloop-0.19.0-cp312-cp312-macosx_10_9_universal2.whl
-  sha256: da8435a3bd498419ee8c13c34b89b5005130a476bda1d6ca8cfdde3de35cd650
+  url: https://files.pythonhosted.org/packages/e6/fc/f0daaf19f5b2116a2d26eb9f98c4a45084aea87bf03c33bcca7aa1ff36e5/uvloop-0.19.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+  sha256: 2693049be9d36fef81741fddb3f441673ba12a34a704e7b4361efb75cf30befc
   requires_dist:
   - sphinx~=4.1.2 ; extra == 'docs'
   - sphinxcontrib-asyncio~=0.3.0 ; extra == 'docs'
@@ -4801,8 +4791,8 @@ packages:
 - kind: pypi
   name: uvloop
   version: 0.19.0
-  url: https://files.pythonhosted.org/packages/e6/fc/f0daaf19f5b2116a2d26eb9f98c4a45084aea87bf03c33bcca7aa1ff36e5/uvloop-0.19.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
-  sha256: 2693049be9d36fef81741fddb3f441673ba12a34a704e7b4361efb75cf30befc
+  url: https://files.pythonhosted.org/packages/85/57/6736733bb0e86a4b5380d04082463b289c0baecaa205934ba81e8a1d5ea4/uvloop-0.19.0-cp312-cp312-macosx_10_9_universal2.whl
+  sha256: da8435a3bd498419ee8c13c34b89b5005130a476bda1d6ca8cfdde3de35cd650
   requires_dist:
   - sphinx~=4.1.2 ; extra == 'docs'
   - sphinxcontrib-asyncio~=0.3.0 ; extra == 'docs'
@@ -4877,30 +4867,30 @@ packages:
 - kind: pypi
   name: watchfiles
   version: 0.22.0
-  url: https://files.pythonhosted.org/packages/f8/a1/4f7dba44f55f23cdc4e775c44f5717db541481a563f47559df40f2c0ef58/watchfiles-0.22.0-cp312-cp312-macosx_11_0_arm64.whl
-  sha256: bd4c06100bce70a20c4b81e599e5886cf504c9532951df65ad1133e508bf20be
-  requires_dist:
-  - anyio>=3.0.0
-  requires_python: '>=3.8'
-- kind: pypi
-  name: watchfiles
-  version: 0.22.0
   url: https://files.pythonhosted.org/packages/17/56/1678819b6250742d9bc399ab2969084f7f735ae5a7af2b41ae3f039295ca/watchfiles-0.22.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
   sha256: 425440e55cd735386ec7925f64d5dde392e69979d4c8459f6bb4e920210407f2
   requires_dist:
   - anyio>=3.0.0
   requires_python: '>=3.8'
 - kind: pypi
-  name: websockets
-  version: '12.0'
-  url: https://files.pythonhosted.org/packages/2e/00/96ae1c9dcb3bc316ef683f2febd8c97dde9f254dc36c3afc65c7645f734c/websockets-12.0-cp312-cp312-macosx_11_0_arm64.whl
-  sha256: 12743ab88ab2af1d17dd4acb4645677cb7063ef4db93abffbf164218a5d54c6b
+  name: watchfiles
+  version: 0.22.0
+  url: https://files.pythonhosted.org/packages/f8/a1/4f7dba44f55f23cdc4e775c44f5717db541481a563f47559df40f2c0ef58/watchfiles-0.22.0-cp312-cp312-macosx_11_0_arm64.whl
+  sha256: bd4c06100bce70a20c4b81e599e5886cf504c9532951df65ad1133e508bf20be
+  requires_dist:
+  - anyio>=3.0.0
   requires_python: '>=3.8'
 - kind: pypi
   name: websockets
   version: '12.0'
   url: https://files.pythonhosted.org/packages/af/f1/bba1e64430685dd456c1a1fd6b0c791ae33104967b928aefeff261761e8d/websockets-12.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
   sha256: 7b645f491f3c48d3f8a00d1fce07445fab7347fec54a3e65f0725d730d5b99cb
+  requires_python: '>=3.8'
+- kind: pypi
+  name: websockets
+  version: '12.0'
+  url: https://files.pythonhosted.org/packages/2e/00/96ae1c9dcb3bc316ef683f2febd8c97dde9f254dc36c3afc65c7645f734c/websockets-12.0-cp312-cp312-macosx_11_0_arm64.whl
+  sha256: 12743ab88ab2af1d17dd4acb4645677cb7063ef4db93abffbf164218a5d54c6b
   requires_python: '>=3.8'
 - kind: conda
   name: wheel
@@ -4979,16 +4969,6 @@ packages:
 - kind: pypi
   name: yarl
   version: 1.9.4
-  url: https://files.pythonhosted.org/packages/54/99/ed3c92c38f421ba6e36caf6aa91c34118771d252dce800118fa2f44d7962/yarl-1.9.4-cp312-cp312-macosx_11_0_arm64.whl
-  sha256: aaaea1e536f98754a6e5c56091baa1b6ce2f2700cc4a00b0d49eca8dea471074
-  requires_dist:
-  - idna>=2.0
-  - multidict>=4.0
-  - typing-extensions>=3.7.4 ; python_version < '3.8'
-  requires_python: '>=3.7'
-- kind: pypi
-  name: yarl
-  version: 1.9.4
   url: https://files.pythonhosted.org/packages/ea/45/65801be625ef939acc8b714cf86d4a198c0646e80dc8970359d080c47204/yarl-1.9.4-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
   sha256: 3777ce5536d17989c91696db1d459574e9a9bd37660ea7ee4d3344579bb6f129
   requires_dist:
@@ -4999,8 +4979,8 @@ packages:
 - kind: pypi
   name: yarl
   version: 1.9.4
-  url: https://files.pythonhosted.org/packages/20/3d/7dabf580dfc0b588e48830486b488858122b10a61f33325e0d7cf1d6180b/yarl-1.9.4-cp311-cp311-macosx_11_0_arm64.whl
-  sha256: d8a1c6c0be645c745a081c192e747c5de06e944a0d21245f4cf7c05e457c36e0
+  url: https://files.pythonhosted.org/packages/54/99/ed3c92c38f421ba6e36caf6aa91c34118771d252dce800118fa2f44d7962/yarl-1.9.4-cp312-cp312-macosx_11_0_arm64.whl
+  sha256: aaaea1e536f98754a6e5c56091baa1b6ce2f2700cc4a00b0d49eca8dea471074
   requires_dist:
   - idna>=2.0
   - multidict>=4.0
@@ -5011,6 +4991,16 @@ packages:
   version: 1.9.4
   url: https://files.pythonhosted.org/packages/38/45/7c669999f5d350f4f8f74369b94e0f6705918eee18e38610bfe44af93d4f/yarl-1.9.4-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
   sha256: 4b3c1ffe10069f655ea2d731808e76e0f452fc6c749bea04781daf18e6039525
+  requires_dist:
+  - idna>=2.0
+  - multidict>=4.0
+  - typing-extensions>=3.7.4 ; python_version < '3.8'
+  requires_python: '>=3.7'
+- kind: pypi
+  name: yarl
+  version: 1.9.4
+  url: https://files.pythonhosted.org/packages/20/3d/7dabf580dfc0b588e48830486b488858122b10a61f33325e0d7cf1d6180b/yarl-1.9.4-cp311-cp311-macosx_11_0_arm64.whl
+  sha256: d8a1c6c0be645c745a081c192e747c5de06e944a0d21245f4cf7c05e457c36e0
   requires_dist:
   - idna>=2.0
   - multidict>=4.0
