@@ -1,0 +1,122 @@
+[
+    {
+        "_id": {
+            "oid": "667062eaaab09ad489fcf253"
+        },
+        "pipeline_name": "test_pipeline",
+        "git_url": "https://github.com/BHKLAB-DataProcessing/GDSC-Pharmacoset_Snakemake",
+        "output_files": [
+            "results/GDSC.RDS"
+        ],
+        "snakefile_path": "Snakefile",
+        "config_file_path": "config/config.yaml",
+        "conda_env_file_path": "pipeline_env.yaml",
+        "created_at": "2024-06-17T16:23:05.964825+00:00",
+        "last_updated_at": "2024-06-17T16:23:05.964834+00:00"
+    },
+    {
+        "_id": {
+            "oid": "667077e5e73ee1bb9ec4bbcb"
+        },
+        "pipeline_name": "GDSC",
+        "git_url": "strin1g",
+        "output_files": [
+            "string"
+        ],
+        "snakefile_path": "Snakefile",
+        "config_file_path": "config/config.yaml",
+        "conda_env_file_path": "pipeline_env.yaml",
+        "created_at": "2024-06-17T17:52:12.870293+00:00",
+        "last_updated_at": "2024-06-17T17:52:12.870301+00:00"
+    },
+    {
+        "_id": {
+            "oid": "667077ece73ee1bb9ec4bbcc"
+        },
+        "pipeline_name": "GDSC2",
+        "git_url": "string",
+        "output_files": [
+            "string"
+        ],
+        "snakefile_path": "Snakefil2e",
+        "config_file_path": "config/config.yaml",
+        "conda_env_file_path": "pipeline_env.yaml",
+        "created_at": "2024-06-17T17:52:12.870293+00:00",
+        "last_updated_at": "2024-06-17T17:52:12.870301+00:00"
+    },
+    {
+        "_id": {
+            "oid": "667079251a42ae46d8c1b741"
+        },
+        "pipeline_name": "GDSC12",
+        "git_url": "https://github.com/BHKLAB-DataProcessing/GDSC-Pharmacoset_Snakemake",
+        "output_files": [
+            "results/GDSC.RDS"
+        ],
+        "snakefile_path": "Snakefile",
+        "config_file_path": "config/config.yaml",
+        "conda_env_file_path": "pipeline_env.yaml",
+        "created_at": "2024-06-17T17:57:44.184807+00:00",
+        "last_updated_at": "2024-06-17T17:57:44.184816+00:00"
+    },
+    {
+        "_id": {
+            "oid": "66707970c14e9cbfd05b7f1d"
+        },
+        "pipeline_name": "GDSC44",
+        "git_url": "https://github.com/BHKLAB-DataProcessing/GDSC-Pharmacoset_Snakemake",
+        "output_files": [
+            "results/GDSC.RDS"
+        ],
+        "snakefile_path": "Snakefile",
+        "config_file_path": "config/config.yaml",
+        "conda_env_file_path": "pipeline_env.yaml",
+        "created_at": "2024-06-17T17:59:00.674582+00:00",
+        "last_updated_at": "2024-06-17T17:59:00.674590+00:00"
+    },
+    {
+        "_id": {
+            "oid": "667079c5a229e65a5533e36e"
+        },
+        "pipeline_name": "GDSC1234",
+        "git_url": "https://github.com/BHKLAB-DataProcessing/GDSC-Pharmacoset_Snakemake",
+        "output_files": [
+            "results/GDSC.RDS"
+        ],
+        "snakefile_path": "Snakefile",
+        "config_file_path": "config/config.yaml",
+        "conda_env_file_path": "pipeline_env.yaml",
+        "created_at": "2024-06-17T18:00:29.354144+00:00",
+        "last_updated_at": "2024-06-17T18:00:29.354152+00:00"
+    },
+    {
+        "_id": {
+            "oid": "66707a585705dc90df828e8f"
+        },
+        "pipeline_name": "GDSCjers",
+        "git_url": "https://github.com/BHKLAB-DataProcessing/GDSC-Pharmacoset_Snakemake",
+        "output_files": [
+            "results/GDSC.RDS"
+        ],
+        "snakefile_path": "Snakefile",
+        "config_file_path": "config/config.yaml",
+        "conda_env_file_path": "pipeline_env.yaml",
+        "created_at": "2024-06-17T18:01:43.365497+00:00",
+        "last_updated_at": "2024-06-17T18:01:43.365505+00:00"
+    },
+    {
+        "_id": {
+            "oid": "66708d39f39b80ad570f861c"
+        },
+        "pipeline_name": "GDSC123412",
+        "git_url": "https://github.com/BHKLAB-DataProcessing/GDSC-Pharmacoset_Snakemake",
+        "output_files": [
+            "results/GDSC.RDS"
+        ],
+        "snakefile_path": "Snakefile",
+        "config_file_path": "config/config.yaml",
+        "conda_env_file_path": "pipeline_env.yaml",
+        "created_at": "2024-06-17T19:22:35.625448+00:00",
+        "last_updated_at": "2024-06-17T19:22:35.625458+00:00"
+    }
+]
