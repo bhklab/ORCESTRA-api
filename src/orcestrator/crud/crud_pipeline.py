@@ -20,8 +20,7 @@ async def create_pipeline(
     ):
         raise ValueError('Pipeline with this name already exists')
 
-    logger.info(f'Creating pipeline {pipeline.pipeline_name}')
-    logger.debug(f'{pipeline.model_dump_json()}')
+    logger.info(f'Adding {pipeline.pipeline_name} to the database')
 
     new_pipeline = pipeline.model_dump()
     result = await db['pipelines'].insert_one(new_pipeline)

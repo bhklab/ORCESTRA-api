@@ -47,14 +47,32 @@ async def create_pipeline(
     pipeline: CreatePipeline,
     db: AsyncIOMotorDatabase = Depends(get_db),
 ) -> PipelineOut:
-    logger.debug(f'Creating pipeline: {pipeline.model_dump()}')
-    logger.debug(f'db: {db.name}')
+    logger.debug(f'Creating pipeline: {pipeline.pipeline_name}')
     try:
         new_pipeline = await crud_pipeline.create_pipeline(pipeline, db)
     except ValueError as e:
         raise HTTPException(status_code=400, detail=str(e))
-    else:
-        return new_pipeline
+
+    ## need to run new_pipeline validate and clone methods but they are async
+    if not await new_pipeline.validate_url():
+        await crud_pipeline.delete_pipeline(new_pipeline.pipeline_name, db)
+        raise HTTPException(status_code=400, detail='Invalid git url')
+
+    try:
+        logger.info(f'Cloning {new_pipeline.git_url} to {new_pipeline.fs_path}')
+        await new_pipeline.clone()
+    except Exception as e:
+        await crud_pipeline.delete_pipeline(new_pipeline.pipeline_name, db)
+        raise HTTPException(status_code=400, detail=str(e))
+
+    try:
+        logger.info(f'Validating local paths for {new_pipeline.pipeline_name}')
+        await new_pipeline.validate_local_file_paths()
+    except Exception as e:
+        await crud_pipeline.delete_pipeline(new_pipeline.pipeline_name, db)
+        raise HTTPException(status_code=400, detail=str(e))
+
+    return new_pipeline
 
 
 ###############################################################################
@@ -123,9 +141,14 @@ async def delete_pipeline(
     db: AsyncIOMotorDatabase = Depends(get_db),
 ) -> PipelineOut:
     pipeline = await crud_pipeline.get_pipeline_by_name(pipeline_name, db)
+
     if pipeline is None:
         raise HTTPException(status_code=404, detail='Pipeline not found')
-    await db['pipelines'].delete_one({'pipeline_name': pipeline_name})
+
+    await crud_pipeline.delete_pipeline(pipeline_name, db)
+
+    await pipeline.delete_local()
+
     return pipeline
 
 

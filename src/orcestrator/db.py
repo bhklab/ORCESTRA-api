@@ -14,7 +14,6 @@ async def get_db() -> AsyncIOMotorDatabase:
     db_name = settings.MONGO_DB
     if not db_name or db_name == '':
         raise ValueError('MONGO_DB is not set')
-    logger.debug(f'db_name: {db_name}')
     if not db_client:
         raise ValueError('Mongo has not been connected')
 

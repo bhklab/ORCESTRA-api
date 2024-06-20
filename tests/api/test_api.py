@@ -3,7 +3,8 @@ from fastapi.testclient import TestClient
 from orcestrator.models.Pipeline import CreatePipeline, PipelineOut
 import os
 import json
-
+from pathlib import Path
+from shutil import rmtree
 
 def test_bad_env():
     with pytest.raises(Exception):
@@ -30,15 +31,15 @@ def client_obj():
 
 @pytest.fixture()
 def good_pipeline():
-    return CreatePipeline(
+    new_pipeline = CreatePipeline(
         pipeline_name="test_pipeline_successful",
-        git_url="https://github.com/bhklab-data-proc/GDSC-Pharmacoset_Snakemake",
+        git_url="https://github.com/jjjermiah/4_snakemake_download_data.git",
         output_files=["results/GDSC.RDS"],
-        snakefile_path="Snakefile",
+        snakefile_path="workflow/Snakefile",
         config_file_path="config/config.yaml",
         conda_env_file_path="pipeline_env.yaml",
     )
-
+    yield new_pipeline
 
 def test_read_root(client_obj):
     response = client_obj.get("/")
