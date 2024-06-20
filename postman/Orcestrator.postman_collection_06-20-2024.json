@@ -1,0 +1,359 @@
+{
+	"info": {
+		"_postman_id": "0161b6ed-c168-4866-a1e1-4d51e653ebf7",
+		"name": "Orcestrator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30506956"
+	},
+	"item": [
+		{
+			"name": "example_pipelines",
+			"item": [
+				{
+					"name": "5_snakemake_bioconductor",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"conda_env_file_path\": \"workflow/envs/pipeline_env.yaml\",\n  \"config_file_path\": \"workflow/config/config.yaml\",\n  \"git_url\": \"https://github.com/jjjermiah/5_snakemake_bioconductor.git\",\n  \"output_files\": [\n    \"results/output.txt\"\n  ],\n  \"pipeline_name\": \"snakemake_bioconductor\",\n  \"snakefile_path\": \"workflow/Snakefile\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/pipelines",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pipelines"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "5_snakemake_bioconductor",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/pipelines/snakemake_bioconductor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pipelines",
+								"snakemake_bioconductor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4_snakemake_download_data",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"conda_env_file_path\": \"pipeline_env.yaml\",\n  \"config_file_path\": \"config/config.yaml\",\n  \"git_url\": \"https://github.com/jjjermiah/4_snakemake_download_data.git\",\n  \"output_files\": [\n    \"results/output.txt\"\n  ],\n  \"pipeline_name\": \"4_snakemake_download_data\",\n  \"snakefile_path\": \"workflow/Snakefile\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/pipelines",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pipelines"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4_snakemake_download_data",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/pipelines/4_snakemake_download_data",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pipelines",
+								"4_snakemake_download_data"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3_snakemake_conda-env",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"conda_env_file_path\": \"pipeline_env.yaml\",\n  \"config_file_path\": \"config/config.yaml\",\n  \"git_url\": \"https://github.com/jjjermiah/3_snakemake_conda-env.git\",\n  \"output_files\": [\n    \"results/output.txt\"\n  ],\n  \"pipeline_name\": \"snakemake_conda-env\",\n  \"snakefile_path\": \"Snakefile\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/pipelines",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pipelines"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3_snakemake_conda-env",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/pipelines/snakemake_conda-env",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pipelines",
+								"snakemake_conda-env"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2_snakemake_simple2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"conda_env_file_path\": \"pipeline.yaml\",\n  \"config_file_path\": \"config/config.yaml\",\n  \"git_url\": \"https://github.com/jjjermiah/2_snakemake_simple2.git\",\n  \"output_files\": [\n    \"results/output.txt\"\n  ],\n  \"pipeline_name\": \"snakemake_simple2\",\n  \"snakefile_path\": \"Snakefile\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/pipelines",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pipelines"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2_snakemake_simple2",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/pipelines/snakemake_simple2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pipelines",
+								"snakemake_simple2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "1_snakemake_simple",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"conda_env_file_path\": \"pipeline.yaml\",\n  \"config_file_path\": \"config/config.yaml\",\n  \"git_url\": \"https://github.com/jjjermiah/1_snakemake_simple.git\",\n  \"output_files\": [\n    \"results/summary.txt\"\n  ],\n  \"pipeline_name\": \"snakemake_simple\",\n  \"snakefile_path\": \"Snakefile\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/pipelines",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pipelines"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "1_snakemake_simple",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/pipelines/snakemake_simple",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pipelines",
+								"snakemake_simple"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "this folder contains the create pipeline requests for the 5 pipelines at github.com/jjjermiah"
+		},
+		{
+			"name": "delete all pipelines",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/pipelines",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pipelines"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all pipelines",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/pipelines",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pipelines"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
