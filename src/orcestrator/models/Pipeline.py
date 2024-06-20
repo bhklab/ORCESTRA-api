@@ -20,17 +20,18 @@ from orcestrator.core import (
 )
 from orcestrator.models.common import PyObjectId
 
+
 class SnakemakePipeline(BaseModel):
     git_url: str
     output_files: List[str]
     snakefile_path: str = Field(
-        default='Snakefile',
+        default="Snakefile",
     )
     config_file_path: str = Field(
-        default='config/config.yaml',
+        default="config/config.yaml",
     )
     conda_env_file_path: str = Field(
-        default='pipeline_env.yaml',
+        default="pipeline_env.yaml",
     )
 
 
@@ -40,14 +41,14 @@ class CreatePipeline(SnakemakePipeline):
     last_updated_at: Optional[str] = datetime.now(timezone.utc).isoformat()
 
     model_config: ConfigDict = {
-        'json_schema_extra': {
-            'example': {
-                'pipeline_name': 'GDSC',
-                'git_url': 'https://github.com/BHKLAB-DataProcessing/GDSC-Pharmacoset_Snakemake',
-                'output_files': ['results/GDSC.RDS'],
-                'snakefile_path': 'Snakefile',
-                'config_file_path': 'config/config.yaml',
-                'conda_env_file_path': 'pipeline_env.yaml',
+        "json_schema_extra": {
+            "example": {
+                "pipeline_name": "snakemake_bioconductor",
+                "git_url": "https://github.com/jjjermiah/5_snakemake_bioconductor.git",
+                "output_files": ["results/output.txt"],
+                "snakefile_path": "workflow/Snakefile",
+                "config_file_path": "workflow/config/config.yaml",
+                "conda_env_file_path": "workflow/envs/pipeline_env.yaml",
             },
         }
     }
@@ -60,7 +61,7 @@ class UpdatePipeline(SnakemakePipeline):
 
 class PipelineOut(SnakemakePipeline):
     pipeline_name: str
-    id: PyObjectId = Field(alias='_id', default=None)
+    id: PyObjectId = Field(alias="_id", default=None)
 
     # If needed, add extra fields that should be included in the response
     created_at: Optional[str] = None
@@ -68,7 +69,7 @@ class PipelineOut(SnakemakePipeline):
 
     @property
     def fs_path(self) -> Path:
-        return Path.home() / 'pipelines' / self.pipeline_name
+        return Path.home() / "pipelines" / self.pipeline_name
 
     async def validate_url(self) -> bool:
         return await validate_github_repo(self.git_url)
@@ -88,17 +89,17 @@ class PipelineOut(SnakemakePipeline):
             AssertionError: If any of the paths do not exist.
         """
 
-        assert self.fs_path.exists(), f'Path: {self.fs_path} does not exist.'
+        assert self.fs_path.exists(), f"Path: {self.fs_path} does not exist."
 
         assert (
             self.fs_path / self.snakefile_path
-        ), f'Snakefile: {self.snakefile_path} does not exist.'
+        ), f"Snakefile: {self.snakefile_path} does not exist."
         assert (
             self.fs_path / self.config_file_path
-        ), f'Config file: {self.config_file_path} does not exist.'
+        ), f"Config file: {self.config_file_path} does not exist."
         assert (
             self.fs_path / self.conda_env_file_path
-        ), f'Conda env file: {self.conda_env_file_path} does not exist.'
+        ), f"Conda env file: {self.conda_env_file_path} does not exist."
         return True
 
     async def pull(self) -> None:
@@ -108,7 +109,19 @@ class PipelineOut(SnakemakePipeline):
         try:
             await self.validate_local_file_paths()
         except AssertionError as ae:
-            raise Exception(f'Error validating local paths: {ae}')
+            raise Exception(f"Error validating local paths: {ae}")
 
     async def delete_local(self) -> None:
         rmtree(self.fs_path)
+
+    async def dry_run(self) -> None:
+        """Dry run the pipeline.
+
+        Should be able to run `snakemake --dry-run`
+        make use of the `execute_command` function from `orcestrator.core.exec`
+
+        Notes:
+        - the prod environment has snakemake & conda installed already
+        - we expect the curator to have the conda env file as well
+        """
+        pass
