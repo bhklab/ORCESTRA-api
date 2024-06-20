@@ -25,8 +25,6 @@ async def validate_github_repo(url: str) -> bool:
                 return True
             return False
 
-
-
 async def clone_github_repo(url: str, dest: Path) -> Repo:
     """Clone a GitHub repository.
 
