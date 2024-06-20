@@ -195,4 +195,7 @@ logs/logs.json
 **/rawdata/
 
 
-.vscode
+**/*vscode*
+
+.vscode/settings.json
+.vscode/settings.json

@@ -1,7 +1,7 @@
 version: "3.9"
 
 services:
-  app:
+  orcestrator-api:
     depends_on:
       - redis-cache
       - local-mongo
@@ -43,6 +43,7 @@ services:
       - local-mongo-data:/data/db
     networks:
       - app-network
+    command: --quiet
 
 volumes:
   cache:

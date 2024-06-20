@@ -12,7 +12,6 @@ from pydantic import (
 
 from orcestrator.models.common import PyObjectId
 
-
 class SnakemakePipeline(BaseModel):
     git_url: str
     output_files: List[str]

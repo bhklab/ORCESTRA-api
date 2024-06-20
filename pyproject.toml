@@ -11,16 +11,6 @@ authors = [
   { name = "Shahbano" },
 ]
 requires-python = ">= 3.10"
-dependencies = [
-  "python-json-logger",
-  "google-cloud-logging",
-  "pydantic",
-  "fastapi",
-  "fastapi-cache2[redis]",
-  "python-dotenv",
-  "motor",
-  "uvicorn",
-]
 
 ################################################################################
 # PIXI Configuration
@@ -32,41 +22,32 @@ version = "0.1.0"
 channels = ["conda-forge", "bioconda"]
 platforms = ["osx-arm64", "linux-aarch64"]
 
+[tool.pixi.dependencies]
+snakemake = "==7.32.4"
+gitpython = ">=3.1.43,<3.2"
+aiohttp = ">=3.9.5,<3.10"
+git = ">=2.45.1,<2.46"
+python-json-logger = ">=2.0.7,<2.1"
+pydantic = ">=2.7.4,<2.8"
+fastapi = ">=0.111.0,<0.112"
+motor = ">=3.4.0,<3.5"
+uvicorn = ">=0.30.1,<0.31"
+google-cloud-logging = ">=3.10.0,<3.11"
+conda = ">=24.5.0,<24.6"
+mamba = ">=1.5.8,<1.6"
+
 [tool.pixi.pypi-dependencies]
 snakemake-orcestrator = { path = ".", editable = true }
+fastapi-cache2 = { extras = ["redis"], version = "*" }
 
 [tool.pixi.environments]
-dev = { features = [
-  "test",
-  "style",
-  "docs",
-  "development",
-], solve-group = "default" }
-prod = { features = ["build", "release", "prod"], solve-group = "default" }
-
-# py310 = ["py310", "test"]
-# py311 = ["py311", "test"]
-# py312 = ["py312", "test"]
+dev = { features = ["test", "style", "docs"], solve-group = "default" }
+prod = { features = ["prod"], solve-group = "default" }
+release = { features = ["build", "release"], solve-group = "default" }
 
 [tool.pixi.tasks.serve-api]
 cmd = "docker compose up"
-description = "Serve the API using docker compose"
-
-# ############################################## python ###############################################
-
-# [tool.pixi.feature.py310.dependencies]
-# python = "3.10.*"
-# [tool.pixi.feature.py311.dependencies]
-# python = "3.11.*"
-# [tool.pixi.feature.py312.dependencies]
-# python = "3.12.*"
-
-############################################## DEV ################################################
-[tool.pixi.feature.development.dependencies]
-uvicorn = ">=0.30.1,<0.31"
-
-[tool.pixi.feature.development.tasks.start]
-cmd = "uvicorn orcestrator.main:app --reload"
+description = "Serve the API using docker compose. Use '-d' to run in background"
 
 ############################################## TEST ################################################
 [tool.pixi.feature.test.dependencies]
@@ -79,7 +60,6 @@ python = "==3.11.0"
 httpx = ">=0.27.0,<0.28"
 mongomock = ">=4.0.0,<4.1"
 pytest-dependency = ">=0.5.1,<0.6"
-
 
 [tool.pixi.feature.test.tasks.test]
 cmd = [
@@ -151,21 +131,12 @@ build = "*"
 hatchling = "*"
 hatch = "*"
 
-[tool.pixi.feature.prod.host-dependencies]
-pip = "*"
-
 [tool.pixi.feature.build.tasks.build]
 cmd = "hatch build --clean"
 inputs = ["src", "config/hatch.toml", "pyproject.toml"]
 outputs = ["dist"]
 env = { HATCH_CONFIG = "config/hatch.toml" }
 description = "Build the package"
-
-
-[tool.pixi.feature.build.tasks.install-dist]
-cmd = "pip install --no-deps --disable-pip-version-check dist/*.whl"
-depends-on = ["build"]
-description = "Install the package in production mode"
 
 [tool.pixi.feature.release.dependencies]
 python-semantic-release = ">=8.5.1"
@@ -177,3 +148,15 @@ description = "Print the next version"
 
 [tool.pixi.feature.release.tasks.release]
 cmd = "semantic-release -c config/releaserc.toml"
+
+################################### PROD ###########################################################7
+[tool.pixi.feature.prod.host-dependencies]
+pip = "*"
+
+[tool.pixi.feature.prod.dependencies]
+python = ">=3.10"
+
+[tool.pixi.feature.prod.tasks.install-dist]
+cmd = "pip install --no-deps --disable-pip-version-check dist/*.whl"
+depends-on = ["build"]
+description = "Install the package in production mode"

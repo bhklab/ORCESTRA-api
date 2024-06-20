@@ -2,8 +2,6 @@ import logging
 import logging.config
 import os
 
-from google.cloud import logging as gcp_logging
-
 LOGGING: dict = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -55,6 +53,8 @@ LOGGING: dict = {
 
 
 def create_cloud_handler(test: bool = False) -> dict:
+    from google.cloud import logging as gcp_logging
+
     labels = {'env': 'prod', 'app': 'orcestra-api'}
     if test:
         labels['env'] = labels['env'] + '-test'
