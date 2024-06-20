@@ -18,14 +18,13 @@ async def create_pipeline(
         pipeline.pipeline_name,
         db,
     ):
-        raise ValueError("Pipeline with this name already exists")
+        raise ValueError('Pipeline with this name already exists')
 
-    logger.info(f"Creating pipeline {pipeline.pipeline_name}")
-    logger.debug(f"{pipeline.model_dump_json()}")
+    logger.info(f'Adding {pipeline.pipeline_name} to the database')
 
     new_pipeline = pipeline.model_dump()
-    result = await db["pipelines"].insert_one(new_pipeline)
-    new_pipeline["id"] = result.inserted_id
+    result = await db['pipelines'].insert_one(new_pipeline)
+    new_pipeline['id'] = result.inserted_id
 
     return PipelineOut(**new_pipeline)
 
@@ -37,8 +36,8 @@ async def get_pipeline_by_name(
     db: AsyncIOMotorDatabase,
 ) -> Optional[PipelineOut]:
     """Query the database for a pipeline by name and return it if found."""
-    pipeline = await db["pipelines"].find_one(
-        filter={"pipeline_name": pipeline_name},
+    pipeline = await db['pipelines'].find_one(
+        filter={'pipeline_name': pipeline_name},
     )
     if pipeline:
         return PipelineOut(**pipeline)
@@ -48,7 +47,7 @@ async def get_pipeline_by_name(
 async def get_all_pipelines(
     db: AsyncIOMotorDatabase,
 ) -> List[PipelineOut]:
-    pipelines = await db["pipelines"].find().to_list(length=None)
+    pipelines = await db['pipelines'].find().to_list(length=None)
     return [PipelineOut(**pipeline) for pipeline in pipelines]
 
 
@@ -62,18 +61,18 @@ async def update_pipeline_fields(
     existing_pipeline = await get_pipeline_by_name(pipeline_name, db)
 
     if not existing_pipeline:
-        raise ValueError("Pipeline not found")
-    logger.debug(f"Updating pipeline {pipeline_name}")
+        raise ValueError('Pipeline not found')
+    logger.debug(f'Updating pipeline {pipeline_name}')
     updated_pipeline_data = updated_pipeline.model_dump()
     new_pipeline_data = {**existing_pipeline.model_dump(), **updated_pipeline_data}
 
-    result = await db["pipelines"].update_one(
-        filter={"pipeline_name": pipeline_name},
-        update={"$set": updated_pipeline_data},
+    result = await db['pipelines'].update_one(
+        filter={'pipeline_name': pipeline_name},
+        update={'$set': updated_pipeline_data},
     )
 
     if result.modified_count == 0:
-        raise ValueError("Pipeline not updated")
+        raise ValueError('Pipeline not updated')
     return PipelineOut(**new_pipeline_data)
 
 
@@ -85,9 +84,9 @@ async def delete_pipeline(
     pipeline_name: str,
     db: AsyncIOMotorDatabase,
 ) -> None:
-    result = await db["pipelines"].delete_one(
-        filter={"pipeline_name": pipeline_name},
+    result = await db['pipelines'].delete_one(
+        filter={'pipeline_name': pipeline_name},
     )
     if result.deleted_count == 0:
-        raise ValueError("Pipeline not found")
-    logger.info(f"Deleted pipeline {pipeline_name}")
+        raise ValueError('Pipeline not found')
+    logger.info(f'Deleted pipeline {pipeline_name}')

@@ -7,8 +7,6 @@ RUN pixi run install-dist
 RUN pixi shell-hook -e prod > /shell-hook
 RUN echo "uvicorn orcestrator.main:app --host 0.0.0.0 --port 8000 --reload" >> /shell-hook
 
-# RUN echo "uvicorn orcestrator.main:app --host 0.0.0.0 --port 1234 --reload" >> /shell-hook
-
 FROM ubuntu:22.04 AS production
 
 # only copy the production env and the shell-hook script to the production image

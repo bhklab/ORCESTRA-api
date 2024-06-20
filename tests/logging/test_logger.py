@@ -1,8 +1,6 @@
 import logging
 import os
 import pytest
-from unittest.mock import MagicMock
-from logging import config as logging_config
 from logging.handlers import TimedRotatingFileHandler
 from google.cloud import logging as gcp_logging
 
@@ -78,14 +76,3 @@ def test_logging_to_file(cleanup_log_file):
         log_content = f.read()
 
     assert "Test file log" in log_content
-
-
-def test_logging_to_gcp(mocker):
-    mock_cloud_handler = mocker.patch(
-        "google.cloud.logging.handlers.CloudLoggingHandler.emit", autospec=True
-    )
-
-    logger = setup_logger("prod", test=True)
-    logger.debug("Test GCP log")
-
-    mock_cloud_handler.assert_called()

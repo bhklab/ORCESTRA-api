@@ -202,5 +202,17 @@ logs/logs.json
 .idea/
 dist
 logs
+.deprecated
+
+.pytest_cache
+
+.ruff_cache
+
 
 pixi.lock
+
+assets
+data
+coverage-report
+tests
+

@@ -34,6 +34,13 @@ docker-compose --version
 # Docker Compose version v2.15.1
 ```
 
+## Useful Resources
+
+- Learning FastAPI: https://fastapi.tiangolo.com/tutorial/
+- Learning Pydantic: https://pydantic-docs.helpmanual.io/
+- Learning Docker: https://docs.docker.com/get-started/overview/
+- Learning Pixi: https://pixi.sh
+
 
 ## Status
 
