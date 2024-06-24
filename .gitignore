@@ -191,7 +191,7 @@ logs/logs.json
 # Ignore all subdirectories everywhere of `.snakemake`
 **/.snakemake/
 **/results/
-**/logs/
+# **/logs/
 **/rawdata/
 
 
