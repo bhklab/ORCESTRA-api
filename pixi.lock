@@ -257,6 +257,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/zstd-1.5.6-h02f22dd_0.conda
       - pypi: https://files.pythonhosted.org/packages/80/6a/670a82f15dd1230531822cbe59858445b4151a94a9a58091dcfbe428ef47/fastapi_cache2-0.2.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/30/43/70d0a08e5d6ca434ba139d19ec2a4847b0a3e461fbb82e680a9b6a4237ef/pendulum-3.0.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+      - pypi: https://files.pythonhosted.org/packages/6a/3e/b68c118422ec867fa7ab88444e1274aa40681c606d59ac27de5a5588f082/python_dotenv-1.0.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/20/2e/409703d645363352a20c944f5d119bdae3eb3034051a53724a7c5fee12b8/redis-4.6.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/77/13/6b15375a24f0a6bead3ba1106004a6ee069e2ad9f3ead4a264513c1a5d85/time_machine-2.14.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
       - pypi: .
@@ -504,6 +505,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/zstd-1.5.6-hb46c0d2_0.conda
       - pypi: https://files.pythonhosted.org/packages/80/6a/670a82f15dd1230531822cbe59858445b4151a94a9a58091dcfbe428ef47/fastapi_cache2-0.2.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/68/e5/0f9d8351242ddb119a40b41c0cf1d0c74cc243829eea6811f753a8ecf15f/pendulum-3.0.0-cp311-cp311-macosx_11_0_arm64.whl
+      - pypi: https://files.pythonhosted.org/packages/6a/3e/b68c118422ec867fa7ab88444e1274aa40681c606d59ac27de5a5588f082/python_dotenv-1.0.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/20/2e/409703d645363352a20c944f5d119bdae3eb3034051a53724a7c5fee12b8/redis-4.6.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/f6/77/65a24ee3fb6274c145f3fc63ecd472641a252921e90a6e3f4f426aef8f75/time_machine-2.14.1-cp311-cp311-macosx_10_9_universal2.whl
       - pypi: .
@@ -794,6 +796,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a7/fa/e01228c2938de91d47b307831c62ab9e4001e747789d0b05baf779a6488c/async_timeout-4.0.3-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/80/6a/670a82f15dd1230531822cbe59858445b4151a94a9a58091dcfbe428ef47/fastapi_cache2-0.2.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/30/43/70d0a08e5d6ca434ba139d19ec2a4847b0a3e461fbb82e680a9b6a4237ef/pendulum-3.0.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+      - pypi: https://files.pythonhosted.org/packages/6a/3e/b68c118422ec867fa7ab88444e1274aa40681c606d59ac27de5a5588f082/python_dotenv-1.0.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/20/2e/409703d645363352a20c944f5d119bdae3eb3034051a53724a7c5fee12b8/redis-4.6.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/77/13/6b15375a24f0a6bead3ba1106004a6ee069e2ad9f3ead4a264513c1a5d85/time_machine-2.14.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
       - pypi: .
@@ -1071,6 +1074,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a7/fa/e01228c2938de91d47b307831c62ab9e4001e747789d0b05baf779a6488c/async_timeout-4.0.3-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/80/6a/670a82f15dd1230531822cbe59858445b4151a94a9a58091dcfbe428ef47/fastapi_cache2-0.2.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/68/e5/0f9d8351242ddb119a40b41c0cf1d0c74cc243829eea6811f753a8ecf15f/pendulum-3.0.0-cp311-cp311-macosx_11_0_arm64.whl
+      - pypi: https://files.pythonhosted.org/packages/6a/3e/b68c118422ec867fa7ab88444e1274aa40681c606d59ac27de5a5588f082/python_dotenv-1.0.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/20/2e/409703d645363352a20c944f5d119bdae3eb3034051a53724a7c5fee12b8/redis-4.6.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/f6/77/65a24ee3fb6274c145f3fc63ecd472641a252921e90a6e3f4f426aef8f75/time_machine-2.14.1-cp311-cp311-macosx_10_9_universal2.whl
       - pypi: .
@@ -1334,6 +1338,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a7/fa/e01228c2938de91d47b307831c62ab9e4001e747789d0b05baf779a6488c/async_timeout-4.0.3-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/80/6a/670a82f15dd1230531822cbe59858445b4151a94a9a58091dcfbe428ef47/fastapi_cache2-0.2.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/30/43/70d0a08e5d6ca434ba139d19ec2a4847b0a3e461fbb82e680a9b6a4237ef/pendulum-3.0.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+      - pypi: https://files.pythonhosted.org/packages/6a/3e/b68c118422ec867fa7ab88444e1274aa40681c606d59ac27de5a5588f082/python_dotenv-1.0.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/20/2e/409703d645363352a20c944f5d119bdae3eb3034051a53724a7c5fee12b8/redis-4.6.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/77/13/6b15375a24f0a6bead3ba1106004a6ee069e2ad9f3ead4a264513c1a5d85/time_machine-2.14.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
       - pypi: .
@@ -1584,6 +1589,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a7/fa/e01228c2938de91d47b307831c62ab9e4001e747789d0b05baf779a6488c/async_timeout-4.0.3-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/80/6a/670a82f15dd1230531822cbe59858445b4151a94a9a58091dcfbe428ef47/fastapi_cache2-0.2.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/68/e5/0f9d8351242ddb119a40b41c0cf1d0c74cc243829eea6811f753a8ecf15f/pendulum-3.0.0-cp311-cp311-macosx_11_0_arm64.whl
+      - pypi: https://files.pythonhosted.org/packages/6a/3e/b68c118422ec867fa7ab88444e1274aa40681c606d59ac27de5a5588f082/python_dotenv-1.0.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/20/2e/409703d645363352a20c944f5d119bdae3eb3034051a53724a7c5fee12b8/redis-4.6.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/f6/77/65a24ee3fb6274c145f3fc63ecd472641a252921e90a6e3f4f426aef8f75/time_machine-2.14.1-cp311-cp311-macosx_10_9_universal2.whl
       - pypi: .
@@ -1882,6 +1888,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a7/fa/e01228c2938de91d47b307831c62ab9e4001e747789d0b05baf779a6488c/async_timeout-4.0.3-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/80/6a/670a82f15dd1230531822cbe59858445b4151a94a9a58091dcfbe428ef47/fastapi_cache2-0.2.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/30/43/70d0a08e5d6ca434ba139d19ec2a4847b0a3e461fbb82e680a9b6a4237ef/pendulum-3.0.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+      - pypi: https://files.pythonhosted.org/packages/6a/3e/b68c118422ec867fa7ab88444e1274aa40681c606d59ac27de5a5588f082/python_dotenv-1.0.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/20/2e/409703d645363352a20c944f5d119bdae3eb3034051a53724a7c5fee12b8/redis-4.6.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/77/13/6b15375a24f0a6bead3ba1106004a6ee069e2ad9f3ead4a264513c1a5d85/time_machine-2.14.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
       - pypi: .
@@ -2162,6 +2169,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a7/fa/e01228c2938de91d47b307831c62ab9e4001e747789d0b05baf779a6488c/async_timeout-4.0.3-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/80/6a/670a82f15dd1230531822cbe59858445b4151a94a9a58091dcfbe428ef47/fastapi_cache2-0.2.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/68/e5/0f9d8351242ddb119a40b41c0cf1d0c74cc243829eea6811f753a8ecf15f/pendulum-3.0.0-cp311-cp311-macosx_11_0_arm64.whl
+      - pypi: https://files.pythonhosted.org/packages/6a/3e/b68c118422ec867fa7ab88444e1274aa40681c606d59ac27de5a5588f082/python_dotenv-1.0.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/20/2e/409703d645363352a20c944f5d119bdae3eb3034051a53724a7c5fee12b8/redis-4.6.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/f6/77/65a24ee3fb6274c145f3fc63ecd472641a252921e90a6e3f4f426aef8f75/time_machine-2.14.1-cp311-cp311-macosx_10_9_universal2.whl
       - pypi: .
@@ -8188,6 +8196,14 @@ packages:
   - pkg:pypi/python-dateutil?source=conda-forge-mapping
   size: 222742
   timestamp: 1709299922152
+- kind: pypi
+  name: python-dotenv
+  version: 1.0.1
+  url: https://files.pythonhosted.org/packages/6a/3e/b68c118422ec867fa7ab88444e1274aa40681c606d59ac27de5a5588f082/python_dotenv-1.0.1-py3-none-any.whl
+  sha256: f7b63ef50f1b690dddf550d03497b66d609393b40b564ed0d674909a68ebf16a
+  requires_dist:
+  - click>=5.0 ; extra == 'cli'
+  requires_python: '>=3.8'
 - kind: conda
   name: python-fastjsonschema
   version: 2.20.0
@@ -9124,7 +9140,9 @@ packages:
   name: snakemake-orcestrator
   version: 0.1.0
   path: .
-  sha256: b174dc07273c7410490fdee60fa0055b1dd4009449f11f62ca04ac5eb1cf1210
+  sha256: baa51906d6c8b542e2eedd69b509c5fb77c048f9c186a829134c0a9aa9280437
+  requires_dist:
+  - python-dotenv
   requires_python: '>=3.10'
   editable: true
 - kind: conda

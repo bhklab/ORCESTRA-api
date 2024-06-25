@@ -14,8 +14,8 @@ services:
       - .:/app
       - /app/.pixi # Ignore this directory in the volume
     environment:
-      - MONGO_URI=mongodb://local-mongo:27017
-      - MONGO_DB=orcestra2_test_db
+      - MONGO_URI=mongodb+srv://orcestra:orcestra@orcestra-cluster.b8ziw5e.mongodb.net/orcestra-api-testing
+      - MONGO_DB=orcestra-api-testing
       - ENV=devel
     networks:
       - app-network

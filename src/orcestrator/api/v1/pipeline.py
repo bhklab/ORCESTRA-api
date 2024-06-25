@@ -41,6 +41,8 @@ def log_execution_time(func: Callable) -> Callable:
 
 ###############################################################################
 # CREATE
+
+
 @router.post('/pipelines', response_model=PipelineOut)
 @log_execution_time
 async def create_pipeline(
@@ -48,30 +50,35 @@ async def create_pipeline(
     db: AsyncIOMotorDatabase = Depends(get_db),
 ) -> PipelineOut:
     logger.debug(f'Creating pipeline: {pipeline.pipeline_name}')
-    try:
-        new_pipeline = await crud_pipeline.create_pipeline(pipeline, db)
-    except ValueError as e:
-        raise HTTPException(status_code=400, detail=str(e))
 
     ## need to run new_pipeline validate and clone methods but they are async
-    if not await new_pipeline.validate_url():
-        await crud_pipeline.delete_pipeline(new_pipeline.pipeline_name, db)
+    if not await pipeline.validate_url():
         raise HTTPException(status_code=400, detail='Invalid git url')
 
     try:
-        logger.info(f'Cloning {new_pipeline.git_url} to {new_pipeline.fs_path}')
-        await new_pipeline.clone()
+        logger.info(f'Cloning {pipeline.git_url} to {pipeline.fs_path}')
+        await pipeline.clone()
     except Exception as e:
-        await crud_pipeline.delete_pipeline(new_pipeline.pipeline_name, db)
+        print("error 1");
         raise HTTPException(status_code=400, detail=str(e))
 
     try:
-        logger.info(f'Validating local paths for {new_pipeline.pipeline_name}')
-        await new_pipeline.validate_local_file_paths()
+        logger.info(f'Validating local paths for {pipeline.pipeline_name}')
+        await pipeline.validate_local_file_paths()
     except Exception as e:
-        await crud_pipeline.delete_pipeline(new_pipeline.pipeline_name, db)
+        print("error 2");
+        await pipeline.delete_local()
         raise HTTPException(status_code=400, detail=str(e))
-
+    
+    try:
+        new_pipeline = await crud_pipeline.create_pipeline(pipeline, db)
+    except ValueError as e:
+        print("error 3");
+        await pipeline.delete_local()
+        raise HTTPException(status_code=400, detail=str(e))
+    finally:
+        if not new_pipeline:
+            await pipeline.delete_local()
     return new_pipeline
 
 
@@ -135,7 +142,7 @@ async def update_pipeline(
 
 @router.delete('/pipelines/{pipeline_name}', response_model=PipelineOut)
 @log_execution_time
-@cache(expire=60)
+# @cache(expire=60)
 async def delete_pipeline(
     pipeline_name: str,
     db: AsyncIOMotorDatabase = Depends(get_db),
@@ -162,5 +169,5 @@ async def delete_all_pipelines(
         e = HTTPException(status_code=404, detail='No pipelines found')
         logger.warning(e.detail)
     for pipeline in pipelines:
-        await delete_pipeline(pipeline.pipeline_name, db)
+        await delete_pipeline(pipeline_name=pipeline.pipeline_name, db=db)
     return pipelines

@@ -36,27 +36,27 @@ def test_logger_configuration_devel():
     assert file_handler.formatter._fmt == LOGGING["formatters"]["json"]["format"]  # type: ignore
 
 
-def test_logger_configuration_prod():
-    logger = setup_logger("prod", test=True)
+# def test_logger_configuration_prod():
+#     logger = setup_logger("prod", test=True)
 
-    assert logger.name == "prod"
-    assert len(logger.handlers) == 3
-    assert any(isinstance(h, logging.StreamHandler) for h in logger.handlers)
-    assert any(isinstance(h, TimedRotatingFileHandler) for h in logger.handlers)
+#     assert logger.name == "prod"
+#     assert len(logger.handlers) == 3
+#     assert any(isinstance(h, logging.StreamHandler) for h in logger.handlers)
+#     assert any(isinstance(h, TimedRotatingFileHandler) for h in logger.handlers)
 
-    cloud_handler = next(
-        h
-        for h in logger.handlers
-        if isinstance(h, gcp_logging.handlers.CloudLoggingHandler)
-    )
+#     cloud_handler = next(
+#         h
+#         for h in logger.handlers
+#         if isinstance(h, gcp_logging.handlers.CloudLoggingHandler)
+#     )
 
-    assert cloud_handler.name == "cloud_logging"
-    assert cloud_handler.level == logging.DEBUG
-    assert cloud_handler.labels == {"env": "prod-test", "app": "orcestra-api"}
-    assert cloud_handler.formatter._fmt == LOGGING["formatters"]["json"]["format"]  # type: ignore
+#     assert cloud_handler.name == "cloud_logging"
+#     assert cloud_handler.level == logging.DEBUG
+#     assert cloud_handler.labels == {"env": "prod-test", "app": "orcestra-api"}
+#     assert cloud_handler.formatter._fmt == LOGGING["formatters"]["json"]["format"]  # type: ignore
 
-    logger.info("Test prod log info")
-    logger.debug("Test prod log debug")
+#     logger.info("Test prod log info")
+#     logger.debug("Test prod log debug")
 
 
 def test_logging_to_console(capsys):

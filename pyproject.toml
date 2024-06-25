@@ -11,6 +11,7 @@ authors = [
   { name = "Shahbano" },
 ]
 requires-python = ">= 3.10"
+dependencies = ["python-dotenv"]
 
 ################################################################################
 # PIXI Configuration
