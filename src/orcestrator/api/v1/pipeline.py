@@ -64,21 +64,18 @@ async def create_pipeline(
         logger.info(f'Cloning {pipeline.git_url} to {pipeline.fs_path}')
         await pipeline.clone()
     except Exception as e:
-        print("error 1");
         raise HTTPException(status_code=400, detail=str(e))
 
     try:
         logger.info(f'Validating local paths for {pipeline.pipeline_name}')
         await pipeline.validate_local_file_paths()
     except Exception as e:
-        print("error 2");
         await pipeline.delete_local()
         raise HTTPException(status_code=400, detail=str(e))
     
     try:
         new_pipeline = await crud_pipeline.create_pipeline(pipeline, db)
     except ValueError as e:
-        print("error 3");
         await pipeline.delete_local()
         raise HTTPException(status_code=400, detail=str(e))
     finally:
