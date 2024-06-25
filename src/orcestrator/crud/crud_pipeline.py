@@ -14,11 +14,6 @@ async def create_pipeline(
     pipeline: CreatePipeline,
     db: AsyncIOMotorDatabase,
 ) -> PipelineOut:
-    if await get_pipeline_by_name(
-        pipeline.pipeline_name,
-        db,
-    ):
-        raise ValueError('Pipeline with this name already exists')
 
     logger.info(f'Adding {pipeline.pipeline_name} to the database')
 

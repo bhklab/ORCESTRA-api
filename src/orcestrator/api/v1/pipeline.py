@@ -51,6 +51,11 @@ async def create_pipeline(
 ) -> PipelineOut:
     logger.debug(f'Creating pipeline: {pipeline.pipeline_name}')
 
+    # check if pipeline already exists
+    existing_pipeline = await crud_pipeline.get_pipeline_by_name(pipeline.pipeline_name, db)
+    if existing_pipeline is not None:
+        raise HTTPException(status_code=400, detail='Pipeline with this name already exists')
+    
     ## need to run new_pipeline validate and clone methods but they are async
     if not await pipeline.validate_url():
         raise HTTPException(status_code=400, detail='Invalid git url')
