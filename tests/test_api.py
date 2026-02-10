@@ -1,10 +1,12 @@
 import pytest
-from fastapi.testclient import TestClient
-from src.main import app  # Assuming 'main.py' contains the FastAPI app
+from src.api import app  # Assuming the API app is defined here
 
-client = TestClient(app)
+@pytest.fixture
+def client():
+    from fastapi.testclient import TestClient
+    return TestClient(app)
 
-def test_read_root():
+def test_root(client):
     response = client.get("/")
     assert response.status_code == 200
-    assert response.json() == {"message": "Hello World"}  # Adjust based on actual root response
+    assert response.json() == {"message": "Welcome to the Snakemake Orchestrator API!"}
